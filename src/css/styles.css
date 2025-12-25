@@ -47,14 +47,21 @@
   /* Typography */
   .headline-xl {
     @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-primary-900;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   .headline-lg {
     @apply text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-primary-900;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .headline {
     @apply text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-primary-900;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .subheadline {
