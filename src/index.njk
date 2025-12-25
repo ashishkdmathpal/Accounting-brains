@@ -1,242 +1,776 @@
 ---
 layout: base.njk
-title: "AccountingBrains - AI-Powered CPA Services | Expert Accounting Made Simple"
-description: "Professional CPA services powered by AI. Get expert tax preparation, bookkeeping, payroll, and financial consulting. Transform your business finances today."
+title: "AccountingBrains - Expert CPA Services for US Non-Profits | Form 990 & Grant Accounting"
+description: "Specialized CPA services for US-based non-profits, NGOs & foundations. Expert Form 990 filing, grant accounting, compliance & financial management. US-licensed CPAs with global delivery excellence."
 ---
 
 <!-- Hero Section -->
-<section class="gradient-bg section">
+<section class="relative overflow-hidden bg-primary-50/50">
+  <!-- Decorative Elements -->
+  <div class="absolute top-20 left-10 w-72 h-72 bg-accent-100 rounded-full blur-3xl opacity-40"></div>
+  <div class="absolute bottom-20 right-10 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-50"></div>
+
+  <!-- Floating Shapes -->
+  <div class="absolute top-32 right-20 w-4 h-4 bg-accent-400 rounded-full animate-float opacity-60 hidden lg:block"></div>
+  <div class="absolute top-48 right-40 w-3 h-3 bg-primary-400 rounded-full animate-float animation-delay-200 opacity-60 hidden lg:block"></div>
+  <div class="absolute bottom-32 left-20 w-5 h-5 bg-accent-300 rounded-full animate-float animation-delay-400 opacity-60 hidden lg:block"></div>
+
+  <div class="container-custom relative">
+    <div class="py-16 md:py-24 lg:py-32">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Left Column - Content -->
+        <div class="order-2 lg:order-1">
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-primary-100 shadow-soft mb-8">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span class="text-sm font-medium text-primary-700">US-Licensed CPAs</span>
+            </span>
+            <span class="w-1 h-1 rounded-full bg-primary-300"></span>
+            <span class="text-sm font-medium text-primary-700">Non-Profit Experts</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="headline-xl text-balance mb-6">
+            Expert accounting for <span class="text-accent-600">US non-profits</span> & beyond
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="subheadline max-w-xl mb-10">
+            Specialized CPA services for 501(c)(3) organizations, foundations, and NGOs. We also serve businesses, startups, and individuals. Expert financial management delivered through our Global Capability Center.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 mb-12">
+            <a href="/contact" class="btn btn-primary btn-lg">
+              Schedule Free Consultation
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <a href="/services" class="btn btn-secondary btn-lg">
+              View Services
+            </a>
+          </div>
+
+          <!-- Trust Indicators -->
+          <div class="flex flex-wrap gap-8 lg:gap-10">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center">
+                <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-primary-900">200+</div>
+                <div class="text-sm text-primary-500">Clients Served</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center">
+                <svg class="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-primary-900">1,500+</div>
+                <div class="text-sm text-primary-500">Form 990s Filed</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center">
+                <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-primary-900">100%</div>
+                <div class="text-sm text-primary-500">Compliance Rate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Dashboard Mockup -->
+        <div class="order-1 lg:order-2 relative">
+          <div class="relative">
+            <!-- Main Dashboard Card -->
+            <div class="bg-white rounded-3xl shadow-soft-xl border border-primary-100 p-6 relative z-10">
+              <!-- Dashboard Header -->
+              <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-primary-900 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                      <path d="M2 17l10 5 10-5"/>
+                      <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-primary-900">Grant & Fund Overview</div>
+                    <div class="text-xs text-primary-500">FY 2025</div>
+                  </div>
+                </div>
+                <div class="px-3 py-1 rounded-full bg-accent-100 text-accent-700 text-xs font-medium">
+                  501(c)(3)
+                </div>
+              </div>
+
+              <!-- Fund Allocation Chart -->
+              <div class="bg-primary-50 rounded-2xl p-5 mb-4">
+                <div class="flex items-center justify-between mb-4">
+                  <div>
+                    <div class="text-sm text-primary-500">Total Grants Managed</div>
+                    <div class="text-3xl font-bold text-primary-900">$2.4M</div>
+                  </div>
+                  <div class="flex items-center gap-1 px-3 py-1 rounded-full bg-accent-100 text-accent-700 text-sm font-medium">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+                    </svg>
+                    12 Active Grants
+                  </div>
+                </div>
+                <!-- Chart Bars representing program spending -->
+                <div class="flex items-end gap-2 h-24">
+                  <div class="flex-1 bg-accent-400 rounded-t-lg h-20" title="Program Services 75%"></div>
+                  <div class="flex-1 bg-primary-300 rounded-t-lg h-10" title="Admin 10%"></div>
+                  <div class="flex-1 bg-primary-200 rounded-t-lg h-6" title="Fundraising 5%"></div>
+                  <div class="flex-1 bg-accent-300 rounded-t-lg h-16" title="Program 2"></div>
+                  <div class="flex-1 bg-accent-500 rounded-t-lg h-24" title="Program 1"></div>
+                  <div class="flex-1 bg-accent-400 rounded-t-lg h-18" style="height: 72px" title="Program 3"></div>
+                  <div class="flex-1 bg-primary-200 rounded-t-lg h-8" title="Reserves"></div>
+                </div>
+                <div class="flex justify-between mt-3 text-xs text-primary-500">
+                  <span>Program Expense Ratio: 85%</span>
+                  <span>IRS Compliant</span>
+                </div>
+              </div>
+
+              <!-- Quick Stats -->
+              <div class="grid grid-cols-3 gap-3">
+                <div class="bg-primary-50 rounded-xl p-3 text-center">
+                  <div class="text-lg font-bold text-primary-900">Form 990</div>
+                  <div class="text-xs text-accent-600 font-medium">Filed</div>
+                </div>
+                <div class="bg-accent-50 rounded-xl p-3 text-center">
+                  <div class="text-lg font-bold text-accent-700">$180K</div>
+                  <div class="text-xs text-primary-500">Monthly</div>
+                </div>
+                <div class="bg-primary-50 rounded-xl p-3 text-center">
+                  <div class="text-lg font-bold text-primary-900">A+</div>
+                  <div class="text-xs text-primary-500">Audit Ready</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Card 1 - Compliance Alert -->
+            <div class="absolute -left-4 top-1/4 bg-white rounded-2xl shadow-soft-lg border border-primary-100 p-4 z-20 animate-float hidden md:flex items-center gap-3 max-w-xs">
+              <div class="w-10 h-10 rounded-xl bg-accent-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="text-sm font-medium text-primary-900">Form 990 Complete</div>
+                <div class="text-xs text-primary-500">E-filed to IRS successfully</div>
+              </div>
+            </div>
+
+            <!-- Floating Card 2 - Grant Tracking -->
+            <div class="absolute -right-4 bottom-1/4 bg-white rounded-2xl shadow-soft-lg border border-primary-100 p-4 z-20 animate-float animation-delay-300 hidden md:flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-accent-500 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                </svg>
+              </div>
+              <div>
+                <div class="text-sm font-medium text-primary-900">Grant Report Ready</div>
+                <div class="text-xs text-accent-600">Ford Foundation Q4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trusted By Section -->
+<section class="py-12 border-b border-primary-100 bg-white">
   <div class="container-custom">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div class="space-y-6">
-        <h1 class="text-5xl md:text-6xl font-heading font-bold leading-tight">
-          Expert <span class="text-gradient">CPA Services</span> Powered by AI
-        </h1>
-        <p class="text-xl text-gray-600">
-          Transform your business finances with cutting-edge accounting solutions. Professional expertise meets intelligent automation.
+    <p class="text-sm text-primary-400 text-center mb-8 uppercase tracking-wider font-medium">Trusted by organizations across the United States</p>
+    <div class="flex flex-wrap items-center justify-center gap-x-16 gap-y-8">
+      <!-- Organization type indicators -->
+      <div class="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
+        <svg class="w-7 h-7 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/>
+        </svg>
+        <span class="text-lg font-semibold text-primary-400">Non-Profits</span>
+      </div>
+      <div class="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
+        <svg class="w-7 h-7 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"/>
+        </svg>
+        <span class="text-lg font-semibold text-primary-400">Businesses</span>
+      </div>
+      <div class="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
+        <svg class="w-7 h-7 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+        </svg>
+        <span class="text-lg font-semibold text-primary-400">Startups</span>
+      </div>
+      <div class="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
+        <svg class="w-7 h-7 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+        </svg>
+        <span class="text-lg font-semibold text-primary-400">Foundations</span>
+      </div>
+      <div class="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
+        <svg class="w-7 h-7 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+        </svg>
+        <span class="text-lg font-semibold text-primary-400">Individuals</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Approach Section with SVG Visual -->
+<section class="section bg-white">
+  <div class="container-custom">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Left: SVG Visual - US & India Connection Dashboard -->
+      <div class="relative order-2 lg:order-1">
+        <div class="bg-white rounded-3xl shadow-soft-xl border border-primary-100 p-6 relative">
+          <!-- Header -->
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-accent-500 flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold text-primary-900">Global Operations</div>
+                <div class="text-xs text-primary-500">Seamless Delivery</div>
+              </div>
+            </div>
+            <div class="px-3 py-1 rounded-full bg-accent-100 text-accent-700 text-xs font-medium">
+              Live
+            </div>
+          </div>
+
+          <!-- World Map Visualization -->
+          <div class="bg-primary-50 rounded-2xl p-6 mb-4 relative overflow-hidden">
+            <!-- Simplified World Map SVG -->
+            <svg class="w-full h-40" viewBox="0 0 400 160" fill="none">
+              <!-- Background grid -->
+              <defs>
+                <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
+                </pattern>
+              </defs>
+              <rect width="400" height="160" fill="url(#grid)"/>
+
+              <!-- USA Location -->
+              <circle cx="100" cy="70" r="12" fill="#059669" fill-opacity="0.2"/>
+              <circle cx="100" cy="70" r="8" fill="#059669" fill-opacity="0.4"/>
+              <circle cx="100" cy="70" r="4" fill="#059669"/>
+              <text x="100" y="95" text-anchor="middle" class="fill-primary-700 text-xs font-semibold">USA</text>
+
+              <!-- India Location -->
+              <circle cx="300" cy="80" r="12" fill="#0f172a" fill-opacity="0.2"/>
+              <circle cx="300" cy="80" r="8" fill="#0f172a" fill-opacity="0.4"/>
+              <circle cx="300" cy="80" r="4" fill="#0f172a"/>
+              <text x="300" y="105" text-anchor="middle" class="fill-primary-700 text-xs font-semibold">India GCC</text>
+
+              <!-- Connection Line -->
+              <path d="M108 70 Q 200 30 292 80" stroke="#059669" stroke-width="2" stroke-dasharray="6,4" fill="none"/>
+
+              <!-- Data flowing animation circles -->
+              <circle r="3" fill="#059669">
+                <animateMotion dur="3s" repeatCount="indefinite" path="M108 70 Q 200 30 292 80"/>
+              </circle>
+              <circle r="3" fill="#0f172a">
+                <animateMotion dur="3s" repeatCount="indefinite" path="M292 80 Q 200 30 108 70"/>
+              </circle>
+
+              <!-- Labels -->
+              <rect x="170" y="35" width="60" height="20" rx="10" fill="white" stroke="#e2e8f0"/>
+              <text x="200" y="49" text-anchor="middle" class="fill-primary-700 text-xs font-medium">24/7</text>
+            </svg>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-primary-50 rounded-xl p-4">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center">
+                  <span class="text-sm">🇺🇸</span>
+                </div>
+                <div class="text-sm font-semibold text-primary-900">US Operations</div>
+              </div>
+              <div class="text-xs text-primary-600 space-y-1">
+                <div class="flex justify-between">
+                  <span>Licensed CPAs</span>
+                  <span class="font-medium text-accent-600">12+</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Client Relations</span>
+                  <span class="font-medium">Direct</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-accent-50 rounded-xl p-4">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center">
+                  <span class="text-sm">🇮🇳</span>
+                </div>
+                <div class="text-sm font-semibold text-primary-900">India GCC</div>
+              </div>
+              <div class="text-xs text-primary-600 space-y-1">
+                <div class="flex justify-between">
+                  <span>Accounting Team</span>
+                  <span class="font-medium text-accent-600">50+</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Processing</span>
+                  <span class="font-medium">24/7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Card -->
+        <div class="absolute -right-4 -bottom-4 bg-white rounded-2xl shadow-soft-lg border border-primary-100 p-4 z-20 animate-float hidden md:flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-accent-100 flex items-center justify-center">
+            <svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-sm font-medium text-primary-900">40% Cost Savings</div>
+            <div class="text-xs text-primary-500">Same quality, better value</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="order-1 lg:order-2">
+        <span class="label mb-4 block">Our Approach</span>
+        <h2 class="headline-lg mb-6">US expertise. Global delivery excellence.</h2>
+        <p class="subheadline mb-8">
+          We combine US-licensed CPA expertise with our Global Capability Center in India to deliver exceptional accounting services at competitive rates—helping non-profits maximize program spending and businesses optimize costs.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="/contact" class="btn btn-primary text-lg">Get Started Free</a>
-          <a href="/services" class="btn btn-secondary text-lg">Explore Services</a>
-        </div>
-        <div class="flex items-center gap-8 pt-4">
-          <div>
-            <div class="text-3xl font-bold text-primary-600">500+</div>
-            <div class="text-sm text-gray-600">Happy Clients</div>
+
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-primary-900 mb-1">US-Licensed CPAs</h3>
+              <p class="text-primary-600">All work reviewed and signed by licensed US Certified Public Accountants with deep expertise.</p>
+            </div>
           </div>
-          <div>
-            <div class="text-3xl font-bold text-primary-600">98%</div>
-            <div class="text-sm text-gray-600">Satisfaction Rate</div>
+
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.36 17.36 0 01-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-primary-900 mb-1">Global Capability Center</h3>
+              <p class="text-primary-600">Our India-based operations center delivers cost-effective excellence so you can invest more in your mission.</p>
+            </div>
           </div>
-          <div>
-            <div class="text-3xl font-bold text-primary-600">24/7</div>
-            <div class="text-sm text-gray-600">AI Support</div>
+
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-primary-900 mb-1">Extended Coverage</h3>
+              <p class="text-primary-600">Time zone advantage means work progresses while you sleep. Faster turnaround without compromising quality.</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="relative">
-        <div class="bg-white rounded-2xl shadow-2xl p-8">
-          <svg class="w-full h-auto text-primary-600" viewBox="0 0 400 300" fill="none">
-            <rect x="50" y="50" width="300" height="200" rx="10" fill="currentColor" opacity="0.1"/>
-            <circle cx="200" cy="150" r="60" fill="currentColor" opacity="0.2"/>
-            <path d="M170 150 L190 170 L230 130" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Features Section -->
-<section class="section bg-white">
+<!-- Services Section with SVG Visual Cards -->
+<section class="section bg-primary-50">
   <div class="container-custom">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-heading font-bold mb-4">Why Choose AccountingBrains?</h2>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">Combining certified CPA expertise with AI-powered efficiency to deliver unmatched value</p>
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="label mb-4 block">Our Services</span>
+      <h2 class="headline-lg mb-6">Comprehensive accounting for every organization</h2>
+      <p class="subheadline">Whether you're a non-profit, business, or individual, we deliver expert CPA services tailored to your needs.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="card text-center">
-        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-          </svg>
+    <!-- Services Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Service 1: Form 990 - Large Card with SVG -->
+      <div class="lg:col-span-2 bg-white rounded-3xl border border-primary-100 p-8 hover:shadow-soft-lg transition-all duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-100 text-accent-700 text-xs font-medium mb-4">
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+              Most Popular for Non-Profits
+            </div>
+            <h3 class="text-2xl font-bold text-primary-900 mb-3">Form 990 Preparation</h3>
+            <p class="text-primary-600 mb-6">Complete Form 990, 990-EZ, 990-PF, and 990-N preparation and e-filing. We ensure IRS compliance and timely submission for your organization.</p>
+            <a href="/services" class="inline-flex items-center text-accent-600 font-medium hover:text-accent-700">
+              Learn more
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+          <!-- SVG Visual: Form 990 Document -->
+          <div class="bg-primary-50 rounded-2xl p-6">
+            <svg class="w-full h-48" viewBox="0 0 200 180" fill="none">
+              <!-- Document -->
+              <rect x="30" y="10" width="140" height="160" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+              <!-- Header -->
+              <rect x="40" y="20" width="80" height="12" rx="2" fill="#0f172a"/>
+              <rect x="40" y="38" width="120" height="6" rx="1" fill="#e2e8f0"/>
+              <!-- IRS Logo placeholder -->
+              <rect x="130" y="18" width="30" height="16" rx="2" fill="#059669" fill-opacity="0.2"/>
+              <text x="145" y="30" text-anchor="middle" class="text-xs fill-accent-600 font-medium" style="font-size: 8px;">IRS</text>
+              <!-- Form lines -->
+              <rect x="40" y="55" width="60" height="4" rx="1" fill="#e2e8f0"/>
+              <rect x="110" y="55" width="50" height="4" rx="1" fill="#059669" fill-opacity="0.3"/>
+              <rect x="40" y="68" width="100" height="4" rx="1" fill="#e2e8f0"/>
+              <rect x="150" y="68" width="10" height="4" rx="1" fill="#059669"/>
+              <rect x="40" y="81" width="80" height="4" rx="1" fill="#e2e8f0"/>
+              <rect x="130" y="81" width="30" height="4" rx="1" fill="#059669" fill-opacity="0.3"/>
+              <!-- Chart section -->
+              <rect x="40" y="100" width="120" height="50" rx="4" fill="#f8fafc" stroke="#e2e8f0"/>
+              <rect x="50" y="130" width="15" height="15" rx="2" fill="#059669"/>
+              <rect x="75" y="120" width="15" height="25" rx="2" fill="#0f172a" fill-opacity="0.3"/>
+              <rect x="100" y="115" width="15" height="30" rx="2" fill="#059669" fill-opacity="0.6"/>
+              <rect x="125" y="125" width="15" height="20" rx="2" fill="#0f172a" fill-opacity="0.2"/>
+              <!-- Checkmark -->
+              <circle cx="170" cy="150" r="15" fill="#059669"/>
+              <path d="M163 150 L168 155 L178 145" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
         </div>
-        <h3 class="text-xl font-heading font-bold mb-2">Lightning Fast</h3>
-        <p class="text-gray-600">AI-powered automation processes your financials in minutes, not days</p>
       </div>
 
-      <div class="card text-center">
-        <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+      <!-- Service 2: Grant Accounting -->
+      <div class="bg-white rounded-3xl border border-primary-100 p-6 hover:shadow-soft-lg transition-all duration-300">
+        <div class="bg-accent-50 rounded-2xl p-4 mb-4">
+          <svg class="w-full h-32" viewBox="0 0 150 120" fill="none">
+            <!-- Money/Grant visualization -->
+            <circle cx="75" cy="60" r="40" fill="#059669" fill-opacity="0.1" stroke="#059669" stroke-width="2"/>
+            <text x="75" y="55" text-anchor="middle" class="fill-accent-600 font-bold" style="font-size: 16px;">$</text>
+            <text x="75" y="72" text-anchor="middle" class="fill-primary-700" style="font-size: 10px;">GRANT</text>
+            <!-- Arrows showing flow -->
+            <path d="M35 40 L50 55" stroke="#059669" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+            <path d="M100 55 L115 40" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+            <path d="M35 80 L50 65" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-opacity="0.3"/>
+            <path d="M100 65 L115 80" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-opacity="0.3"/>
+            <!-- Small circles at ends -->
+            <circle cx="30" cy="35" r="5" fill="#059669" fill-opacity="0.3"/>
+            <circle cx="120" cy="35" r="5" fill="#059669" fill-opacity="0.3"/>
+            <circle cx="30" cy="85" r="5" fill="#0f172a" fill-opacity="0.2"/>
+            <circle cx="120" cy="85" r="5" fill="#0f172a" fill-opacity="0.2"/>
           </svg>
         </div>
-        <h3 class="text-xl font-heading font-bold mb-2">100% Accurate</h3>
-        <p class="text-gray-600">Certified CPAs review every transaction for complete peace of mind</p>
+        <h3 class="text-xl font-bold text-primary-900 mb-2">Grant Accounting</h3>
+        <p class="text-primary-600 text-sm">Comprehensive grant tracking, fund accounting, and funder reporting.</p>
       </div>
 
-      <div class="card text-center">
-        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      <!-- Service 3: Bookkeeping -->
+      <div class="bg-white rounded-3xl border border-primary-100 p-6 hover:shadow-soft-lg transition-all duration-300">
+        <div class="bg-primary-50 rounded-2xl p-4 mb-4">
+          <svg class="w-full h-32" viewBox="0 0 150 120" fill="none">
+            <!-- Ledger book -->
+            <rect x="25" y="20" width="100" height="80" rx="4" fill="white" stroke="#0f172a" stroke-width="2"/>
+            <rect x="25" y="20" width="15" height="80" fill="#0f172a" fill-opacity="0.1"/>
+            <!-- Lines -->
+            <line x1="50" y1="35" x2="115" y2="35" stroke="#e2e8f0" stroke-width="1"/>
+            <line x1="50" y1="50" x2="115" y2="50" stroke="#e2e8f0" stroke-width="1"/>
+            <line x1="50" y1="65" x2="115" y2="65" stroke="#e2e8f0" stroke-width="1"/>
+            <line x1="50" y1="80" x2="115" y2="80" stroke="#e2e8f0" stroke-width="1"/>
+            <!-- Numbers -->
+            <text x="55" y="47" class="fill-primary-900" style="font-size: 9px;">Revenue</text>
+            <text x="100" y="47" class="fill-accent-600 font-medium" style="font-size: 9px;">$50K</text>
+            <text x="55" y="62" class="fill-primary-900" style="font-size: 9px;">Expenses</text>
+            <text x="100" y="62" class="fill-primary-500" style="font-size: 9px;">$35K</text>
+            <text x="55" y="77" class="fill-primary-900" style="font-size: 9px;">Net</text>
+            <text x="100" y="77" class="fill-accent-600 font-bold" style="font-size: 9px;">$15K</text>
+            <!-- Calculator icon -->
+            <rect x="105" y="82" width="20" height="25" rx="3" fill="#059669"/>
+            <rect x="108" y="85" width="14" height="8" rx="1" fill="white"/>
           </svg>
         </div>
-        <h3 class="text-xl font-heading font-bold mb-2">Save Money</h3>
-        <p class="text-gray-600">Transparent pricing with no hidden fees. Pay only for what you need</p>
+        <h3 class="text-xl font-bold text-primary-900 mb-2">Bookkeeping</h3>
+        <p class="text-primary-600 text-sm">Monthly reconciliations and financial statement preparation for all entity types.</p>
       </div>
+
+      <!-- Service 4: Tax Preparation -->
+      <div class="bg-white rounded-3xl border border-primary-100 p-6 hover:shadow-soft-lg transition-all duration-300">
+        <div class="bg-accent-50 rounded-2xl p-4 mb-4">
+          <svg class="w-full h-32" viewBox="0 0 150 120" fill="none">
+            <!-- Tax form with calculations -->
+            <rect x="35" y="15" width="80" height="90" rx="4" fill="white" stroke="#059669" stroke-width="2"/>
+            <rect x="45" y="25" width="40" height="8" rx="2" fill="#059669"/>
+            <text x="65" y="32" text-anchor="middle" class="fill-white font-bold" style="font-size: 8px;">TAX</text>
+            <!-- Form fields -->
+            <rect x="45" y="40" width="30" height="4" rx="1" fill="#e2e8f0"/>
+            <rect x="85" y="40" width="20" height="4" rx="1" fill="#059669" fill-opacity="0.3"/>
+            <rect x="45" y="50" width="25" height="4" rx="1" fill="#e2e8f0"/>
+            <rect x="85" y="50" width="20" height="4" rx="1" fill="#059669" fill-opacity="0.3"/>
+            <rect x="45" y="60" width="35" height="4" rx="1" fill="#e2e8f0"/>
+            <rect x="85" y="60" width="20" height="4" rx="1" fill="#059669" fill-opacity="0.3"/>
+            <!-- Total line -->
+            <line x1="45" y1="75" x2="105" y2="75" stroke="#0f172a" stroke-width="1"/>
+            <rect x="45" y="80" width="20" height="6" rx="1" fill="#0f172a"/>
+            <rect x="85" y="80" width="20" height="6" rx="1" fill="#059669"/>
+            <!-- Refund arrow -->
+            <path d="M125 60 L135 60 L135 45 L145 55 L135 65 L135 50" fill="#059669"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-primary-900 mb-2">Tax Preparation</h3>
+        <p class="text-primary-600 text-sm">Individual and business tax returns with strategic planning for maximum savings.</p>
+      </div>
+
+      <!-- Service 5: Audit Support -->
+      <div class="bg-white rounded-3xl border border-primary-100 p-6 hover:shadow-soft-lg transition-all duration-300">
+        <div class="bg-primary-50 rounded-2xl p-4 mb-4">
+          <svg class="w-full h-32" viewBox="0 0 150 120" fill="none">
+            <!-- Magnifying glass over document -->
+            <rect x="20" y="25" width="70" height="85" rx="4" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+            <rect x="30" y="35" width="50" height="4" rx="1" fill="#e2e8f0"/>
+            <rect x="30" y="45" width="40" height="4" rx="1" fill="#e2e8f0"/>
+            <rect x="30" y="55" width="50" height="4" rx="1" fill="#e2e8f0"/>
+            <rect x="30" y="65" width="35" height="4" rx="1" fill="#e2e8f0"/>
+            <rect x="30" y="75" width="45" height="4" rx="1" fill="#e2e8f0"/>
+            <rect x="30" y="85" width="50" height="4" rx="1" fill="#e2e8f0"/>
+            <!-- Magnifying glass -->
+            <circle cx="100" cy="50" r="25" fill="white" stroke="#0f172a" stroke-width="3"/>
+            <line x1="118" y1="68" x2="135" y2="85" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+            <!-- Checkmarks inside -->
+            <path d="M88 45 L95 52 L112 35" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-primary-900 mb-2">Audit Support</h3>
+        <p class="text-primary-600 text-sm">Complete audit preparation, workpapers, and auditor coordination.</p>
+      </div>
+
+      <!-- Service 6: Payroll -->
+      <div class="bg-white rounded-3xl border border-primary-100 p-6 hover:shadow-soft-lg transition-all duration-300">
+        <div class="bg-accent-50 rounded-2xl p-4 mb-4">
+          <svg class="w-full h-32" viewBox="0 0 150 120" fill="none">
+            <!-- People icons with payment -->
+            <circle cx="45" cy="40" r="15" fill="#0f172a" fill-opacity="0.1"/>
+            <circle cx="45" cy="35" r="8" fill="#0f172a" fill-opacity="0.3"/>
+            <path d="M30 55 Q45 65 60 55" stroke="#0f172a" stroke-width="2" fill="none" stroke-opacity="0.3"/>
+
+            <circle cx="105" cy="40" r="15" fill="#0f172a" fill-opacity="0.1"/>
+            <circle cx="105" cy="35" r="8" fill="#0f172a" fill-opacity="0.3"/>
+            <path d="M90 55 Q105 65 120 55" stroke="#0f172a" stroke-width="2" fill="none" stroke-opacity="0.3"/>
+
+            <!-- Payment card/check -->
+            <rect x="50" y="70" width="50" height="35" rx="4" fill="#059669"/>
+            <rect x="55" y="78" width="20" height="3" rx="1" fill="white"/>
+            <rect x="55" y="85" width="30" height="3" rx="1" fill="white" fill-opacity="0.6"/>
+            <text x="85" y="96" class="fill-white font-bold" style="font-size: 10px;">$</text>
+
+            <!-- Arrow from card to people -->
+            <path d="M60 70 L50 60" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+            <path d="M90 70 L100 60" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-primary-900 mb-2">Payroll & HR</h3>
+        <p class="text-primary-600 text-sm">Full-service payroll processing and benefits administration.</p>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="/services" class="btn btn-primary btn-lg">
+        View All Services
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- Services Overview -->
-<section class="section gradient-bg">
-  <div class="container-custom">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-heading font-bold mb-4">Comprehensive Accounting Solutions</h2>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">From tax preparation to financial consulting, we've got you covered</p>
+<!-- Testimonials Section with SVG Background -->
+<section class="section bg-primary-900 relative overflow-hidden">
+  <!-- Decorative SVG Background Pattern -->
+  <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1000 600" fill="none" preserveAspectRatio="xMidYMid slice">
+    <!-- Abstract geometric pattern -->
+    <circle cx="100" cy="100" r="150" fill="#059669" fill-opacity="0.05"/>
+    <circle cx="900" cy="500" r="200" fill="#059669" fill-opacity="0.08"/>
+    <path d="M0 300 Q250 200 500 300 T1000 300" stroke="#059669" stroke-opacity="0.1" stroke-width="2" fill="none"/>
+    <path d="M0 350 Q250 250 500 350 T1000 350" stroke="white" stroke-opacity="0.05" stroke-width="1" fill="none"/>
+    <!-- Dots pattern -->
+    <circle cx="200" cy="150" r="3" fill="white" fill-opacity="0.1"/>
+    <circle cx="250" cy="180" r="2" fill="white" fill-opacity="0.1"/>
+    <circle cx="800" cy="120" r="3" fill="white" fill-opacity="0.1"/>
+    <circle cx="750" cy="450" r="2" fill="white" fill-opacity="0.1"/>
+    <circle cx="850" cy="400" r="3" fill="white" fill-opacity="0.1"/>
+  </svg>
+
+  <div class="container-custom relative">
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-semibold uppercase tracking-wider text-accent-400 mb-4 block">Client Success Stories</span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">Trusted by organizations nationwide</h2>
+      <p class="text-lg text-primary-300">See how we've helped clients strengthen their financial operations.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-heading font-bold">Tax Preparation</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Expert tax filing for individuals and businesses. Maximize deductions, minimize liability.</p>
-        <a href="/services#tax-prep" class="text-primary-600 font-medium hover:underline">Learn more →</a>
-      </div>
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {% set testimonials = [
+        { quote: "AccountingBrains transformed our grant reporting process. Their expertise in non-profit accounting saved us countless hours and helped us pass our audit with flying colors.", name: "Jennifer Martinez", role: "Executive Director, Youth Futures Foundation", initials: "JM", type: "Non-Profit" },
+        { quote: "Finally, a CPA firm that truly understands our needs. Their Form 990 preparation is meticulous, and the cost savings from their global model means more money for our programs.", name: "David Thompson", role: "CFO, Community Health Partners", initials: "DT", type: "Non-Profit" },
+        { quote: "The team's responsiveness is exceptional. Having support across time zones means our questions are answered overnight. Our board is impressed with the quality of financial reports.", name: "Rachel Kim", role: "Finance Director, Tech Startup Inc.", initials: "RK", type: "Business" }
+      ] %}
 
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-heading font-bold">Bookkeeping</h3>
+      {% for testimonial in testimonials %}
+      <div class="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-8 relative">
+        <!-- Type Badge -->
+        <div class="absolute top-6 right-6 px-2 py-1 rounded-full bg-accent-500/20 text-accent-400 text-xs font-medium">
+          {{ testimonial.type }}
         </div>
-        <p class="text-gray-600 mb-4">Accurate record-keeping and financial reporting. Always know where your business stands.</p>
-        <a href="/services#bookkeeping" class="text-accent-600 font-medium hover:underline">Learn more →</a>
-      </div>
 
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-heading font-bold">Payroll Services</h3>
+        <div class="flex gap-1 mb-6">
+          {% for i in range(5) %}
+          <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+          {% endfor %}
         </div>
-        <p class="text-gray-600 mb-4">Hassle-free payroll processing. Ensure compliance and keep your team happy.</p>
-        <a href="/services#payroll" class="text-primary-600 font-medium hover:underline">Learn more →</a>
-      </div>
-
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-            </svg>
+        <blockquote class="text-white/90 leading-relaxed mb-6">
+          "{{ testimonial.quote }}"
+        </blockquote>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-accent-500/20 flex items-center justify-center">
+            <span class="text-sm font-semibold text-accent-400">{{ testimonial.initials }}</span>
           </div>
-          <h3 class="text-xl font-heading font-bold">Financial Consulting</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Strategic financial advice to grow your business. Data-driven insights for better decisions.</p>
-        <a href="/services#consulting" class="text-accent-600 font-medium hover:underline">Learn more →</a>
-      </div>
-
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
-            </svg>
+          <div>
+            <div class="font-semibold text-white">{{ testimonial.name }}</div>
+            <div class="text-sm text-primary-400">{{ testimonial.role }}</div>
           </div>
-          <h3 class="text-xl font-heading font-bold">Audit Support</h3>
         </div>
-        <p class="text-gray-600 mb-4">Comprehensive audit preparation and support. Navigate audits with confidence.</p>
-        <a href="/services#audit" class="text-primary-600 font-medium hover:underline">Learn more →</a>
       </div>
-
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-heading font-bold">Business Formation</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Start your business right. LLC, S-Corp, C-Corp setup and compliance guidance.</p>
-        <a href="/services#formation" class="text-accent-600 font-medium hover:underline">Learn more →</a>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- CTA Section -->
-<section class="section bg-primary-600 text-white">
-  <div class="container-custom text-center">
-    <h2 class="text-4xl font-heading font-bold mb-4">Ready to Transform Your Finances?</h2>
-    <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">Join hundreds of businesses that trust AccountingBrains for their accounting needs</p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/contact" class="btn bg-white text-primary-600 hover:bg-gray-100 text-lg">Schedule Free Consultation</a>
-      <a href="/pricing" class="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 text-lg">View Pricing</a>
-    </div>
-  </div>
-</section>
+<!-- CTA Section with SVG Visual -->
+<section class="section bg-white relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 bg-dots opacity-30"></div>
 
-<!-- Testimonials Section -->
-<section class="section bg-white">
-  <div class="container-custom">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-heading font-bold mb-4">What Our Clients Say</h2>
-      <p class="text-xl text-gray-600">Don't just take our word for it</p>
-    </div>
+  <div class="container-custom relative">
+    <div class="bg-primary-900 rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
+      <!-- Decorative SVG Elements -->
+      <svg class="absolute top-0 right-0 w-96 h-96 opacity-10" viewBox="0 0 400 400" fill="none">
+        <circle cx="300" cy="100" r="200" stroke="#059669" stroke-width="40"/>
+        <circle cx="300" cy="100" r="120" stroke="#059669" stroke-width="20"/>
+        <circle cx="300" cy="100" r="50" fill="#059669"/>
+      </svg>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="card">
-        <div class="flex items-center gap-2 mb-4">
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+      <svg class="absolute bottom-0 left-0 w-64 h-64 opacity-10" viewBox="0 0 300 300" fill="none">
+        <rect x="20" y="20" width="100" height="100" rx="20" stroke="white" stroke-width="10"/>
+        <rect x="60" y="60" width="100" height="100" rx="20" stroke="white" stroke-width="10"/>
+        <rect x="100" y="100" width="100" height="100" rx="20" fill="white" fill-opacity="0.2"/>
+      </svg>
+
+      <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Left: Content -->
+        <div>
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-8">
+            <svg class="w-5 h-5 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+            <span class="text-sm font-medium text-white/90">Free 30-minute consultation</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-6 text-balance">
+            Ready to strengthen your finances?
+          </h2>
+          <p class="text-lg text-primary-300 mb-10 max-w-xl">
+            Whether you're a non-profit, business, or individual, we're here to help. Schedule a free consultation to discuss your accounting needs.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contact" class="btn btn-accent btn-lg">
+              Schedule Free Consultation
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <a href="/pricing" class="btn btn-lg bg-white/10 text-white hover:bg-white/20 border border-white/20">
+              View Pricing
+            </a>
+          </div>
         </div>
-        <p class="text-gray-600 mb-4">"AccountingBrains transformed our financial management. The AI tools save us hours every week while maintaining 100% accuracy."</p>
-        <div class="font-medium">Sarah Johnson</div>
-        <div class="text-sm text-gray-500">CEO, TechStart Inc.</div>
-      </div>
 
-      <div class="card">
-        <div class="flex items-center gap-2 mb-4">
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="text-gray-600 mb-4">"Best decision we made for our business. Professional, responsive, and the pricing is incredibly fair. Highly recommend!"</p>
-        <div class="font-medium">Michael Chen</div>
-        <div class="text-sm text-gray-500">Owner, Chen's Restaurant Group</div>
-      </div>
+        <!-- Right: SVG Visual - Consultation Preview -->
+        <div class="hidden lg:block">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6">
+            <!-- Mini Calendar SVG -->
+            <svg class="w-full h-64" viewBox="0 0 300 240" fill="none">
+              <!-- Calendar frame -->
+              <rect x="20" y="20" width="260" height="200" rx="12" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.2"/>
+              <!-- Header -->
+              <rect x="20" y="20" width="260" height="45" rx="12" fill="#059669"/>
+              <text x="150" y="48" text-anchor="middle" class="fill-white font-semibold" style="font-size: 14px;">Schedule Your Consultation</text>
 
-      <div class="card">
-        <div class="flex items-center gap-2 mb-4">
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <!-- Calendar grid -->
+              <g transform="translate(35, 80)">
+                <!-- Days header -->
+                <text x="0" y="0" class="fill-white/60" style="font-size: 10px;">Mon</text>
+                <text x="38" y="0" class="fill-white/60" style="font-size: 10px;">Tue</text>
+                <text x="76" y="0" class="fill-white/60" style="font-size: 10px;">Wed</text>
+                <text x="114" y="0" class="fill-white/60" style="font-size: 10px;">Thu</text>
+                <text x="152" y="0" class="fill-white/60" style="font-size: 10px;">Fri</text>
+                <text x="190" y="0" class="fill-white/60" style="font-size: 10px;">Sat</text>
+                <text x="228" y="0" class="fill-white/60" style="font-size: 10px;">Sun</text>
+
+                <!-- Date cells -->
+                {% for row in range(3) %}
+                {% for col in range(7) %}
+                {% set day = row * 7 + col + 1 %}
+                {% if day <= 21 %}
+                <rect x="{{ col * 33 }}" y="{{ row * 35 + 15 }}" width="28" height="28" rx="6"
+                  fill="{% if day == 15 %}#059669{% else %}white{% endif %}"
+                  fill-opacity="{% if day == 15 %}1{% else %}0.1{% endif %}"/>
+                <text x="{{ col * 33 + 14 }}" y="{{ row * 35 + 34 }}" text-anchor="middle"
+                  class="{% if day == 15 %}fill-white{% else %}fill-white/80{% endif %}"
+                  style="font-size: 11px;">{{ day }}</text>
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+              </g>
+
+              <!-- Selected time slot -->
+              <rect x="35" y="190" width="230" height="20" rx="4" fill="white" fill-opacity="0.1"/>
+              <circle cx="48" cy="200" r="5" fill="#059669"/>
+              <text x="60" y="204" class="fill-white/80" style="font-size: 11px;">Selected: Jan 15, 2025 at 10:00 AM EST</text>
+            </svg>
+          </div>
         </div>
-        <p class="text-gray-600 mb-4">"The team is knowledgeable, proactive, and always available. They saved us thousands on taxes last year!"</p>
-        <div class="font-medium">Emily Rodriguez</div>
-        <div class="text-sm text-gray-500">CFO, GreenTech Solutions</div>
       </div>
     </div>
   </div>

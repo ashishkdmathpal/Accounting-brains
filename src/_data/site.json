@@ -1,8 +1,46 @@
 {
   "name": "AccountingBrains",
-  "description": "AI-Powered CPA Services",
+  "tagline": "Expert CPA Services for US Non-Profits",
+  "description": "Specialized CPA and accounting services for US-based non-profits, NGOs, and foundations. Expert Form 990 filing, grant accounting, compliance, and financial management delivered through our Global Capability Center.",
   "url": "https://accountingbrains.com",
   "author": "AccountingBrains Team",
   "email": "hello@accountingbrains.com",
-  "gaId": ""
+  "phone": "+1 (855) 228-2724",
+  "gaId": "",
+  "social": {
+    "twitter": "@accountingbrains",
+    "linkedin": "accountingbrains"
+  },
+  "locations": {
+    "us": {
+      "name": "US Operations",
+      "address": "United States",
+      "description": "Licensed US CPAs serving non-profits nationwide"
+    },
+    "gcc": {
+      "name": "Global Capability Center",
+      "location": "India",
+      "description": "Expert accounting operations delivering cost-effective excellence"
+    }
+  },
+  "services": [
+    "Form 990 Preparation & Filing",
+    "Non-Profit Bookkeeping",
+    "Grant Accounting & Management",
+    "Financial Statement Preparation",
+    "Audit Support & Preparation",
+    "Board Financial Reporting",
+    "Compliance & Regulatory Support",
+    "Payroll Services"
+  ],
+  "targetAudience": [
+    "501(c)(3) Organizations",
+    "Charitable Foundations",
+    "NGOs",
+    "Religious Organizations",
+    "Educational Institutions",
+    "Healthcare Non-Profits",
+    "Arts & Cultural Organizations",
+    "Environmental Organizations"
+  ]
 }

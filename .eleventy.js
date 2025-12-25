@@ -3,8 +3,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin");
 
-  // Add CSS passthrough for development
-  eleventyConfig.addPassthroughCopy("src/css");
+  // NOTE: CSS is handled by PostCSS, not passthrough copy
+  // This prevents the uncompiled Tailwind directives from overwriting compiled CSS
 
   // Date filter for blog posts
   eleventyConfig.addFilter("dateDisplay", (dateObj) => {

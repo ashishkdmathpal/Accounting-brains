@@ -1,14 +1,14 @@
 {
   "name": "accountingbrains",
   "version": "1.0.0",
-  "description": "AI-Powered CPA Marketing Website",
+  "description": "AccountingBrains - Expert CPA Services Website",
   "scripts": {
-    "dev": "npm-run-all --parallel dev:*",
+    "dev": "npm-run-all build:css --parallel dev:*",
     "dev:eleventy": "eleventy --serve",
     "dev:css": "postcss src/css/styles.css --o _site/css/styles.css --watch",
-    "build": "npm-run-all build:*",
+    "build": "npm-run-all build:eleventy build:css",
     "build:eleventy": "eleventy",
-    "build:css": "NODE_ENV=production postcss src/css/styles.css --o _site/css/styles.css",
+    "build:css": "mkdir -p _site/css && NODE_ENV=production postcss src/css/styles.css --o _site/css/styles.css",
     "generate:blog": "node scripts/generate-blog.js",
     "scrape:leads": "node scripts/scrape-leads.js"
   },
