@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "AccountingBrains Team"}
+      - {label: "Category", name: "category", widget: "select", options: ["Tax Planning", "Bookkeeping", "Payroll", "Business Tips", "Financial Strategy", "CPA Insights"]}
+      - {label: "Tags", name: "tags", widget: "list", default: ["posts"]}
+      - {label: "Read Time (minutes)", name: "readTime", widget: "number", value_type: "int", min: 1, max: 30, default: 5}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}

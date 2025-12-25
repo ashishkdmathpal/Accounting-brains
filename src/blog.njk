@@ -1,0 +1,111 @@
+---
+layout: base.njk
+title: "Blog - Accounting Tips & Financial Insights | AccountingBrains"
+description: "Expert accounting advice, tax tips, and financial strategies for business owners. Stay informed with the latest from our CPA team."
+pagination:
+  data: collections.posts
+  size: 9
+---
+
+<!-- Hero Section -->
+<section class="gradient-bg py-12 md:py-20">
+  <div class="container-custom">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-3xl md:text-5xl font-heading font-bold mb-4 md:mb-6">Accounting Insights & Tips</h1>
+      <p class="text-lg md:text-xl text-gray-600 px-4">Expert advice to help you make smarter financial decisions</p>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Posts Grid -->
+<section class="py-12 md:py-20 bg-white">
+  <div class="container-custom">
+    {% if collections.posts.length > 0 %}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        {% for post in pagination.items %}
+          <article class="card hover:scale-105 transition-transform group">
+            <!-- Featured Image Placeholder -->
+            <div class="w-full h-48 bg-gradient-to-br from-primary-100 to-accent-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+              {% if post.data.image %}
+                <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="w-full h-full object-cover">
+              {% else %}
+                <svg class="w-16 h-16 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+              {% endif %}
+            </div>
+
+            <!-- Category Badge -->
+            {% if post.data.category %}
+              <span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-xs font-medium mb-3">
+                {{ post.data.category }}
+              </span>
+            {% endif %}
+
+            <!-- Post Title -->
+            <h2 class="text-xl md:text-2xl font-heading font-bold mb-3 group-hover:text-primary-600 transition-colors">
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+
+            <!-- Excerpt -->
+            <p class="text-sm md:text-base text-gray-600 mb-4">
+              {{ post.data.description or (post.templateContent | excerpt) }}
+            </p>
+
+            <!-- Meta Info -->
+            <div class="flex items-center justify-between text-xs md:text-sm text-gray-500">
+              <span>{{ post.data.date | dateDisplay }}</span>
+              <a href="{{ post.url }}" class="text-primary-600 hover:underline font-medium">Read more →</a>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+      <!-- Pagination -->
+      {% if pagination.pages.length > 1 %}
+        <nav class="mt-12 flex justify-center gap-2" aria-label="Pagination">
+          {% if pagination.previousPageHref %}
+            <a href="{{ pagination.previousPageHref }}" class="btn btn-secondary px-4 py-2">← Previous</a>
+          {% endif %}
+
+          <span class="px-4 py-2 text-gray-600">
+            Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}
+          </span>
+
+          {% if pagination.nextPageHref %}
+            <a href="{{ pagination.nextPageHref }}" class="btn btn-secondary px-4 py-2">Next →</a>
+          {% endif %}
+        </nav>
+      {% endif %}
+    {% else %}
+      <!-- No Posts Yet -->
+      <div class="text-center py-16">
+        <svg class="w-24 h-24 text-gray-300 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+        <h2 class="text-2xl font-heading font-bold mb-4">No posts yet</h2>
+        <p class="text-gray-600 mb-8">Check back soon for accounting tips and insights!</p>
+        <a href="/" class="btn btn-primary">Back to Home</a>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section class="py-12 md:py-20 bg-primary-600 text-white">
+  <div class="container-custom max-w-4xl text-center">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4 px-4">Subscribe to Our Newsletter</h2>
+    <p class="text-lg md:text-xl mb-8 opacity-90 px-4">Get weekly accounting tips and financial insights delivered to your inbox</p>
+
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="max-w-lg mx-auto">
+      <div class="flex flex-col sm:flex-row gap-3">
+        <input type="email" name="email" required placeholder="Your email address"
+          class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-white focus:outline-none text-base">
+        <button type="submit" class="btn bg-white text-primary-600 hover:bg-gray-100 px-8 whitespace-nowrap">
+          Subscribe
+        </button>
+      </div>
+      <p class="text-sm opacity-75 mt-4">Unsubscribe anytime. No spam, we promise.</p>
+    </form>
+  </div>
+</section>

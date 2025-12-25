@@ -1,0 +1,373 @@
+---
+layout: base.njk
+title: "Pricing - Transparent & Affordable CPA Services | AccountingBrains"
+description: "Simple, transparent pricing for professional CPA services. No hidden fees. Choose the plan that fits your business needs. Cancel anytime."
+---
+
+<!-- Hero Section -->
+<section class="gradient-bg py-12 md:py-20">
+  <div class="container-custom">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-3xl md:text-5xl font-heading font-bold mb-4 md:mb-6">Simple, Transparent Pricing</h1>
+      <p class="text-lg md:text-xl text-gray-600 px-4">Choose the plan that fits your needs. No hidden fees. Cancel anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Toggle (Monthly/Annual) -->
+<section class="py-8 md:py-12 bg-white">
+  <div class="container-custom">
+    <div class="flex justify-center items-center gap-4 mb-8 md:mb-12">
+      <span id="monthly-label" class="text-base md:text-lg font-medium text-gray-900">Monthly</span>
+      <button id="pricing-toggle" class="relative inline-flex h-8 w-14 items-center rounded-full bg-gray-300 transition-colors">
+        <span id="toggle-circle" class="inline-block h-6 w-6 transform rounded-full bg-white shadow-lg transition-transform translate-x-1"></span>
+      </button>
+      <span id="annual-label" class="text-base md:text-lg font-medium text-gray-500">Annual <span class="text-accent-600 text-sm">(Save 20%)</span></span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
+      <!-- Starter Plan -->
+      <div class="card hover:shadow-2xl transition-all relative">
+        <div class="mb-6">
+          <h3 class="text-2xl md:text-3xl font-heading font-bold mb-2">Starter</h3>
+          <p class="text-sm md:text-base text-gray-600">Perfect for freelancers and solopreneurs</p>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-baseline">
+            <span class="text-4xl md:text-5xl font-bold">$<span id="starter-price">199</span></span>
+            <span class="text-gray-600 ml-2">/month</span>
+          </div>
+          <p class="text-xs md:text-sm text-gray-500 mt-2"><span id="starter-annual-note" class="hidden">Billed annually ($1,910)</span></p>
+        </div>
+
+        <ul class="space-y-3 md:space-y-4 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Monthly bookkeeping (up to 50 transactions)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Financial statements (P&L, Balance Sheet)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Annual tax preparation (1040)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Email support (48hr response)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">AI-powered expense categorization</span>
+          </li>
+        </ul>
+
+        <a href="/contact?plan=starter" class="btn btn-secondary w-full text-center">Get Started</a>
+      </div>
+
+      <!-- Professional Plan (Most Popular) -->
+      <div class="card hover:shadow-2xl transition-all relative border-2 border-primary-600">
+        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+          <span class="bg-primary-600 text-white px-4 py-1 rounded-full text-xs md:text-sm font-medium">Most Popular</span>
+        </div>
+
+        <div class="mb-6 mt-4">
+          <h3 class="text-2xl md:text-3xl font-heading font-bold mb-2">Professional</h3>
+          <p class="text-sm md:text-base text-gray-600">Ideal for growing businesses</p>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-baseline">
+            <span class="text-4xl md:text-5xl font-bold text-primary-600">$<span id="professional-price">499</span></span>
+            <span class="text-gray-600 ml-2">/month</span>
+          </div>
+          <p class="text-xs md:text-sm text-gray-500 mt-2"><span id="professional-annual-note" class="hidden">Billed annually ($4,790)</span></p>
+        </div>
+
+        <ul class="space-y-3 md:space-y-4 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base font-medium">Everything in Starter, plus:</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Unlimited transactions</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Payroll services (up to 10 employees)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Quarterly tax planning sessions</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Cash flow forecasting</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Priority email & chat support (24hr)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Dedicated CPA account manager</span>
+          </li>
+        </ul>
+
+        <a href="/contact?plan=professional" class="btn btn-primary w-full text-center">Get Started</a>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="card hover:shadow-2xl transition-all relative">
+        <div class="mb-6">
+          <h3 class="text-2xl md:text-3xl font-heading font-bold mb-2">Enterprise</h3>
+          <p class="text-sm md:text-base text-gray-600">For established businesses</p>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-baseline">
+            <span class="text-4xl md:text-5xl font-bold">$<span id="enterprise-price">999</span></span>
+            <span class="text-gray-600 ml-2">/month</span>
+          </div>
+          <p class="text-xs md:text-sm text-gray-500 mt-2"><span id="enterprise-annual-note" class="hidden">Billed annually ($9,590)</span></p>
+        </div>
+
+        <ul class="space-y-3 md:space-y-4 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base font-medium">Everything in Professional, plus:</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Unlimited payroll employees</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">CFO-level strategic consulting</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Multi-entity consolidation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Audit support & representation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Custom financial dashboards</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm md:text-base">Phone support & monthly CPA calls</span>
+          </li>
+        </ul>
+
+        <a href="/contact?plan=enterprise" class="btn btn-accent w-full text-center">Get Started</a>
+      </div>
+    </div>
+
+    <!-- Custom Plan -->
+    <div class="max-w-4xl mx-auto mt-8 md:mt-12">
+      <div class="card bg-gradient-to-r from-primary-50 to-accent-50 text-center">
+        <h3 class="text-2xl md:text-3xl font-heading font-bold mb-3 md:mb-4">Need a Custom Plan?</h3>
+        <p class="text-base md:text-lg text-gray-600 mb-6 px-4">Large organization or unique requirements? Let's build a plan tailored to your needs.</p>
+        <a href="/contact?plan=custom" class="btn btn-primary inline-block w-full sm:w-auto">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add-On Services -->
+<section class="py-12 md:py-20 gradient-bg">
+  <div class="container-custom">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Add-On Services</h2>
+      <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">Additional services available for all plans</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
+        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">State Tax Filings</h3>
+        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$99</p>
+        <p class="text-sm md:text-base text-gray-600">Per state, per year</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
+        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">Sales Tax Filing</h3>
+        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$149</p>
+        <p class="text-sm md:text-base text-gray-600">Per state, per month</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
+        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">Business Formation</h3>
+        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$299</p>
+        <p class="text-sm md:text-base text-gray-600">One-time setup fee</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
+        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">Financial Audit</h3>
+        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$999</p>
+        <p class="text-sm md:text-base text-gray-600">Per year (small business)</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
+        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">R&D Tax Credit</h3>
+        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">15%</p>
+        <p class="text-sm md:text-base text-gray-600">Of credit value (no upfront cost)</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
+        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">Advisory Hours</h3>
+        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$250</p>
+        <p class="text-sm md:text-base text-gray-600">Per hour (CPA consultation)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-12 md:py-20 bg-white">
+  <div class="container-custom max-w-4xl">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="space-y-6">
+      <div class="card">
+        <h3 class="text-lg md:text-xl font-bold mb-2">Can I switch plans?</h3>
+        <p class="text-sm md:text-base text-gray-600">Yes! You can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="text-lg md:text-xl font-bold mb-2">What payment methods do you accept?</h3>
+        <p class="text-sm md:text-base text-gray-600">We accept all major credit cards (Visa, Mastercard, Amex) and ACH bank transfers via Stripe.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="text-lg md:text-xl font-bold mb-2">Is there a setup fee?</h3>
+        <p class="text-sm md:text-base text-gray-600">No setup fees for any plan. We may charge a one-time cleanup fee if your books are significantly behind.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="text-lg md:text-xl font-bold mb-2">What if I need to cancel?</h3>
+        <p class="text-sm md:text-base text-gray-600">No contracts or cancellation fees. Cancel anytime with 30 days notice. We'll provide all your financial records.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="text-lg md:text-xl font-bold mb-2">Do you work with QuickBooks/Xero?</h3>
+        <p class="text-sm md:text-base text-gray-600">Yes! We integrate with QuickBooks Online, QuickBooks Desktop, Xero, FreshBooks, and most major accounting software.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-12 md:py-20 bg-primary-600 text-white">
+  <div class="container-custom text-center">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4 px-4">Ready to Get Started?</h2>
+    <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto px-4">Join hundreds of businesses that trust AccountingBrains</p>
+    <a href="/contact" class="btn bg-white text-primary-600 hover:bg-gray-100 text-base md:text-lg w-full sm:w-auto inline-block">Schedule Free Consultation</a>
+  </div>
+</section>
+
+<!-- Pricing Toggle Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('pricing-toggle');
+    const circle = document.getElementById('toggle-circle');
+    const monthlyLabel = document.getElementById('monthly-label');
+    const annualLabel = document.getElementById('annual-label');
+
+    const starterPrice = document.getElementById('starter-price');
+    const professionalPrice = document.getElementById('professional-price');
+    const enterprisePrice = document.getElementById('enterprise-price');
+
+    const starterNote = document.getElementById('starter-annual-note');
+    const professionalNote = document.getElementById('professional-annual-note');
+    const enterpriseNote = document.getElementById('enterprise-annual-note');
+
+    let isAnnual = false;
+
+    toggle.addEventListener('click', function() {
+      isAnnual = !isAnnual;
+
+      if (isAnnual) {
+        // Switch to annual pricing (20% discount)
+        toggle.classList.add('bg-primary-600');
+        toggle.classList.remove('bg-gray-300');
+        circle.classList.add('translate-x-7');
+        monthlyLabel.classList.add('text-gray-500');
+        monthlyLabel.classList.remove('text-gray-900');
+        annualLabel.classList.add('text-gray-900');
+        annualLabel.classList.remove('text-gray-500');
+
+        starterPrice.textContent = '159';
+        professionalPrice.textContent = '399';
+        enterprisePrice.textContent = '799';
+
+        starterNote.classList.remove('hidden');
+        professionalNote.classList.remove('hidden');
+        enterpriseNote.classList.remove('hidden');
+      } else {
+        // Switch to monthly pricing
+        toggle.classList.remove('bg-primary-600');
+        toggle.classList.add('bg-gray-300');
+        circle.classList.remove('translate-x-7');
+        monthlyLabel.classList.remove('text-gray-500');
+        monthlyLabel.classList.add('text-gray-900');
+        annualLabel.classList.remove('text-gray-900');
+        annualLabel.classList.add('text-gray-500');
+
+        starterPrice.textContent = '199';
+        professionalPrice.textContent = '499';
+        enterprisePrice.textContent = '999';
+
+        starterNote.classList.add('hidden');
+        professionalNote.classList.add('hidden');
+        enterpriseNote.classList.add('hidden');
+      }
+    });
+  });
+</script>
