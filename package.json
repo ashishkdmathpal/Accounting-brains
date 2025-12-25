@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "AccountingBrains - Expert CPA Services Website",
   "scripts": {
-    "dev": "npm-run-all build:css --parallel dev:*",
+    "dev": "pnpm run build:css && (pnpm run dev:eleventy & pnpm run dev:css)",
     "dev:eleventy": "eleventy --serve",
     "dev:css": "postcss src/css/styles.css --o _site/css/styles.css --watch",
-    "build": "npm-run-all build:eleventy build:css",
+    "build": "pnpm run build:eleventy && pnpm run build:css",
     "build:eleventy": "eleventy",
     "build:css": "mkdir -p _site/css && NODE_ENV=production postcss src/css/styles.css --o _site/css/styles.css",
     "generate:blog": "node scripts/generate-blog.js",
@@ -25,7 +25,6 @@
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.32",
     "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.4.0"
