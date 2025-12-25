@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or "AccountingBrains - AI-Powered CPA Services" }}</title>
+  <meta name="description" content="{{ description or 'Professional CPA services powered by AI. Expert accounting, tax preparation, and financial consulting for businesses and individuals.' }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Google Analytics -->
+  {% if site.gaId %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gaId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.gaId }}');
+  </script>
+  {% endif %}
+
+  <!-- Schema.org markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "AccountingBrains",
+    "description": "AI-Powered CPA Services",
+    "url": "https://accountingbrains.com",
+    "logo": "https://accountingbrains.com/assets/images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body class="flex flex-col min-h-screen">
+  {% include "header.njk" %}
+
+  <main class="flex-grow">
+    {{ content | safe }}
+  </main>
+
+  {% include "footer.njk" %}
+  {% include "cookie-consent.njk" %}
+
+  <!-- Scripts -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
