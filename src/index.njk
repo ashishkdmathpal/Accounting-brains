@@ -62,8 +62,8 @@ description: "Specialized CPA services for US-based non-profits, NGOs & foundati
                 </svg>
               </div>
               <div>
-                <div class="text-2xl font-bold text-primary-900">200+</div>
-                <div class="text-sm text-primary-500">Clients Served</div>
+                <div class="text-2xl font-bold text-primary-900">{{ site.stats.clients }}</div>
+                <div class="text-sm text-primary-500">{{ site.stats.clientsLabel }}</div>
               </div>
             </div>
             <div class="flex items-center gap-3">
@@ -147,18 +147,18 @@ description: "Specialized CPA services for US-based non-profits, NGOs & foundati
               </div>
 
               <!-- Quick Stats -->
-              <div class="grid grid-cols-3 gap-3">
-                <div class="bg-primary-50 rounded-xl p-3 text-center">
-                  <div class="text-lg font-bold text-primary-900">Form 990</div>
-                  <div class="text-xs text-accent-600 font-medium">Filed</div>
+              <div class="grid grid-cols-3 gap-2 sm:gap-3">
+                <div class="bg-primary-50 rounded-xl p-2 sm:p-3 text-center min-w-0">
+                  <div class="text-sm sm:text-base md:text-lg font-bold text-primary-900 truncate">990</div>
+                  <div class="text-xs text-accent-600 font-medium truncate">Filed</div>
                 </div>
-                <div class="bg-accent-50 rounded-xl p-3 text-center">
-                  <div class="text-lg font-bold text-accent-700">$180K</div>
-                  <div class="text-xs text-primary-500">Monthly</div>
+                <div class="bg-accent-50 rounded-xl p-2 sm:p-3 text-center min-w-0">
+                  <div class="text-sm sm:text-base md:text-lg font-bold text-accent-700 truncate">$180K</div>
+                  <div class="text-xs text-primary-500 truncate">Monthly</div>
                 </div>
-                <div class="bg-primary-50 rounded-xl p-3 text-center">
-                  <div class="text-lg font-bold text-primary-900">A+</div>
-                  <div class="text-xs text-primary-500">Audit Ready</div>
+                <div class="bg-primary-50 rounded-xl p-2 sm:p-3 text-center min-w-0">
+                  <div class="text-sm sm:text-base md:text-lg font-bold text-primary-900 truncate">A+</div>
+                  <div class="text-xs text-primary-500 truncate">Audit</div>
                 </div>
               </div>
             </div>

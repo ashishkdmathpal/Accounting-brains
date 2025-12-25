@@ -11,7 +11,7 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
       <div>
         <div class="inline-flex items-center gap-2 bg-white border border-primary-200 rounded-full px-4 py-2 mb-6">
           <span class="w-2 h-2 bg-accent-500 rounded-full"></span>
-          <span class="text-sm font-medium text-gray-700">Trusted by 500+ Organizations</span>
+          <span class="text-sm font-medium text-gray-700">Trusted by {{ site.stats.clients }} Organizations</span>
         </div>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-6 leading-tight">
           Expert CPAs Dedicated to Your Mission
@@ -29,79 +29,51 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
         </div>
       </div>
       <div class="relative">
-        <!-- About Hero SVG - Global Team Illustration -->
-        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
-          <svg viewBox="0 0 400 320" class="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- World Map Background -->
-            <ellipse cx="200" cy="160" rx="180" ry="100" fill="#E0E7FF" opacity="0.4"/>
+        <!-- About Hero - Feature Grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- US Office -->
+          <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+            <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-1">US Operations</h4>
+            <p class="text-sm text-gray-500">Licensed CPAs nationwide</p>
+          </div>
 
-            <!-- Connection Lines -->
-            <path d="M100 120 Q 200 80 300 140" stroke="#6366F1" stroke-width="2" stroke-dasharray="6 4" opacity="0.5">
-              <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite"/>
-            </path>
-            <path d="M100 200 Q 200 240 300 180" stroke="#10B981" stroke-width="2" stroke-dasharray="6 4" opacity="0.5">
-              <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite"/>
-            </path>
+          <!-- India GCC -->
+          <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+            <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-1">India GCC</h4>
+            <p class="text-sm text-gray-500">Expert operations team</p>
+          </div>
 
-            <!-- US Office Node -->
-            <g transform="translate(80, 100)">
-              <circle cx="0" cy="0" r="35" fill="#6366F1" opacity="0.1"/>
-              <circle cx="0" cy="0" r="25" fill="white" stroke="#6366F1" stroke-width="2"/>
-              <!-- US Flag Icon -->
-              <rect x="-12" y="-8" width="24" height="16" rx="2" fill="#EF4444"/>
-              <rect x="-12" y="-8" width="24" height="3" fill="white"/>
-              <rect x="-12" y="-2" width="24" height="3" fill="white"/>
-              <rect x="-12" y="4" width="24" height="3" fill="white"/>
-              <rect x="-12" y="-8" width="10" height="8" fill="#3B82F6"/>
-              <text x="0" y="45" text-anchor="middle" class="text-xs font-semibold" fill="#374151">US Office</text>
-            </g>
+          <!-- Clients Served -->
+          <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+            <div class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-1">{{ site.stats.clients }} Clients</h4>
+            <p class="text-sm text-gray-500">Organizations served</p>
+          </div>
 
-            <!-- India GCC Node -->
-            <g transform="translate(320, 120)">
-              <circle cx="0" cy="0" r="35" fill="#10B981" opacity="0.1"/>
-              <circle cx="0" cy="0" r="25" fill="white" stroke="#10B981" stroke-width="2"/>
-              <!-- India Flag Icon -->
-              <rect x="-12" y="-8" width="24" height="5" rx="1" fill="#FF9933"/>
-              <rect x="-12" y="-3" width="24" height="6" fill="white"/>
-              <rect x="-12" y="3" width="24" height="5" rx="1" fill="#138808"/>
-              <circle cx="0" cy="0" r="3" fill="#000080"/>
-              <text x="0" y="45" text-anchor="middle" class="text-xs font-semibold" fill="#374151">GCC India</text>
-            </g>
-
-            <!-- Central Hub -->
-            <g transform="translate(200, 160)">
-              <circle cx="0" cy="0" r="50" fill="#6366F1" opacity="0.1">
-                <animate attributeName="r" values="45;50;45" dur="3s" repeatCount="indefinite"/>
-              </circle>
-              <circle cx="0" cy="0" r="40" fill="white" stroke="#6366F1" stroke-width="3"/>
-              <!-- Logo -->
-              <path d="M0 -18 L-15 -5 L-15 15 L0 22 L15 15 L15 -5 Z" fill="#6366F1" opacity="0.2"/>
-              <path d="M0 -12 L-10 -2 L-10 10 L0 15 L10 10 L10 -2 Z" fill="#6366F1"/>
-              <text x="0" y="62" text-anchor="middle" class="text-sm font-bold" fill="#1F2937">AccountingBrains</text>
-            </g>
-
-            <!-- Team Icons -->
-            <g transform="translate(130, 220)">
-              <circle cx="0" cy="0" r="18" fill="#F3F4F6"/>
-              <circle cx="0" cy="-5" r="6" fill="#9CA3AF"/>
-              <path d="M-10 12 Q 0 5 10 12" stroke="#9CA3AF" stroke-width="3" fill="none"/>
-            </g>
-            <g transform="translate(200, 250)">
-              <circle cx="0" cy="0" r="18" fill="#F3F4F6"/>
-              <circle cx="0" cy="-5" r="6" fill="#9CA3AF"/>
-              <path d="M-10 12 Q 0 5 10 12" stroke="#9CA3AF" stroke-width="3" fill="none"/>
-            </g>
-            <g transform="translate(270, 220)">
-              <circle cx="0" cy="0" r="18" fill="#F3F4F6"/>
-              <circle cx="0" cy="-5" r="6" fill="#9CA3AF"/>
-              <path d="M-10 12 Q 0 5 10 12" stroke="#9CA3AF" stroke-width="3" fill="none"/>
-            </g>
-
-            <!-- Decorative Elements -->
-            <circle cx="50" cy="200" r="6" fill="#10B981" opacity="0.3"/>
-            <circle cx="350" cy="220" r="8" fill="#6366F1" opacity="0.3"/>
-            <circle cx="150" cy="60" r="5" fill="#F59E0B" opacity="0.4"/>
-          </svg>
+          <!-- 24/7 Support -->
+          <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+            <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-1">{{ site.stats.support }} Support</h4>
+            <p class="text-sm text-gray-500">Always available</p>
+          </div>
         </div>
       </div>
     </div>
@@ -113,48 +85,52 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
   <div class="container-custom">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <div class="order-2 lg:order-1">
-        <!-- Mission SVG - Target with Purpose -->
+        <!-- Mission SVG - Focused Growth Illustration -->
         <div class="bg-primary-50 rounded-2xl p-8">
-          <svg viewBox="0 0 400 300" class="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Target Circles -->
-            <circle cx="200" cy="150" r="120" fill="#E0E7FF" opacity="0.3"/>
-            <circle cx="200" cy="150" r="90" fill="#C7D2FE" opacity="0.4"/>
-            <circle cx="200" cy="150" r="60" fill="#A5B4FC" opacity="0.5"/>
-            <circle cx="200" cy="150" r="30" fill="#6366F1"/>
+          <svg viewBox="0 0 450 320" class="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background -->
+            <rect x="15" y="15" width="420" height="290" rx="12" fill="#F8FAFC"/>
 
-            <!-- Arrow hitting target -->
-            <g transform="translate(200, 150)">
-              <circle cx="0" cy="0" r="8" fill="white"/>
-              <path d="M-60 -60 L-5 -5" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
-              <polygon points="-5,-5 -15,-2 -8,-10" fill="#10B981"/>
-              <!-- Feathers -->
-              <path d="M-55 -55 L-65 -50" stroke="#10B981" stroke-width="2"/>
-              <path d="M-55 -55 L-50 -65" stroke="#10B981" stroke-width="2"/>
-            </g>
+            <!-- Chart Title -->
+            <text x="225" y="45" text-anchor="middle" fill="#1E3A5F" font-size="16" font-weight="700">Client Satisfaction Growth</text>
 
-            <!-- Stats floating around -->
-            <g transform="translate(50, 80)">
-              <rect x="0" y="0" width="70" height="45" rx="8" fill="white" stroke="#E5E7EB"/>
-              <text x="35" y="22" text-anchor="middle" class="text-lg font-bold" fill="#6366F1">500+</text>
-              <text x="35" y="36" text-anchor="middle" class="text-xs" fill="#6B7280">Clients</text>
-            </g>
+            <!-- Growth Chart -->
+            <g transform="translate(45, 65)">
+              <!-- Chart Background -->
+              <rect x="0" y="0" width="360" height="210" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
 
-            <g transform="translate(310, 60)">
-              <rect x="0" y="0" width="70" height="45" rx="8" fill="white" stroke="#E5E7EB"/>
-              <text x="35" y="22" text-anchor="middle" class="text-lg font-bold" fill="#10B981">15+</text>
-              <text x="35" y="36" text-anchor="middle" class="text-xs" fill="#6B7280">Years</text>
-            </g>
+              <!-- Grid Lines -->
+              <line x1="50" y1="35" x2="350" y2="35" stroke="#F1F5F9" stroke-width="1"/>
+              <line x1="50" y1="70" x2="350" y2="70" stroke="#F1F5F9" stroke-width="1"/>
+              <line x1="50" y1="105" x2="350" y2="105" stroke="#F1F5F9" stroke-width="1"/>
+              <line x1="50" y1="140" x2="350" y2="140" stroke="#F1F5F9" stroke-width="1"/>
 
-            <g transform="translate(30, 200)">
-              <rect x="0" y="0" width="80" height="45" rx="8" fill="white" stroke="#E5E7EB"/>
-              <text x="40" y="22" text-anchor="middle" class="text-lg font-bold" fill="#6366F1">$50M+</text>
-              <text x="40" y="36" text-anchor="middle" class="text-xs" fill="#6B7280">Managed</text>
-            </g>
+              <!-- Y-axis Labels -->
+              <text x="40" y="40" text-anchor="end" fill="#94A3B8" font-size="11">100%</text>
+              <text x="40" y="75" text-anchor="end" fill="#94A3B8" font-size="11">75%</text>
+              <text x="40" y="110" text-anchor="end" fill="#94A3B8" font-size="11">50%</text>
+              <text x="40" y="145" text-anchor="end" fill="#94A3B8" font-size="11">25%</text>
 
-            <g transform="translate(300, 220)">
-              <rect x="0" y="0" width="70" height="45" rx="8" fill="white" stroke="#E5E7EB"/>
-              <text x="35" y="22" text-anchor="middle" class="text-lg font-bold" fill="#10B981">98%</text>
-              <text x="35" y="36" text-anchor="middle" class="text-xs" fill="#6B7280">Retention</text>
+              <!-- Growth Bars - 5 bars for 2021-2025 -->
+              <rect x="60" y="120" width="45" height="55" rx="4" fill="#E0E7FF"/>
+              <rect x="120" y="95" width="45" height="80" rx="4" fill="#C7D2FE"/>
+              <rect x="180" y="65" width="45" height="110" rx="4" fill="#A5B4FC"/>
+              <rect x="240" y="40" width="45" height="135" rx="4" fill="#818CF8"/>
+              <rect x="300" y="15" width="45" height="160" rx="4" fill="#6366F1"/>
+
+              <!-- Bar Labels -->
+              <text x="82" y="112" text-anchor="middle" fill="#6366F1" font-size="11" font-weight="600">32%</text>
+              <text x="142" y="87" text-anchor="middle" fill="#6366F1" font-size="11" font-weight="600">54%</text>
+              <text x="202" y="57" text-anchor="middle" fill="#6366F1" font-size="11" font-weight="600">69%</text>
+              <text x="262" y="32" text-anchor="middle" fill="#6366F1" font-size="11" font-weight="600">83%</text>
+              <text x="322" y="8" text-anchor="middle" fill="#059669" font-size="11" font-weight="700">97%</text>
+
+              <!-- X-axis Labels -->
+              <text x="82" y="195" text-anchor="middle" fill="#64748B" font-size="12">2021</text>
+              <text x="142" y="195" text-anchor="middle" fill="#64748B" font-size="12">2022</text>
+              <text x="202" y="195" text-anchor="middle" fill="#64748B" font-size="12">2023</text>
+              <text x="262" y="195" text-anchor="middle" fill="#64748B" font-size="12">2024</text>
+              <text x="322" y="195" text-anchor="middle" fill="#059669" font-size="12" font-weight="600">2025</text>
             </g>
           </svg>
         </div>
@@ -172,20 +148,20 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
         </p>
         <div class="grid grid-cols-2 gap-4">
           <div class="bg-primary-50 rounded-xl p-5 text-center">
-            <div class="text-3xl font-bold text-primary-600 mb-1">500+</div>
-            <div class="text-sm text-gray-600">Satisfied Clients</div>
+            <div class="text-3xl font-bold text-primary-600 mb-1">{{ site.stats.clients }}</div>
+            <div class="text-sm text-gray-600">{{ site.stats.clientsLabel }}</div>
           </div>
           <div class="bg-accent-50 rounded-xl p-5 text-center">
-            <div class="text-3xl font-bold text-accent-600 mb-1">15+</div>
-            <div class="text-sm text-gray-600">Years Experience</div>
+            <div class="text-3xl font-bold text-accent-600 mb-1">{{ site.stats.yearsExperience }}</div>
+            <div class="text-sm text-gray-600">{{ site.stats.yearsLabel }}</div>
           </div>
           <div class="bg-accent-50 rounded-xl p-5 text-center">
-            <div class="text-3xl font-bold text-accent-600 mb-1">$50M+</div>
-            <div class="text-sm text-gray-600">Managed Annually</div>
+            <div class="text-3xl font-bold text-accent-600 mb-1">{{ site.stats.managedAnnually }}</div>
+            <div class="text-sm text-gray-600">{{ site.stats.managedLabel }}</div>
           </div>
           <div class="bg-primary-50 rounded-xl p-5 text-center">
-            <div class="text-3xl font-bold text-primary-600 mb-1">98%</div>
-            <div class="text-sm text-gray-600">Client Retention</div>
+            <div class="text-3xl font-bold text-primary-600 mb-1">{{ site.stats.retention }}</div>
+            <div class="text-sm text-gray-600">{{ site.stats.retentionLabel }}</div>
           </div>
         </div>
       </div>
@@ -209,30 +185,14 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
       <!-- US Operations -->
       <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-        <div class="mb-6">
-          <svg viewBox="0 0 200 150" class="w-full h-32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- US Map Outline -->
-            <path d="M20 60 Q 40 40 80 45 Q 120 35 160 50 Q 180 60 180 80 Q 170 100 140 110 Q 100 120 60 115 Q 30 110 20 90 Q 15 75 20 60" fill="#E0E7FF" stroke="#6366F1" stroke-width="2"/>
-            <!-- Office Building -->
-            <g transform="translate(80, 50)">
-              <rect x="0" y="20" width="40" height="50" fill="white" stroke="#6366F1" stroke-width="2"/>
-              <rect x="5" y="25" width="8" height="10" fill="#C7D2FE"/>
-              <rect x="16" y="25" width="8" height="10" fill="#C7D2FE"/>
-              <rect x="27" y="25" width="8" height="10" fill="#C7D2FE"/>
-              <rect x="5" y="40" width="8" height="10" fill="#C7D2FE"/>
-              <rect x="16" y="40" width="8" height="10" fill="#C7D2FE"/>
-              <rect x="27" y="40" width="8" height="10" fill="#C7D2FE"/>
-              <rect x="15" y="55" width="10" height="15" fill="#6366F1"/>
-              <!-- Flag -->
-              <rect x="35" y="5" width="2" height="20" fill="#6B7280"/>
-              <rect x="37" y="5" width="15" height="10" fill="#EF4444"/>
-            </g>
-            <!-- Stars -->
-            <circle cx="50" cy="55" r="3" fill="#F59E0B"/>
-            <circle cx="150" cy="65" r="3" fill="#F59E0B"/>
-          </svg>
+        <div class="mb-6 flex justify-center">
+          <div class="w-20 h-20 bg-indigo-50 rounded-2xl flex items-center justify-center">
+            <svg class="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">US Operations</h3>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">US Operations</h3>
         <ul class="space-y-3 text-gray-600">
           <li class="flex items-start gap-2">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -263,59 +223,31 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
 
       <!-- Connection Arrow -->
       <div class="hidden lg:flex items-center justify-center">
-        <svg viewBox="0 0 200 200" class="w-full h-48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Bidirectional Arrows -->
-          <path d="M30 100 L170 100" stroke="#6366F1" stroke-width="3" stroke-dasharray="8 4">
-            <animate attributeName="stroke-dashoffset" from="0" to="24" dur="1s" repeatCount="indefinite"/>
-          </path>
-          <polygon points="170,100 155,92 155,108" fill="#6366F1"/>
-          <polygon points="30,100 45,92 45,108" fill="#6366F1"/>
-
-          <!-- Central Hub -->
-          <circle cx="100" cy="100" r="35" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="2"/>
-          <text x="100" y="95" text-anchor="middle" class="text-xs font-semibold" fill="#374151">Seamless</text>
-          <text x="100" y="110" text-anchor="middle" class="text-xs font-semibold" fill="#374151">Integration</text>
-
-          <!-- Data Icons -->
-          <g transform="translate(70, 55)">
-            <rect x="0" y="0" width="12" height="15" rx="2" fill="#C7D2FE"/>
-            <path d="M2 4 L10 4 M2 7 L8 7 M2 10 L10 10" stroke="#6366F1" stroke-width="1"/>
-          </g>
-          <g transform="translate(118, 55)">
-            <rect x="0" y="0" width="12" height="15" rx="2" fill="#A7F3D0"/>
-            <path d="M2 4 L10 4 M2 7 L8 7 M2 10 L10 10" stroke="#10B981" stroke-width="1"/>
-          </g>
-        </svg>
+        <div class="text-center px-6">
+          <div class="flex items-center justify-center gap-4 mb-4">
+            <div class="h-0.5 w-12 bg-indigo-300"></div>
+            <div class="w-12 h-12 bg-white rounded-full border-2 border-indigo-200 flex items-center justify-center">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+              </svg>
+            </div>
+            <div class="h-0.5 w-12 bg-emerald-300"></div>
+          </div>
+          <p class="text-sm font-medium text-gray-600">Seamless Integration</p>
+          <p class="text-xs text-gray-400 mt-1">Real-time collaboration</p>
+        </div>
       </div>
 
       <!-- India GCC -->
       <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-        <div class="mb-6">
-          <svg viewBox="0 0 200 150" class="w-full h-32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- India Map Outline -->
-            <path d="M80 30 Q 120 25 140 40 Q 160 60 150 100 Q 130 130 100 135 Q 70 130 60 100 Q 50 70 60 50 Q 70 35 80 30" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
-            <!-- Modern Office -->
-            <g transform="translate(70, 45)">
-              <rect x="0" y="30" width="60" height="40" fill="white" stroke="#10B981" stroke-width="2"/>
-              <rect x="5" y="35" width="10" height="8" fill="#A7F3D0"/>
-              <rect x="18" y="35" width="10" height="8" fill="#A7F3D0"/>
-              <rect x="31" y="35" width="10" height="8" fill="#A7F3D0"/>
-              <rect x="44" y="35" width="10" height="8" fill="#A7F3D0"/>
-              <rect x="5" y="48" width="10" height="8" fill="#A7F3D0"/>
-              <rect x="18" y="48" width="10" height="8" fill="#A7F3D0"/>
-              <rect x="31" y="48" width="10" height="8" fill="#A7F3D0"/>
-              <rect x="44" y="48" width="10" height="8" fill="#A7F3D0"/>
-              <rect x="23" y="60" width="14" height="10" fill="#10B981"/>
-              <!-- Satellite Dish -->
-              <ellipse cx="50" cy="25" rx="8" ry="5" fill="none" stroke="#10B981" stroke-width="2"/>
-              <path d="M50 30 L50 35" stroke="#10B981" stroke-width="2"/>
-            </g>
-            <!-- Tech Icons -->
-            <circle cx="55" cy="60" r="8" fill="#A7F3D0"/>
-            <path d="M52 60 L58 60 M55 57 L55 63" stroke="#10B981" stroke-width="2"/>
-          </svg>
+        <div class="mb-6 flex justify-center">
+          <div class="w-20 h-20 bg-emerald-50 rounded-2xl flex items-center justify-center">
+            <svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Global Capability Center</h3>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Global Capability Center</h3>
         <ul class="space-y-3 text-gray-600">
           <li class="flex items-start gap-2">
             <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -359,117 +291,80 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Integrity -->
       <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-        <div class="mb-6">
-          <svg viewBox="0 0 120 100" class="w-full h-24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Shield -->
-            <path d="M60 10 L95 25 L95 55 Q 95 80 60 95 Q 25 80 25 55 L25 25 Z" fill="#E0E7FF" stroke="#6366F1" stroke-width="2"/>
-            <path d="M60 20 L85 32 L85 52 Q 85 72 60 85 Q 35 72 35 52 L35 32 Z" fill="white"/>
-            <!-- Checkmark -->
-            <path d="M45 50 L55 60 L75 40" stroke="#6366F1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <div class="mb-6 flex justify-center">
+          <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
-        <p class="text-gray-600">We uphold the highest ethical standards in every engagement, ensuring complete transparency and honesty in all our dealings.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Integrity</h3>
+        <p class="text-gray-600 text-center">We uphold the highest ethical standards in every engagement, ensuring complete transparency and honesty in all our dealings.</p>
       </div>
 
       <!-- Expertise -->
       <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-        <div class="mb-6">
-          <svg viewBox="0 0 120 100" class="w-full h-24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Certificate/Diploma -->
-            <rect x="20" y="15" width="80" height="60" rx="4" fill="white" stroke="#10B981" stroke-width="2"/>
-            <rect x="30" y="25" width="60" height="4" rx="2" fill="#D1FAE5"/>
-            <rect x="35" y="35" width="50" height="3" rx="1" fill="#E5E7EB"/>
-            <rect x="35" y="42" width="40" height="3" rx="1" fill="#E5E7EB"/>
-            <!-- Seal -->
-            <circle cx="60" cy="58" r="12" fill="#10B981"/>
-            <path d="M54 58 L58 62 L66 54" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <!-- Ribbon -->
-            <path d="M52 70 L48 85 L55 78 L60 90 L65 78 L72 85 L68 70" fill="#FCD34D" stroke="#F59E0B" stroke-width="1"/>
-          </svg>
+        <div class="mb-6 flex justify-center">
+          <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center">
+            <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Expertise</h3>
-        <p class="text-gray-600">Our team of certified CPAs brings decades of combined experience across non-profit accounting and regulatory compliance.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Expertise</h3>
+        <p class="text-gray-600 text-center">Our team of certified CPAs brings decades of combined experience across non-profit accounting and regulatory compliance.</p>
       </div>
 
       <!-- Client-First -->
       <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-        <div class="mb-6">
-          <svg viewBox="0 0 120 100" class="w-full h-24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Handshake -->
-            <ellipse cx="60" cy="50" rx="45" ry="35" fill="#E0E7FF" opacity="0.5"/>
-            <!-- Left Hand -->
-            <path d="M25 55 L40 50 L50 50 L55 55" stroke="#6366F1" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <circle cx="22" cy="55" r="8" fill="#C7D2FE" stroke="#6366F1" stroke-width="2"/>
-            <!-- Right Hand -->
-            <path d="M95 55 L80 50 L70 50 L65 55" stroke="#10B981" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <circle cx="98" cy="55" r="8" fill="#A7F3D0" stroke="#10B981" stroke-width="2"/>
-            <!-- Heart -->
-            <path d="M60 35 C 55 28 45 30 45 40 C 45 50 60 58 60 58 C 60 58 75 50 75 40 C 75 30 65 28 60 35" fill="#F87171"/>
-          </svg>
+        <div class="mb-6 flex justify-center">
+          <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center">
+            <svg class="w-8 h-8 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Client-First</h3>
-        <p class="text-gray-600">Your success is our success. We build lasting relationships through exceptional service and dedicated support.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Client-First</h3>
+        <p class="text-gray-600 text-center">Your success is our success. We build lasting relationships through exceptional service and dedicated support.</p>
       </div>
 
       <!-- Accuracy -->
       <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-        <div class="mb-6">
-          <svg viewBox="0 0 120 100" class="w-full h-24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Target -->
-            <circle cx="60" cy="50" r="40" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
-            <circle cx="60" cy="50" r="28" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
-            <circle cx="60" cy="50" r="16" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
-            <circle cx="60" cy="50" r="6" fill="#10B981"/>
-            <!-- Arrow -->
-            <line x1="60" y1="50" x2="25" y2="20" stroke="#374151" stroke-width="2"/>
-            <polygon points="25,20 32,22 27,27" fill="#374151"/>
-          </svg>
+        <div class="mb-6 flex justify-center">
+          <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center">
+            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Accuracy</h3>
-        <p class="text-gray-600">Every number matters. Our dual-layer review process ensures 100% accuracy in all deliverables.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Accuracy</h3>
+        <p class="text-gray-600 text-center">Every number matters. Our dual-layer review process ensures 100% accuracy in all deliverables.</p>
       </div>
 
       <!-- Efficiency -->
       <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-        <div class="mb-6">
-          <svg viewBox="0 0 120 100" class="w-full h-24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Speedometer -->
-            <path d="M20 70 A 45 45 0 0 1 100 70" fill="none" stroke="#E5E7EB" stroke-width="8" stroke-linecap="round"/>
-            <path d="M20 70 A 45 45 0 0 1 85 35" fill="none" stroke="#6366F1" stroke-width="8" stroke-linecap="round"/>
-            <!-- Needle -->
-            <line x1="60" y1="70" x2="80" y2="40" stroke="#1F2937" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="60" cy="70" r="6" fill="#1F2937"/>
-            <!-- Speed marks -->
-            <text x="25" y="82" class="text-xs" fill="#9CA3AF">0</text>
-            <text x="55" y="30" class="text-xs" fill="#9CA3AF">50</text>
-            <text x="90" y="82" class="text-xs" fill="#9CA3AF">100</text>
-          </svg>
+        <div class="mb-6 flex justify-center">
+          <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Efficiency</h3>
-        <p class="text-gray-600">Streamlined processes and expert workflows deliver results in hours instead of days, maximizing your time.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Efficiency</h3>
+        <p class="text-gray-600 text-center">Streamlined processes and expert workflows deliver results in hours instead of days, maximizing your time.</p>
       </div>
 
       <!-- Innovation -->
       <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-        <div class="mb-6">
-          <svg viewBox="0 0 120 100" class="w-full h-24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Lightbulb -->
-            <path d="M60 15 Q 85 15 85 45 Q 85 60 70 70 L70 80 L50 80 L50 70 Q 35 60 35 45 Q 35 15 60 15" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
-            <rect x="48" y="80" width="24" height="8" rx="2" fill="#F59E0B"/>
-            <!-- Rays -->
-            <line x1="60" y1="5" x2="60" y2="-5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
-            <line x1="90" y1="45" x2="100" y2="45" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
-            <line x1="20" y1="45" x2="30" y2="45" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
-            <line x1="82" y1="22" x2="90" y2="15" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
-            <line x1="30" y1="15" x2="38" y2="22" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
-            <!-- Gears inside -->
-            <circle cx="55" cy="45" r="8" fill="none" stroke="#D97706" stroke-width="2"/>
-            <circle cx="68" cy="50" r="5" fill="none" stroke="#D97706" stroke-width="2"/>
-          </svg>
+        <div class="mb-6 flex justify-center">
+          <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center">
+            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
-        <p class="text-gray-600">We leverage modern technology and streamlined processes to deliver faster, more accurate, and more insightful services.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Innovation</h3>
+        <p class="text-gray-600 text-center">We leverage modern technology and streamlined processes to deliver faster, more accurate, and more insightful services.</p>
       </div>
     </div>
   </div>
@@ -488,20 +383,11 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
       <!-- Team Member 1 -->
       <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition-shadow">
         <div class="mb-6">
-          <svg viewBox="0 0 120 120" class="w-32 h-32 mx-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="55" fill="#E0E7FF"/>
-            <circle cx="60" cy="45" r="22" fill="#C7D2FE"/>
-            <ellipse cx="60" cy="95" rx="35" ry="20" fill="#C7D2FE"/>
-            <!-- Hair -->
-            <path d="M38 35 Q 40 20 60 18 Q 80 20 82 35 Q 85 28 80 22 Q 70 12 60 12 Q 50 12 40 22 Q 35 28 38 35" fill="#4B5563"/>
-            <!-- Face features -->
-            <circle cx="50" cy="42" r="3" fill="#374151"/>
-            <circle cx="70" cy="42" r="3" fill="#374151"/>
-            <path d="M55 55 Q 60 58 65 55" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- Blazer -->
-            <path d="M25 95 Q 30 75 60 70 Q 90 75 95 95" fill="#6366F1"/>
-            <path d="M55 70 L60 85 L65 70" fill="white"/>
-          </svg>
+          <img
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face"
+            alt="Jennifer Davis"
+            class="w-28 h-28 mx-auto rounded-full object-cover border-4 border-indigo-100"
+          />
         </div>
         <h3 class="text-xl font-bold text-gray-900 mb-1">Jennifer Davis, CPA</h3>
         <p class="text-primary-600 font-medium mb-3">Founder & CEO</p>
@@ -516,24 +402,11 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
       <!-- Team Member 2 -->
       <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition-shadow">
         <div class="mb-6">
-          <svg viewBox="0 0 120 120" class="w-32 h-32 mx-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="55" fill="#D1FAE5"/>
-            <circle cx="60" cy="45" r="22" fill="#A7F3D0"/>
-            <ellipse cx="60" cy="95" rx="35" ry="20" fill="#A7F3D0"/>
-            <!-- Hair -->
-            <path d="M40 38 Q 42 22 60 20 Q 78 22 80 38 L78 35 Q 75 25 60 24 Q 45 25 42 35 Z" fill="#1F2937"/>
-            <!-- Face features -->
-            <circle cx="50" cy="42" r="3" fill="#374151"/>
-            <circle cx="70" cy="42" r="3" fill="#374151"/>
-            <path d="M55 55 Q 60 58 65 55" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- Glasses -->
-            <circle cx="50" cy="42" r="8" fill="none" stroke="#374151" stroke-width="1.5"/>
-            <circle cx="70" cy="42" r="8" fill="none" stroke="#374151" stroke-width="1.5"/>
-            <path d="M58 42 L62 42" stroke="#374151" stroke-width="1.5"/>
-            <!-- Blazer -->
-            <path d="M25 95 Q 30 75 60 70 Q 90 75 95 95" fill="#10B981"/>
-            <path d="M55 70 L60 85 L65 70" fill="white"/>
-          </svg>
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+            alt="Michael Chen"
+            class="w-28 h-28 mx-auto rounded-full object-cover border-4 border-emerald-100"
+          />
         </div>
         <h3 class="text-xl font-bold text-gray-900 mb-1">Michael Chen, CPA</h3>
         <p class="text-accent-600 font-medium mb-3">Chief Operations Officer</p>
@@ -548,25 +421,11 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
       <!-- Team Member 3 -->
       <div class="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition-shadow">
         <div class="mb-6">
-          <svg viewBox="0 0 120 120" class="w-32 h-32 mx-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="55" fill="#E0E7FF"/>
-            <circle cx="60" cy="45" r="22" fill="#C7D2FE"/>
-            <ellipse cx="60" cy="95" rx="35" ry="20" fill="#C7D2FE"/>
-            <!-- Hair -->
-            <path d="M35 45 Q 35 18 60 15 Q 85 18 85 45 Q 88 35 82 25 Q 72 10 60 10 Q 48 10 38 25 Q 32 35 35 45" fill="#7C3AED"/>
-            <path d="M35 45 Q 32 55 38 60" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
-            <path d="M85 45 Q 88 55 82 60" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
-            <!-- Face features -->
-            <circle cx="50" cy="42" r="3" fill="#374151"/>
-            <circle cx="70" cy="42" r="3" fill="#374151"/>
-            <path d="M55 55 Q 60 58 65 55" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- Earrings -->
-            <circle cx="35" cy="50" r="3" fill="#F59E0B"/>
-            <circle cx="85" cy="50" r="3" fill="#F59E0B"/>
-            <!-- Blazer -->
-            <path d="M25 95 Q 30 75 60 70 Q 90 75 95 95" fill="#6366F1"/>
-            <circle cx="60" cy="78" r="4" fill="#F59E0B"/>
-          </svg>
+          <img
+            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face"
+            alt="Sarah Rodriguez"
+            class="w-28 h-28 mx-auto rounded-full object-cover border-4 border-violet-100"
+          />
         </div>
         <h3 class="text-xl font-bold text-gray-900 mb-1">Sarah Rodriguez, CPA</h3>
         <p class="text-primary-600 font-medium mb-3">Director of Tax Services</p>
@@ -646,92 +505,51 @@ description: "Meet the team behind AccountingBrains. US-licensed CPAs with our G
       </div>
 
       <div>
-        <!-- Why Choose Us SVG -->
-        <div class="bg-gray-50 rounded-2xl p-8">
-          <svg viewBox="0 0 400 350" class="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Central Building -->
-            <g transform="translate(150, 80)">
-              <rect x="0" y="40" width="100" height="130" fill="white" stroke="#6366F1" stroke-width="2"/>
-              <!-- Windows -->
-              <rect x="10" y="50" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="35" y="50" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="60" y="50" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="10" y="75" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="35" y="75" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="60" y="75" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="10" y="100" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="35" y="100" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="60" y="100" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="10" y="125" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="35" y="125" width="18" height="15" fill="#C7D2FE"/>
-              <rect x="60" y="125" width="18" height="15" fill="#C7D2FE"/>
-              <!-- Door -->
-              <rect x="37" y="150" width="26" height="20" fill="#6366F1"/>
-              <!-- Roof -->
-              <polygon points="0,40 50,10 100,40" fill="#6366F1"/>
-              <!-- Flag -->
-              <rect x="48" y="-5" width="3" height="20" fill="#374151"/>
-              <rect x="51" y="-5" width="20" height="12" fill="#10B981"/>
-            </g>
+        <!-- Why Choose Us - Feature Grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Compliance -->
+          <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-1">100% Compliance</h4>
+            <p class="text-sm text-gray-500">IRS standards met</p>
+          </div>
 
-            <!-- Orbiting Elements -->
-            <!-- Certificate -->
-            <g transform="translate(50, 120)">
-              <rect x="0" y="0" width="60" height="45" rx="4" fill="white" stroke="#10B981" stroke-width="2"/>
-              <rect x="8" y="8" width="44" height="4" fill="#D1FAE5"/>
-              <rect x="12" y="16" width="36" height="3" fill="#E5E7EB"/>
-              <circle cx="30" cy="32" r="8" fill="#10B981"/>
-              <path d="M26 32 L29 35 L34 29" stroke="white" stroke-width="2"/>
-            </g>
+          <!-- 24/7 Support -->
+          <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-1">24/7 Operations</h4>
+            <p class="text-sm text-gray-500">Round-the-clock service</p>
+          </div>
 
-            <!-- Clock / 24-7 -->
-            <g transform="translate(300, 100)">
-              <circle cx="30" cy="30" r="28" fill="white" stroke="#6366F1" stroke-width="2"/>
-              <circle cx="30" cy="30" r="3" fill="#6366F1"/>
-              <line x1="30" y1="30" x2="30" y2="15" stroke="#6366F1" stroke-width="2"/>
-              <line x1="30" y1="30" x2="42" y2="35" stroke="#6366F1" stroke-width="2"/>
-              <text x="30" y="52" text-anchor="middle" class="text-xs font-bold" fill="#6366F1">24/7</text>
-            </g>
+          <!-- Cost Effective -->
+          <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-1">Cost Effective</h4>
+            <p class="text-sm text-gray-500">40% lower costs</p>
+          </div>
 
-            <!-- Money/Savings -->
-            <g transform="translate(40, 230)">
-              <circle cx="30" cy="30" r="28" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
-              <text x="30" y="36" text-anchor="middle" class="text-xl font-bold" fill="#10B981">$</text>
-              <path d="M20 20 L40 40" stroke="#10B981" stroke-width="2" stroke-dasharray="2"/>
-            </g>
-
-            <!-- Team -->
-            <g transform="translate(300, 220)">
-              <circle cx="20" cy="25" r="12" fill="#E0E7FF"/>
-              <circle cx="40" cy="25" r="12" fill="#E0E7FF"/>
-              <circle cx="60" cy="25" r="12" fill="#E0E7FF"/>
-              <circle cx="20" cy="20" r="5" fill="#9CA3AF"/>
-              <circle cx="40" cy="20" r="5" fill="#9CA3AF"/>
-              <circle cx="60" cy="20" r="5" fill="#9CA3AF"/>
-              <path d="M12 38 Q 20 32 28 38" fill="#6366F1"/>
-              <path d="M32 38 Q 40 32 48 38" fill="#6366F1"/>
-              <path d="M52 38 Q 60 32 68 38" fill="#6366F1"/>
-            </g>
-
-            <!-- Connecting Lines -->
-            <path d="M110 145 L150 160" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4">
-              <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite"/>
-            </path>
-            <path d="M300 130 L250 160" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4">
-              <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite"/>
-            </path>
-            <path d="M100 260 L150 230" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4">
-              <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite"/>
-            </path>
-            <path d="M300 250 L250 230" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4">
-              <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite"/>
-            </path>
-
-            <!-- Decorative dots -->
-            <circle cx="180" cy="300" r="4" fill="#6366F1" opacity="0.3"/>
-            <circle cx="220" cy="300" r="4" fill="#10B981" opacity="0.3"/>
-            <circle cx="200" cy="50" r="4" fill="#F59E0B" opacity="0.4"/>
-          </svg>
+          <!-- Expert Team -->
+          <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-1">Expert Team</h4>
+            <p class="text-sm text-gray-500">US-licensed CPAs</p>
+          </div>
         </div>
       </div>
     </div>

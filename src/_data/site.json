@@ -7,6 +7,20 @@
   "email": "hello@accountingbrains.com",
   "phone": "+1 (855) 228-2724",
   "gaId": "",
+  "stats": {
+    "clients": "70+",
+    "clientsLabel": "Clients Served",
+    "yearsExperience": "15+",
+    "yearsLabel": "Years Experience",
+    "managedAnnually": "$50M+",
+    "managedLabel": "Managed Annually",
+    "retention": "98%",
+    "retentionLabel": "Client Retention",
+    "teamMembers": "50+",
+    "teamLabel": "Team Members",
+    "support": "24/7",
+    "supportLabel": "Support"
+  },
   "social": {
     "twitter": "@accountingbrains",
     "linkedin": "accountingbrains"

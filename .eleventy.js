@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
   // Copy static assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin");
+  eleventyConfig.addPassthroughCopy({ "src/.nojekyll": ".nojekyll" });
 
   // NOTE: CSS is handled by PostCSS, not passthrough copy
   // This prevents the uncompiled Tailwind directives from overwriting compiled CSS
@@ -29,6 +30,11 @@ module.exports = function(eleventyConfig) {
       month: 'long',
       day: 'numeric'
     });
+  });
+
+  // ISO date filter for sitemap
+  eleventyConfig.addFilter("dateToISO", (dateObj) => {
+    return new Date(dateObj).toISOString().split('T')[0];
   });
 
   // Excerpt filter for blog previews

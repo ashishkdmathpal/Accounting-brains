@@ -1,0 +1,32 @@
+# Cloudflare Workers Configuration
+# Copy this file to wrangler.toml and update with your settings
+
+name = "accountingbrains-contact"
+main = "contact-form.js"
+compatibility_date = "2024-01-01"
+
+# For production deployment
+# account_id = "your-cloudflare-account-id"
+
+# Environment variables (non-sensitive)
+[vars]
+NOTIFICATION_EMAIL = "hello@accountingbrains.com"
+
+# Secrets (add via: wrangler secret put BREVO_API_KEY)
+# BREVO_API_KEY = "your-brevo-api-key"
+
+# ---
+
+# For newsletter worker, create a separate wrangler.toml:
+# name = "accountingbrains-newsletter"
+# main = "newsletter.js"
+# compatibility_date = "2024-01-01"
+
+# Deployment Steps:
+# 1. Install Wrangler: npm install -g wrangler
+# 2. Login to Cloudflare: wrangler login
+# 3. Copy this file: cp wrangler.toml.example wrangler.toml
+# 4. Update account_id and other settings
+# 5. Add Brevo API key: wrangler secret put BREVO_API_KEY
+# 6. Deploy: wrangler deploy
+# 7. Update the API URLs in contact.njk and blog.njk with your worker URLs

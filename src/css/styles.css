@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Premium Inter font with all weights */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Note: Inter font is loaded via <link> in base.njk for reliability */
 
 @layer base {
   html {
@@ -28,11 +27,11 @@
 @layer components {
   /* Container */
   .container-custom {
-    @apply max-w-7xl mx-auto px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-8 sm:px-10 lg:px-16;
   }
 
   .container-tight {
-    @apply max-w-5xl mx-auto px-6 lg:px-8;
+    @apply max-w-5xl mx-auto px-8 sm:px-10 lg:px-16;
   }
 
   /* Section spacing */
@@ -161,11 +160,19 @@
 
   /* Stats */
   .stat-value {
-    @apply text-4xl md:text-5xl font-bold text-primary-900 tracking-tight;
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-900 tracking-tight;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .stat-value-sm {
+    @apply text-base sm:text-lg font-bold tracking-tight;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .stat-label {
-    @apply text-sm text-primary-500 mt-1;
+    @apply text-xs sm:text-sm text-primary-500 mt-1;
   }
 
   /* Navigation link */

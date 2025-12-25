@@ -32,69 +32,46 @@ description: "Schedule a free consultation with our CPA team. Fast response time
         </div>
       </div>
 
-      <!-- Hero SVG Illustration -->
+      <!-- Hero Feature Grid -->
       <div class="flex justify-center lg:justify-end">
-        <svg class="w-full max-w-md" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Background Shapes -->
-          <circle cx="200" cy="160" r="140" fill="#EEF2FF" opacity="0.5"/>
-          <circle cx="280" cy="80" r="40" fill="#C7D2FE" opacity="0.3"/>
-          <circle cx="100" cy="240" r="30" fill="#A5B4FC" opacity="0.3"/>
-
-          <!-- Main Phone/Device -->
-          <rect x="130" y="60" width="140" height="200" rx="16" fill="#1E3A5F" stroke="#2D5A87" stroke-width="2"/>
-          <rect x="140" y="80" width="120" height="160" rx="8" fill="#fff"/>
-
-          <!-- Message Bubbles -->
-          <rect x="148" y="90" width="80" height="24" rx="12" fill="#EEF2FF"/>
-          <rect x="168" y="120" width="84" height="24" rx="12" fill="#10B981" opacity="0.2"/>
-          <rect x="148" y="150" width="70" height="24" rx="12" fill="#EEF2FF"/>
-          <rect x="178" y="180" width="74" height="24" rx="12" fill="#10B981" opacity="0.2"/>
-
-          <!-- Checkmarks in messages -->
-          <path d="M240 132 L244 136 L252 128" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M240 192 L244 196 L252 188" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-
-          <!-- Notification Badge -->
-          <circle cx="260" cy="70" r="14" fill="#F59E0B"/>
-          <text x="260" y="75" text-anchor="middle" fill="white" font-size="12" font-weight="bold">1</text>
-
-          <!-- Calendar Icon Floating -->
-          <g transform="translate(290, 140)">
-            <rect width="60" height="55" rx="8" fill="white" stroke="#E5E7EB" stroke-width="2"/>
-            <rect y="0" width="60" height="18" rx="8" fill="#4F46E5"/>
-            <rect x="8" y="6" width="8" height="8" rx="2" fill="white"/>
-            <rect x="26" y="6" width="8" height="8" rx="2" fill="white"/>
-            <rect x="44" y="6" width="8" height="8" rx="2" fill="white"/>
-            <circle cx="15" cy="32" r="4" fill="#10B981"/>
-            <circle cx="30" cy="32" r="4" fill="#E5E7EB"/>
-            <circle cx="45" cy="32" r="4" fill="#E5E7EB"/>
-            <circle cx="15" cy="45" r="4" fill="#E5E7EB"/>
-            <circle cx="30" cy="45" r="4" fill="#4F46E5"/>
-            <circle cx="45" cy="45" r="4" fill="#E5E7EB"/>
-          </g>
-
-          <!-- Email Envelope Floating -->
-          <g transform="translate(40, 100)">
-            <rect width="70" height="50" rx="6" fill="white" stroke="#E5E7EB" stroke-width="2"/>
-            <path d="M5 10 L35 30 L65 10" stroke="#4F46E5" stroke-width="2" fill="none"/>
-            <circle cx="60" cy="10" r="8" fill="#10B981"/>
-            <path d="M56 10 L59 13 L64 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-
-          <!-- Video Call Icon -->
-          <g transform="translate(60, 200)">
-            <rect width="50" height="40" rx="8" fill="white" stroke="#E5E7EB" stroke-width="2"/>
-            <circle cx="25" cy="16" r="8" fill="#4F46E5" opacity="0.2"/>
-            <path d="M40 20 L48 14 L48 26 L40 20" fill="#4F46E5"/>
-            <rect x="8" y="28" width="34" height="6" rx="3" fill="#10B981" opacity="0.3"/>
-          </g>
-
-          <!-- Animated Pulse -->
-          <circle cx="200" cy="160" r="100" fill="none" stroke="#4F46E5" stroke-width="1" opacity="0.2">
-            <animate attributeName="r" values="100;140;100" dur="3s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" repeatCount="indefinite"/>
-          </circle>
-        </svg>
+        <div class="grid grid-cols-2 gap-4 max-w-sm">
+          <!-- Phone Icon -->
+          <div class="bg-white rounded-2xl p-6 shadow-soft border border-gray-100 flex flex-col items-center justify-center">
+            <div class="w-14 h-14 bg-indigo-50 rounded-xl flex items-center justify-center mb-3">
+              <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium text-gray-700">Call Us</span>
+          </div>
+          <!-- Email Icon -->
+          <div class="bg-white rounded-2xl p-6 shadow-soft border border-gray-100 flex flex-col items-center justify-center">
+            <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mb-3">
+              <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium text-gray-700">Email Us</span>
+          </div>
+          <!-- Schedule Icon -->
+          <div class="bg-white rounded-2xl p-6 shadow-soft border border-gray-100 flex flex-col items-center justify-center">
+            <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center mb-3">
+              <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium text-gray-700">Schedule</span>
+          </div>
+          <!-- Chat Icon -->
+          <div class="bg-white rounded-2xl p-6 shadow-soft border border-gray-100 flex flex-col items-center justify-center">
+            <div class="w-14 h-14 bg-rose-50 rounded-xl flex items-center justify-center mb-3">
+              <svg class="w-7 h-7 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium text-gray-700">Chat</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -118,8 +95,8 @@ description: "Schedule a free consultation with our CPA team. Fast response time
           </div>
         </div>
 
-        <!-- Formspree Integration -->
-        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-4 md:space-y-6">
+        <!-- Contact Form - Submits to Cloudflare Worker -->
+        <form id="contact-form" class="space-y-4 md:space-y-6">
           <!-- Honeypot for spam protection -->
           <input type="text" name="_gotcha" style="display:none">
 
@@ -204,9 +181,30 @@ description: "Schedule a free consultation with our CPA team. Fast response time
             </label>
           </div>
 
-          <button type="submit" class="btn btn-primary w-full text-base md:text-lg">
-            Send Message
+          <button type="submit" id="submit-btn" class="btn btn-primary w-full text-base md:text-lg">
+            <span id="btn-text">Send Message</span>
+            <span id="btn-loading" class="hidden">
+              <svg class="animate-spin h-5 w-5 inline mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              Sending...
+            </span>
           </button>
+
+          <!-- Success/Error Messages -->
+          <div id="form-success" class="hidden p-4 bg-green-50 border border-green-200 rounded-lg text-green-700">
+            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
+            Thank you! We'll be in touch within 24 hours.
+          </div>
+          <div id="form-error" class="hidden p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
+            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+            <span id="error-message">Something went wrong. Please try again.</span>
+          </div>
 
           <p class="text-xs md:text-sm text-gray-500">
             * Required fields. We respect your privacy and will never share your information.
@@ -356,18 +354,9 @@ description: "Schedule a free consultation with our CPA team. Fast response time
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Card 1 -->
       <div class="card text-center">
-        <div class="w-20 h-20 mx-auto mb-6 relative">
-          <svg class="w-full h-full" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- US/India Connection -->
-            <circle cx="25" cy="30" r="18" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2"/>
-            <text x="25" y="34" text-anchor="middle" fill="#4F46E5" font-size="10" font-weight="bold">US</text>
-            <circle cx="55" cy="50" r="18" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
-            <text x="55" y="54" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="bold">IN</text>
-            <!-- Connection line -->
-            <path d="M38 38 L47 45" stroke="#10B981" stroke-width="2" stroke-dasharray="4 2">
-              <animate attributeName="stroke-dashoffset" values="6;0" dur="1s" repeatCount="indefinite"/>
-            </path>
-            <circle cx="42" cy="41" r="3" fill="#10B981"/>
+        <div class="w-16 h-16 mx-auto mb-6 bg-indigo-50 rounded-2xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
           </svg>
         </div>
         <h3 class="text-xl font-bold mb-2">Global Expertise</h3>
@@ -376,18 +365,9 @@ description: "Schedule a free consultation with our CPA team. Fast response time
 
       <!-- Card 2 -->
       <div class="card text-center">
-        <div class="w-20 h-20 mx-auto mb-6">
-          <svg class="w-full h-full" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Fast Response Clock -->
-            <circle cx="40" cy="40" r="30" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
-            <path d="M40 20V40L52 46" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
-            <!-- Speed lines -->
-            <path d="M60 25 L70 20" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
-            <path d="M65 40 L75 40" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
-            <path d="M60 55 L70 60" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
-            <!-- 24h badge -->
-            <circle cx="62" cy="60" r="12" fill="#10B981"/>
-            <text x="62" y="63" text-anchor="middle" fill="white" font-size="8" font-weight="bold">24h</text>
+        <div class="w-16 h-16 mx-auto mb-6 bg-emerald-50 rounded-2xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
           </svg>
         </div>
         <h3 class="text-xl font-bold mb-2">Fast Response</h3>
@@ -396,15 +376,9 @@ description: "Schedule a free consultation with our CPA team. Fast response time
 
       <!-- Card 3 -->
       <div class="card text-center">
-        <div class="w-20 h-20 mx-auto mb-6">
-          <svg class="w-full h-full" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Non-profit Heart -->
-            <path d="M40 65 L20 45 C10 35 15 20 30 20 C35 20 40 25 40 30 C40 25 45 20 50 20 C65 20 70 35 60 45 L40 65Z" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
-            <!-- Check badge -->
-            <circle cx="55" cy="25" r="12" fill="#10B981"/>
-            <path d="M50 25 L53 28 L60 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <!-- 501c3 text -->
-            <text x="40" y="48" text-anchor="middle" fill="#EF4444" font-size="8" font-weight="bold">501(c)(3)</text>
+        <div class="w-16 h-16 mx-auto mb-6 bg-rose-50 rounded-2xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
           </svg>
         </div>
         <h3 class="text-xl font-bold mb-2">Non-Profit Experts</h3>
@@ -419,12 +393,11 @@ description: "Schedule a free consultation with our CPA team. Fast response time
   <div class="container-custom max-w-4xl">
     <div class="text-center mb-12 md:mb-16">
       <div class="flex justify-center mb-6">
-        <svg class="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="32" cy="32" r="28" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2"/>
-          <text x="32" y="40" text-anchor="middle" fill="#4F46E5" font-size="28" font-weight="bold">?</text>
-          <circle cx="50" cy="14" r="8" fill="#10B981"/>
-          <path d="M47 14L49 16L53 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
       </div>
       <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Common Questions</h2>
     </div>
@@ -506,10 +479,11 @@ description: "Schedule a free consultation with our CPA team. Fast response time
   <div class="container-custom relative z-10">
     <div class="max-w-3xl mx-auto text-center">
       <div class="flex justify-center mb-6">
-        <svg class="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="32" cy="32" r="28" fill="white" opacity="0.1"/>
-          <path d="M20 32L28 40L44 24" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
       </div>
       <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Ready to Get Started?</h2>
       <p class="text-lg text-primary-200 mb-8">Fill out the form above or schedule a call. No commitment, just a conversation about your needs.</p>
@@ -527,13 +501,15 @@ description: "Schedule a free consultation with our CPA team. Fast response time
 
 <!-- Form JavaScript -->
 <script>
-  // Capture plan parameter from URL
+  // Contact Form Worker URL - UPDATE THIS after deploying the worker
+  const CONTACT_FORM_API = 'https://accountingbrains-contact.ashishkdmathpal.workers.dev';
+
   document.addEventListener('DOMContentLoaded', function() {
+    // Capture plan parameter from URL
     const urlParams = new URLSearchParams(window.location.search);
     const plan = urlParams.get('plan');
     if (plan) {
       document.getElementById('plan-input').value = plan;
-      // Pre-select service if plan is specified
       const serviceMap = {
         'starter': 'bookkeeping',
         'professional': 'form-990',
@@ -544,5 +520,72 @@ description: "Schedule a free consultation with our CPA team. Fast response time
         document.getElementById('service').value = serviceMap[plan];
       }
     }
+
+    // Handle form submission
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const btnLoading = document.getElementById('btn-loading');
+    const successMsg = document.getElementById('form-success');
+    const errorMsg = document.getElementById('form-error');
+    const errorText = document.getElementById('error-message');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      // Check honeypot (spam protection)
+      if (form._gotcha && form._gotcha.value) {
+        return;
+      }
+
+      // Hide previous messages
+      successMsg.classList.add('hidden');
+      errorMsg.classList.add('hidden');
+
+      // Show loading state
+      submitBtn.disabled = true;
+      btnText.classList.add('hidden');
+      btnLoading.classList.remove('hidden');
+
+      // Collect form data
+      const formData = {
+        firstName: form.firstName.value,
+        lastName: form.lastName.value,
+        email: form.email.value,
+        phone: form.phone.value || '',
+        organization: form.organization.value || '',
+        orgType: form.orgType.value || '',
+        service: form.service.value,
+        message: form.message.value,
+        plan: form.querySelector('#plan-input').value || '',
+      };
+
+      try {
+        const response = await fetch(CONTACT_FORM_API, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          successMsg.classList.remove('hidden');
+          form.reset();
+        } else {
+          errorText.textContent = result.error || 'Something went wrong. Please try again.';
+          errorMsg.classList.remove('hidden');
+        }
+      } catch (error) {
+        console.error('Form submission error:', error);
+        errorText.textContent = 'Network error. Please check your connection and try again.';
+        errorMsg.classList.remove('hidden');
+      } finally {
+        // Reset button state
+        submitBtn.disabled = false;
+        btnText.classList.remove('hidden');
+        btnLoading.classList.add('hidden');
+      }
+    });
   });
 </script>
