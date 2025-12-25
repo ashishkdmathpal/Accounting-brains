@@ -38,6 +38,8 @@ jobs:
 
       - name: Build site
         run: pnpm run build
+        env:
+          ELEVENTY_PATH_PREFIX: /Accounting-brains/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -2,7 +2,7 @@
   <div class="container-custom">
     <nav class="flex items-center justify-between h-20">
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-2 group">
+      <a href="{{ '/' | url }}" class="flex items-center gap-2 group">
         <div class="w-9 h-9 bg-primary-900 rounded-lg flex items-center justify-center group-hover:bg-accent-600 transition-colors duration-300">
           <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 2L2 7l10 5 10-5-10-5z"/>
@@ -15,17 +15,17 @@
 
       <!-- Desktop Navigation -->
       <div class="hidden lg:flex items-center gap-1">
-        <a href="/" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Home</a>
-        <a href="/services" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Services</a>
-        <a href="/about" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">About</a>
-        <a href="/pricing" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Pricing</a>
-        <a href="/blog" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Insights</a>
+        <a href="{{ '/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Home</a>
+        <a href="{{ '/services/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Services</a>
+        <a href="{{ '/about/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">About</a>
+        <a href="{{ '/pricing/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Pricing</a>
+        <a href="{{ '/blog/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Insights</a>
       </div>
 
       <!-- CTA -->
       <div class="hidden lg:flex items-center gap-4">
-        <a href="/contact" class="nav-link hover-underline">Contact</a>
-        <a href="/contact" class="btn btn-primary">
+        <a href="{{ '/contact/' | url }}" class="nav-link hover-underline">Contact</a>
+        <a href="{{ '/contact/' | url }}" class="btn btn-primary">
           Get Started
           <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -49,15 +49,15 @@
   <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white border-t border-primary-100 shadow-soft-lg">
     <div class="container-custom py-6">
       <div class="flex flex-col gap-1">
-        <a href="/" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Home</a>
-        <a href="/services" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Services</a>
-        <a href="/about" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">About</a>
-        <a href="/pricing" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Pricing</a>
-        <a href="/blog" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Insights</a>
-        <a href="/contact" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Contact</a>
+        <a href="{{ '/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Home</a>
+        <a href="{{ '/services/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Services</a>
+        <a href="{{ '/about/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">About</a>
+        <a href="{{ '/pricing/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Pricing</a>
+        <a href="{{ '/blog/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Insights</a>
+        <a href="{{ '/contact/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Contact</a>
       </div>
       <div class="mt-6 pt-6 border-t border-primary-100">
-        <a href="/contact" class="btn btn-primary w-full justify-center">
+        <a href="{{ '/contact/' | url }}" class="btn btn-primary w-full justify-center">
           Get Started
           <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
