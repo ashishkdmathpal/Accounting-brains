@@ -1,23 +1,106 @@
 ---
 layout: base.njk
 title: "Pricing - Transparent & Affordable CPA Services | AccountingBrains"
-description: "Simple, transparent pricing for professional CPA services. No hidden fees. Choose the plan that fits your business needs. Cancel anytime."
+description: "Simple, transparent pricing for professional CPA services for non-profits and businesses. No hidden fees. Choose the plan that fits your needs."
 ---
 
 <!-- Hero Section -->
-<section class="gradient-bg py-12 md:py-20">
+<section class="bg-primary-50 py-16 md:py-24 overflow-hidden">
   <div class="container-custom">
-    <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-3xl md:text-5xl font-heading font-bold mb-4 md:mb-6">Simple, Transparent Pricing</h1>
-      <p class="text-lg md:text-xl text-gray-600 px-4">Choose the plan that fits your needs. No hidden fees. Cancel anytime.</p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 bg-white border border-primary-200 rounded-full px-4 py-2 mb-6">
+          <span class="w-2 h-2 bg-accent-500 rounded-full"></span>
+          <span class="text-sm font-medium text-gray-700">Save 20% with Annual Billing</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-6 leading-tight">
+          Simple, Transparent Pricing
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+          Choose the plan that fits your organization. No hidden fees. No long-term contracts. Cancel anytime.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+          <a href="#pricing-plans" class="btn btn-primary text-base px-6 py-3">
+            View Plans
+          </a>
+          <a href="/contact" class="btn btn-outline text-base px-6 py-3">
+            Get Custom Quote
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <!-- Pricing Hero SVG - Price Tags & Value -->
+        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+          <svg viewBox="0 0 400 300" class="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Main Price Tag -->
+            <g transform="translate(120, 50)">
+              <path d="M0 30 L0 150 L80 180 L160 150 L160 30 L80 0 Z" fill="white" stroke="#6366F1" stroke-width="3"/>
+              <circle cx="80" cy="45" r="15" fill="#6366F1" opacity="0.2"/>
+              <text x="80" y="85" text-anchor="middle" class="text-2xl font-bold" fill="#6366F1">Best</text>
+              <text x="80" y="110" text-anchor="middle" class="text-2xl font-bold" fill="#6366F1">Value</text>
+              <!-- Decorative lines -->
+              <line x1="30" y1="130" x2="130" y2="130" stroke="#E5E7EB" stroke-width="2"/>
+              <line x1="40" y1="145" x2="120" y2="145" stroke="#E5E7EB" stroke-width="2"/>
+            </g>
+
+            <!-- Floating Price Badges -->
+            <g transform="translate(30, 80)">
+              <circle cx="35" cy="35" r="32" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+              <text x="35" y="32" text-anchor="middle" class="text-sm font-bold" fill="#10B981">20%</text>
+              <text x="35" y="46" text-anchor="middle" class="text-xs font-medium" fill="#10B981">OFF</text>
+            </g>
+
+            <g transform="translate(300, 60)">
+              <rect x="0" y="0" width="70" height="50" rx="8" fill="white" stroke="#6366F1" stroke-width="2"/>
+              <text x="35" y="25" text-anchor="middle" class="text-xs" fill="#6B7280">From</text>
+              <text x="35" y="42" text-anchor="middle" class="text-lg font-bold" fill="#6366F1">$199</text>
+            </g>
+
+            <!-- Check marks floating -->
+            <g transform="translate(50, 200)">
+              <circle cx="15" cy="15" r="12" fill="#D1FAE5"/>
+              <path d="M10 15 L14 19 L20 11" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(320, 180)">
+              <circle cx="15" cy="15" r="12" fill="#D1FAE5"/>
+              <path d="M10 15 L14 19 L20 11" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(280, 240)">
+              <circle cx="15" cy="15" r="12" fill="#E0E7FF"/>
+              <path d="M10 15 L14 19 L20 11" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <!-- Dollar signs -->
+            <g transform="translate(60, 30)">
+              <circle cx="15" cy="15" r="15" fill="#FEF3C7"/>
+              <text x="15" y="21" text-anchor="middle" class="text-lg font-bold" fill="#F59E0B">$</text>
+            </g>
+            <g transform="translate(330, 140)">
+              <circle cx="12" cy="12" r="12" fill="#FEF3C7"/>
+              <text x="12" y="17" text-anchor="middle" class="text-sm font-bold" fill="#F59E0B">$</text>
+            </g>
+
+            <!-- Animated pulse on main tag -->
+            <circle cx="200" cy="130" r="80" fill="#6366F1" opacity="0.05">
+              <animate attributeName="r" values="75;85;75" dur="2s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.08;0.03;0.08" dur="2s" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Pricing Toggle (Monthly/Annual) -->
-<section class="py-8 md:py-12 bg-white">
+<section id="pricing-plans" class="py-16 md:py-24 bg-white">
   <div class="container-custom">
-    <div class="flex justify-center items-center gap-4 mb-8 md:mb-12">
+    <div class="text-center mb-8">
+      <span class="text-sm font-semibold text-primary-600 uppercase tracking-wider">Choose Your Plan</span>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mt-2 mb-4">Plans for Every Organization</h2>
+    </div>
+
+    <div class="flex justify-center items-center gap-4 mb-12">
       <span id="monthly-label" class="text-base md:text-lg font-medium text-gray-900">Monthly</span>
       <button id="pricing-toggle" class="relative inline-flex h-8 w-14 items-center rounded-full bg-gray-300 transition-colors">
         <span id="toggle-circle" class="inline-block h-6 w-6 transform rounded-full bg-white shadow-lg transition-transform translate-x-1"></span>
@@ -25,52 +108,61 @@ description: "Simple, transparent pricing for professional CPA services. No hidd
       <span id="annual-label" class="text-base md:text-lg font-medium text-gray-500">Annual <span class="text-accent-600 text-sm">(Save 20%)</span></span>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
       <!-- Starter Plan -->
-      <div class="card hover:shadow-2xl transition-all relative">
+      <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl hover:border-primary-200 transition-all relative">
+        <!-- Plan Icon SVG -->
         <div class="mb-6">
-          <h3 class="text-2xl md:text-3xl font-heading font-bold mb-2">Starter</h3>
-          <p class="text-sm md:text-base text-gray-600">Perfect for freelancers and solopreneurs</p>
+          <svg viewBox="0 0 80 80" class="w-16 h-16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="38" fill="#E0E7FF" stroke="#6366F1" stroke-width="2"/>
+            <!-- Seedling/Sprout -->
+            <path d="M40 55 L40 35" stroke="#6366F1" stroke-width="3" stroke-linecap="round"/>
+            <path d="M40 40 Q 30 35 30 25 Q 40 30 40 40" fill="#10B981"/>
+            <path d="M40 35 Q 50 30 50 20 Q 40 25 40 35" fill="#6366F1"/>
+            <ellipse cx="40" cy="58" rx="12" ry="4" fill="#D1FAE5"/>
+          </svg>
         </div>
+        <h3 class="text-2xl font-heading font-bold mb-2">Starter</h3>
+        <p class="text-gray-600 mb-6">Perfect for small non-profits and startups</p>
 
         <div class="mb-6">
           <div class="flex items-baseline">
-            <span class="text-4xl md:text-5xl font-bold">$<span id="starter-price">199</span></span>
+            <span class="text-5xl font-bold text-gray-900">$<span id="starter-price">199</span></span>
             <span class="text-gray-600 ml-2">/month</span>
           </div>
-          <p class="text-xs md:text-sm text-gray-500 mt-2"><span id="starter-annual-note" class="hidden">Billed annually ($1,910)</span></p>
+          <p class="text-sm text-gray-500 mt-2 h-5"><span id="starter-annual-note" class="hidden">Billed annually ($1,910)</span></p>
         </div>
 
-        <ul class="space-y-3 md:space-y-4 mb-8">
+        <ul class="space-y-4 mb-8">
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Monthly bookkeeping (up to 50 transactions)</span>
+            <span>Monthly bookkeeping (up to 50 transactions)</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Financial statements (P&L, Balance Sheet)</span>
+            <span>Financial statements (P&L, Balance Sheet)</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Annual tax preparation (1040)</span>
+            <span>Annual Form 990-N/990-EZ preparation</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Email support (48hr response)</span>
+            <span>Email support (48hr response)</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">AI-powered expense categorization</span>
+            <span>Expense categorization & tracking</span>
           </li>
         </ul>
 
@@ -78,66 +170,76 @@ description: "Simple, transparent pricing for professional CPA services. No hidd
       </div>
 
       <!-- Professional Plan (Most Popular) -->
-      <div class="card hover:shadow-2xl transition-all relative border-2 border-primary-600">
+      <div class="bg-white border-2 border-primary-600 rounded-2xl p-8 hover:shadow-xl transition-all relative">
         <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <span class="bg-primary-600 text-white px-4 py-1 rounded-full text-xs md:text-sm font-medium">Most Popular</span>
+          <span class="bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
         </div>
 
-        <div class="mb-6 mt-4">
-          <h3 class="text-2xl md:text-3xl font-heading font-bold mb-2">Professional</h3>
-          <p class="text-sm md:text-base text-gray-600">Ideal for growing businesses</p>
+        <!-- Plan Icon SVG -->
+        <div class="mb-6 mt-2">
+          <svg viewBox="0 0 80 80" class="w-16 h-16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="38" fill="#6366F1" stroke="#6366F1" stroke-width="2"/>
+            <!-- Growing Plant -->
+            <path d="M40 58 L40 30" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            <path d="M40 38 Q 28 33 25 22 Q 38 27 40 38" fill="#10B981"/>
+            <path d="M40 32 Q 52 27 55 16 Q 42 21 40 32" fill="#A7F3D0"/>
+            <path d="M40 45 Q 30 40 28 30 Q 38 35 40 45" fill="#34D399"/>
+            <ellipse cx="40" cy="62" rx="15" ry="5" fill="#D1FAE5"/>
+          </svg>
         </div>
+        <h3 class="text-2xl font-heading font-bold mb-2">Professional</h3>
+        <p class="text-gray-600 mb-6">Ideal for growing organizations</p>
 
         <div class="mb-6">
           <div class="flex items-baseline">
-            <span class="text-4xl md:text-5xl font-bold text-primary-600">$<span id="professional-price">499</span></span>
+            <span class="text-5xl font-bold text-primary-600">$<span id="professional-price">499</span></span>
             <span class="text-gray-600 ml-2">/month</span>
           </div>
-          <p class="text-xs md:text-sm text-gray-500 mt-2"><span id="professional-annual-note" class="hidden">Billed annually ($4,790)</span></p>
+          <p class="text-sm text-gray-500 mt-2 h-5"><span id="professional-annual-note" class="hidden">Billed annually ($4,790)</span></p>
         </div>
 
-        <ul class="space-y-3 md:space-y-4 mb-8">
+        <ul class="space-y-4 mb-8">
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base font-medium">Everything in Starter, plus:</span>
+            <span class="font-medium">Everything in Starter, plus:</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Unlimited transactions</span>
+            <span>Unlimited transactions</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Payroll services (up to 10 employees)</span>
+            <span>Full Form 990 preparation</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Quarterly tax planning sessions</span>
+            <span>Grant accounting & tracking</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Cash flow forecasting</span>
+            <span>Payroll services (up to 10 employees)</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Priority email & chat support (24hr)</span>
+            <span>Quarterly board financial reports</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Dedicated CPA account manager</span>
+            <span>Dedicated CPA account manager</span>
           </li>
         </ul>
 
@@ -145,62 +247,73 @@ description: "Simple, transparent pricing for professional CPA services. No hidd
       </div>
 
       <!-- Enterprise Plan -->
-      <div class="card hover:shadow-2xl transition-all relative">
+      <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-200 transition-all relative">
+        <!-- Plan Icon SVG -->
         <div class="mb-6">
-          <h3 class="text-2xl md:text-3xl font-heading font-bold mb-2">Enterprise</h3>
-          <p class="text-sm md:text-base text-gray-600">For established businesses</p>
+          <svg viewBox="0 0 80 80" class="w-16 h-16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="38" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+            <!-- Tree (full grown) -->
+            <path d="M40 65 L40 45" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="40" cy="32" r="20" fill="#10B981"/>
+            <circle cx="30" cy="38" r="10" fill="#34D399"/>
+            <circle cx="50" cy="38" r="10" fill="#34D399"/>
+            <circle cx="40" cy="25" r="12" fill="#6EE7B7"/>
+            <ellipse cx="40" cy="68" rx="18" ry="5" fill="#A7F3D0"/>
+          </svg>
         </div>
+        <h3 class="text-2xl font-heading font-bold mb-2">Enterprise</h3>
+        <p class="text-gray-600 mb-6">For established organizations</p>
 
         <div class="mb-6">
           <div class="flex items-baseline">
-            <span class="text-4xl md:text-5xl font-bold">$<span id="enterprise-price">999</span></span>
+            <span class="text-5xl font-bold text-gray-900">$<span id="enterprise-price">999</span></span>
             <span class="text-gray-600 ml-2">/month</span>
           </div>
-          <p class="text-xs md:text-sm text-gray-500 mt-2"><span id="enterprise-annual-note" class="hidden">Billed annually ($9,590)</span></p>
+          <p class="text-sm text-gray-500 mt-2 h-5"><span id="enterprise-annual-note" class="hidden">Billed annually ($9,590)</span></p>
         </div>
 
-        <ul class="space-y-3 md:space-y-4 mb-8">
+        <ul class="space-y-4 mb-8">
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base font-medium">Everything in Professional, plus:</span>
+            <span class="font-medium">Everything in Professional, plus:</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Unlimited payroll employees</span>
+            <span>Unlimited payroll employees</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">CFO-level strategic consulting</span>
+            <span>CFO-level strategic consulting</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Multi-entity consolidation</span>
+            <span>Multi-program fund accounting</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Audit support & representation</span>
+            <span>Audit support & representation</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Custom financial dashboards</span>
+            <span>Custom financial dashboards</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-sm md:text-base">Phone support & monthly CPA calls</span>
+            <span>Phone support & monthly CPA calls</span>
           </li>
         </ul>
 
@@ -209,106 +322,369 @@ description: "Simple, transparent pricing for professional CPA services. No hidd
     </div>
 
     <!-- Custom Plan -->
-    <div class="max-w-4xl mx-auto mt-8 md:mt-12">
-      <div class="card bg-gradient-to-r from-primary-50 to-accent-50 text-center">
-        <h3 class="text-2xl md:text-3xl font-heading font-bold mb-3 md:mb-4">Need a Custom Plan?</h3>
-        <p class="text-base md:text-lg text-gray-600 mb-6 px-4">Large organization or unique requirements? Let's build a plan tailored to your needs.</p>
-        <a href="/contact?plan=custom" class="btn btn-primary inline-block w-full sm:w-auto">Contact Sales</a>
+    <div class="max-w-4xl mx-auto mt-12">
+      <div class="bg-primary-50 border border-primary-100 rounded-2xl p-8 text-center">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <svg viewBox="0 0 60 60" class="w-14 h-14 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="28" fill="white" stroke="#6366F1" stroke-width="2"/>
+              <path d="M20 30 L28 30 L28 20 L32 20 L32 30 L40 30 L40 34 L32 34 L32 44 L28 44 L28 34 L20 34 Z" fill="#6366F1"/>
+            </svg>
+            <div class="text-left">
+              <h3 class="text-xl font-heading font-bold text-gray-900">Need a Custom Plan?</h3>
+              <p class="text-gray-600">Large organization or unique requirements? Let's build a tailored solution.</p>
+            </div>
+          </div>
+          <a href="/contact?plan=custom" class="btn btn-primary whitespace-nowrap">Contact Sales</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Add-On Services -->
-<section class="py-12 md:py-20 gradient-bg">
+<section class="py-16 md:py-24 bg-gray-50">
   <div class="container-custom">
     <div class="text-center mb-12 md:mb-16">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Add-On Services</h2>
-      <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">Additional services available for all plans</p>
+      <span class="text-sm font-semibold text-primary-600 uppercase tracking-wider">Enhance Your Plan</span>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mt-2 mb-4">Add-On Services</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Additional services available for all plans</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
-        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">State Tax Filings</h3>
-        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$99</p>
-        <p class="text-sm md:text-base text-gray-600">Per state, per year</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- State Tax Filings -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="mb-4">
+          <svg viewBox="0 0 60 60" class="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="44" height="44" rx="4" fill="#E0E7FF" stroke="#6366F1" stroke-width="2"/>
+            <path d="M18 22 L42 22 M18 30 L38 30 M18 38 L42 38" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="46" cy="14" r="10" fill="#10B981"/>
+            <path d="M42 14 L45 17 L50 11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-heading font-bold mb-2">State Tax Filings</h3>
+        <p class="text-3xl font-bold text-primary-600 mb-2">$99</p>
+        <p class="text-gray-600">Per state, per year</p>
       </div>
 
-      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
-        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">Sales Tax Filing</h3>
-        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$149</p>
-        <p class="text-sm md:text-base text-gray-600">Per state, per month</p>
+      <!-- Sales Tax Filing -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="mb-4">
+          <svg viewBox="0 0 60 60" class="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="26" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+            <text x="30" y="36" text-anchor="middle" class="text-xl font-bold" fill="#10B981">%</text>
+            <circle cx="46" cy="14" r="10" fill="#6366F1"/>
+            <path d="M43 14 L45 16 L49 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-heading font-bold mb-2">Sales Tax Filing</h3>
+        <p class="text-3xl font-bold text-primary-600 mb-2">$149</p>
+        <p class="text-gray-600">Per state, per month</p>
       </div>
 
-      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
-        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">Business Formation</h3>
-        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$299</p>
-        <p class="text-sm md:text-base text-gray-600">One-time setup fee</p>
+      <!-- 501(c)(3) Application -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="mb-4">
+          <svg viewBox="0 0 60 60" class="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="5" width="40" height="50" rx="3" fill="white" stroke="#6366F1" stroke-width="2"/>
+            <rect x="15" y="12" width="30" height="4" rx="1" fill="#C7D2FE"/>
+            <rect x="15" y="20" width="25" height="3" rx="1" fill="#E5E7EB"/>
+            <rect x="15" y="26" width="28" height="3" rx="1" fill="#E5E7EB"/>
+            <rect x="15" y="32" width="20" height="3" rx="1" fill="#E5E7EB"/>
+            <!-- Seal -->
+            <circle cx="35" cy="45" r="8" fill="#F59E0B"/>
+            <path d="M32 45 L34 47 L38 43" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-heading font-bold mb-2">501(c)(3) Application</h3>
+        <p class="text-3xl font-bold text-primary-600 mb-2">$799</p>
+        <p class="text-gray-600">Complete IRS application</p>
       </div>
 
-      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
-        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">Financial Audit</h3>
-        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$999</p>
-        <p class="text-sm md:text-base text-gray-600">Per year (small business)</p>
+      <!-- Financial Audit Prep -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="mb-4">
+          <svg viewBox="0 0 60 60" class="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="30" r="18" fill="#E0E7FF" stroke="#6366F1" stroke-width="2"/>
+            <line x1="38" y1="43" x2="50" y2="55" stroke="#6366F1" stroke-width="4" stroke-linecap="round"/>
+            <path d="M20 28 L23 31 L30 24" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-heading font-bold mb-2">Audit Preparation</h3>
+        <p class="text-3xl font-bold text-primary-600 mb-2">$999</p>
+        <p class="text-gray-600">Per year (small organization)</p>
       </div>
 
-      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
-        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">R&D Tax Credit</h3>
-        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">15%</p>
-        <p class="text-sm md:text-base text-gray-600">Of credit value (no upfront cost)</p>
+      <!-- Grant Reporting -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="mb-4">
+          <svg viewBox="0 0 60 60" class="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="12" width="44" height="36" rx="3" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+            <!-- Chart bars -->
+            <rect x="16" y="32" width="6" height="10" fill="#F59E0B"/>
+            <rect x="27" y="26" width="6" height="16" fill="#F59E0B"/>
+            <rect x="38" y="20" width="6" height="22" fill="#F59E0B"/>
+            <!-- Header -->
+            <rect x="14" y="16" width="20" height="3" rx="1" fill="#F59E0B" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-heading font-bold mb-2">Grant Reporting</h3>
+        <p class="text-3xl font-bold text-primary-600 mb-2">$199</p>
+        <p class="text-gray-600">Per grant report</p>
       </div>
 
-      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
-        <h3 class="text-xl md:text-2xl font-heading font-bold mb-2">Advisory Hours</h3>
-        <p class="text-2xl md:text-3xl font-bold text-primary-600 mb-3">$250</p>
-        <p class="text-sm md:text-base text-gray-600">Per hour (CPA consultation)</p>
+      <!-- Advisory Hours -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+        <div class="mb-4">
+          <svg viewBox="0 0 60 60" class="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="26" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+            <circle cx="30" cy="30" r="4" fill="#10B981"/>
+            <line x1="30" y1="30" x2="30" y2="15" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+            <line x1="30" y1="30" x2="42" y2="36" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+            <!-- Hour marks -->
+            <circle cx="30" cy="8" r="2" fill="#10B981"/>
+            <circle cx="52" cy="30" r="2" fill="#10B981"/>
+            <circle cx="30" cy="52" r="2" fill="#10B981"/>
+            <circle cx="8" cy="30" r="2" fill="#10B981"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-heading font-bold mb-2">Advisory Hours</h3>
+        <p class="text-3xl font-bold text-primary-600 mb-2">$250</p>
+        <p class="text-gray-600">Per hour (CPA consultation)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What's Included Section -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="container-custom">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div>
+        <span class="text-sm font-semibold text-primary-600 uppercase tracking-wider">All Plans Include</span>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mt-2 mb-6">
+          Everything You Need for Financial Success
+        </h2>
+        <p class="text-lg text-gray-600 mb-8">
+          Every plan comes with these essential features to keep your organization compliant and financially healthy.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <svg class="w-6 h-6 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+            <span class="font-medium text-gray-900">Bank-level security</span>
+          </div>
+          <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <svg class="w-6 h-6 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+            <span class="font-medium text-gray-900">CPA review</span>
+          </div>
+          <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <svg class="w-6 h-6 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+            </svg>
+            <span class="font-medium text-gray-900">Software integrations</span>
+          </div>
+          <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <svg class="w-6 h-6 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span class="font-medium text-gray-900">24/7 access</span>
+          </div>
+          <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <svg class="w-6 h-6 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            <span class="font-medium text-gray-900">Monthly reports</span>
+          </div>
+          <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+            <svg class="w-6 h-6 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+            <span class="font-medium text-gray-900">Dedicated support</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- What's Included SVG -->
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <svg viewBox="0 0 400 320" class="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Central Package Box -->
+            <g transform="translate(140, 80)">
+              <path d="M60 0 L120 35 L120 105 L60 140 L0 105 L0 35 Z" fill="#E0E7FF" stroke="#6366F1" stroke-width="2"/>
+              <path d="M60 0 L60 70 L0 35" fill="#C7D2FE" stroke="#6366F1" stroke-width="2"/>
+              <path d="M60 70 L120 35" stroke="#6366F1" stroke-width="2"/>
+              <path d="M60 70 L60 140" stroke="#6366F1" stroke-width="2"/>
+              <!-- Ribbon -->
+              <path d="M0 70 L60 105 L120 70" stroke="#10B981" stroke-width="3" fill="none"/>
+              <path d="M60 40 L60 105" stroke="#10B981" stroke-width="3"/>
+              <!-- Bow -->
+              <circle cx="60" cy="40" r="10" fill="#10B981"/>
+              <path d="M45 35 Q 50 45 60 40 Q 70 45 75 35" stroke="#10B981" stroke-width="3" fill="none"/>
+            </g>
+
+            <!-- Floating Features -->
+            <g transform="translate(30, 50)">
+              <circle cx="25" cy="25" r="22" fill="white" stroke="#6366F1" stroke-width="2"/>
+              <path d="M18 25 L23 30 L32 20" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <g transform="translate(310, 40)">
+              <circle cx="25" cy="25" r="22" fill="white" stroke="#10B981" stroke-width="2"/>
+              <path d="M18 25 L23 30 L32 20" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <g transform="translate(20, 180)">
+              <circle cx="25" cy="25" r="22" fill="white" stroke="#F59E0B" stroke-width="2"/>
+              <path d="M18 25 L23 30 L32 20" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <g transform="translate(320, 200)">
+              <circle cx="25" cy="25" r="22" fill="white" stroke="#6366F1" stroke-width="2"/>
+              <path d="M18 25 L23 30 L32 20" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <!-- Connection Lines -->
+            <path d="M70 70 L140 110" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4">
+              <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite"/>
+            </path>
+            <path d="M330 70 L260 110" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4">
+              <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite"/>
+            </path>
+            <path d="M70 200 L140 170" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4">
+              <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite"/>
+            </path>
+            <path d="M330 220 L260 180" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4">
+              <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite"/>
+            </path>
+
+            <!-- Sparkles -->
+            <circle cx="100" cy="260" r="4" fill="#6366F1" opacity="0.4"/>
+            <circle cx="300" cy="280" r="5" fill="#10B981" opacity="0.4"/>
+            <circle cx="200" cy="30" r="4" fill="#F59E0B" opacity="0.4"/>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FAQ Section -->
-<section class="py-12 md:py-20 bg-white">
+<section class="py-16 md:py-24 bg-gray-50">
   <div class="container-custom max-w-4xl">
     <div class="text-center mb-12 md:mb-16">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Frequently Asked Questions</h2>
+      <span class="text-sm font-semibold text-primary-600 uppercase tracking-wider">Got Questions?</span>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mt-2 mb-4">Frequently Asked Questions</h2>
     </div>
 
     <div class="space-y-6">
-      <div class="card">
-        <h3 class="text-lg md:text-xl font-bold mb-2">Can I switch plans?</h3>
-        <p class="text-sm md:text-base text-gray-600">Yes! You can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.</p>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Can I switch plans?</h3>
+            <p class="text-gray-600">Yes! You can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 class="text-lg md:text-xl font-bold mb-2">What payment methods do you accept?</h3>
-        <p class="text-sm md:text-base text-gray-600">We accept all major credit cards (Visa, Mastercard, Amex) and ACH bank transfers via Stripe.</p>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What payment methods do you accept?</h3>
+            <p class="text-gray-600">We accept all major credit cards (Visa, Mastercard, Amex) and ACH bank transfers via Stripe.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 class="text-lg md:text-xl font-bold mb-2">Is there a setup fee?</h3>
-        <p class="text-sm md:text-base text-gray-600">No setup fees for any plan. We may charge a one-time cleanup fee if your books are significantly behind.</p>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Is there a setup fee?</h3>
+            <p class="text-gray-600">No setup fees for any plan. We may charge a one-time cleanup fee if your books are significantly behind.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 class="text-lg md:text-xl font-bold mb-2">What if I need to cancel?</h3>
-        <p class="text-sm md:text-base text-gray-600">No contracts or cancellation fees. Cancel anytime with 30 days notice. We'll provide all your financial records.</p>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What if I need to cancel?</h3>
+            <p class="text-gray-600">No contracts or cancellation fees. Cancel anytime with 30 days notice. We'll provide all your financial records.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 class="text-lg md:text-xl font-bold mb-2">Do you work with QuickBooks/Xero?</h3>
-        <p class="text-sm md:text-base text-gray-600">Yes! We integrate with QuickBooks Online, QuickBooks Desktop, Xero, FreshBooks, and most major accounting software.</p>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Do you work with QuickBooks/Xero?</h3>
+            <p class="text-gray-600">Yes! We integrate with QuickBooks Online, QuickBooks Desktop, Xero, FreshBooks, and most major accounting software.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA Section -->
-<section class="py-12 md:py-20 bg-primary-600 text-white">
-  <div class="container-custom text-center">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4 px-4">Ready to Get Started?</h2>
-    <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto px-4">Join hundreds of businesses that trust AccountingBrains</p>
-    <a href="/contact" class="btn bg-white text-primary-600 hover:bg-gray-100 text-base md:text-lg w-full sm:w-auto inline-block">Schedule Free Consultation</a>
+<section class="py-16 md:py-24 bg-primary-900 text-white relative overflow-hidden">
+  <!-- Decorative SVG Background -->
+  <div class="absolute inset-0 opacity-10">
+    <svg class="w-full h-full" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <circle cx="100" cy="100" r="150" fill="currentColor"/>
+      <circle cx="700" cy="300" r="200" fill="currentColor"/>
+      <circle cx="400" cy="50" r="80" fill="currentColor"/>
+      <circle cx="600" cy="100" r="60" fill="currentColor"/>
+      <circle cx="200" cy="350" r="100" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <div class="container-custom relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
+        Ready to Get Started?
+      </h2>
+      <p class="text-xl text-primary-200 mb-8 max-w-2xl mx-auto">
+        Join hundreds of organizations that trust AccountingBrains with their finances.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="btn bg-white text-primary-900 hover:bg-gray-100 text-lg px-8 py-4">
+          Schedule Free Consultation
+        </a>
+        <a href="/about" class="btn border-2 border-white text-white hover:bg-white hover:text-primary-900 text-lg px-8 py-4">
+          Learn About Us
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -334,7 +710,6 @@ description: "Simple, transparent pricing for professional CPA services. No hidd
       isAnnual = !isAnnual;
 
       if (isAnnual) {
-        // Switch to annual pricing (20% discount)
         toggle.classList.add('bg-primary-600');
         toggle.classList.remove('bg-gray-300');
         circle.classList.add('translate-x-7');
@@ -351,7 +726,6 @@ description: "Simple, transparent pricing for professional CPA services. No hidd
         professionalNote.classList.remove('hidden');
         enterpriseNote.classList.remove('hidden');
       } else {
-        // Switch to monthly pricing
         toggle.classList.remove('bg-primary-600');
         toggle.classList.add('bg-gray-300');
         circle.classList.remove('translate-x-7');
