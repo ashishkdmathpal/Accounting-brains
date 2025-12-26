@@ -1,16 +1,19 @@
 {
   "name": "AccountingBrains",
   "tagline": "Expert CPA Services for US Non-Profits",
+  "taglineAlt": "Simplifies Accounting Compliance Taxation",
+  "quote": "It's not about having lots of money. It's knowing how to manage it.",
   "description": "Specialized CPA and accounting services for US-based non-profits, NGOs, and foundations. Expert Form 990 filing, grant accounting, compliance, and financial management delivered through our Global Capability Center.",
   "url": "https://accountingbrains.com",
   "author": "AccountingBrains Team",
   "email": "hello@accountingbrains.com",
   "phone": "+1 (855) 228-2724",
   "gaId": "",
+  "founded": "2018",
   "stats": {
     "clients": "70+",
     "clientsLabel": "Clients Served",
-    "yearsExperience": "15+",
+    "yearsExperience": "7+",
     "yearsLabel": "Years Experience",
     "managedAnnually": "$50M+",
     "managedLabel": "Managed Annually",
@@ -29,14 +32,23 @@
     "us": {
       "name": "US Operations",
       "address": "United States",
+      "phone": "+1 (855) 228-2724",
       "description": "Licensed US CPAs serving non-profits nationwide"
     },
     "gcc": {
-      "name": "Global Capability Center",
+      "name": "Brain Coin India Pvt Ltd",
       "location": "India",
+      "address": "B 30, Sundar Park, Sinhgad Road, Pune 411051",
+      "phone": ["+91-9553614291", "+91-8485876206"],
       "description": "Expert accounting operations delivering cost-effective excellence"
     }
   },
+  "team": {
+    "credentials": ["CA", "CPA", "CS", "MBA", "Lawyers"],
+    "certifications": ["QuickBooks Pro-Advisor"],
+    "industries": ["Financial Services", "Healthcare", "IT/ITES", "Engineering", "Trading", "Manufacturing", "Non-Profit"]
+  },
+  "software": ["QuickBooks", "Xero", "Zoho", "SAP"],
   "services": [
     "Form 990 Preparation & Filing",
     "Non-Profit Bookkeeping",

@@ -360,6 +360,28 @@ description: "Comprehensive accounting services including tax preparation, bookk
               <p class="text-sm text-primary-600">Organized expense tracking and reporting</p>
             </div>
           </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-primary-900 mb-1">Inventory Tracking & Management</h3>
+              <p class="text-sm text-primary-600">Complete inventory control and valuation</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-primary-900 mb-1">IFRS & GAAP Compliance</h3>
+              <p class="text-sm text-primary-600">Reporting aligned with international standards</p>
+            </div>
+          </div>
         </div>
 
         <a href="{{ '/contact/' | url }}" class="btn btn-primary btn-lg">Learn More</a>
@@ -543,7 +565,7 @@ description: "Comprehensive accounting services including tax preparation, bookk
         </p>
 
         <div class="space-y-3 mb-8">
-          {% set consulting_services = ["Cash Flow Management", "Budget Planning & Forecasting", "Business Valuation", "Profitability Analysis", "M&A Advisory", "Strategic Planning"] %}
+          {% set consulting_services = ["Cash Flow Management", "Budget Planning & Forecasting", "Business Valuation", "Profitability Analysis", "Custom Dashboards & MIS Reports", "Live Review Sessions"] %}
           {% for service in consulting_services %}
           <div class="flex items-center gap-3 bg-primary-50 p-4 rounded-xl">
             <svg class="w-5 h-5 text-accent-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -716,6 +738,23 @@ description: "Comprehensive accounting services including tax preparation, bookk
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Software & Tools Section -->
+<section class="py-12 bg-white border-t border-b border-gray-100">
+  <div class="container-custom">
+    <div class="text-center mb-8">
+      <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Cloud-Based Expertise</p>
+      <p class="text-lg text-gray-600 mt-2">We work with the platforms you trust</p>
+    </div>
+    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+      {% for tool in site.software %}
+      <div class="flex items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors">
+        <span class="text-xl font-bold">{{ tool }}</span>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
