@@ -15,12 +15,12 @@
 
       <!-- Desktop Navigation -->
       <div class="hidden lg:flex items-center gap-1">
-        <a href="{{ '/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Home</a>
-        <a href="{{ '/why-accounting-brains/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Why Us</a>
-        <a href="{{ '/services/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Services</a>
-        <a href="{{ '/about/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">About</a>
-        <a href="{{ '/pricing/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Pricing</a>
-        <a href="{{ '/blog/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50">Insights</a>
+        <a href="{{ '/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50 {% if page.url == '/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Home</a>
+        <a href="{{ '/why-accounting-brains/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50 {% if page.url == '/why-accounting-brains/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Why Us</a>
+        <a href="{{ '/services/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50 {% if page.url == '/services/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Services</a>
+        <a href="{{ '/about/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50 {% if page.url == '/about/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">About</a>
+        <a href="{{ '/pricing/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50 {% if page.url == '/pricing/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Pricing</a>
+        <a href="{{ '/blog/' | url }}" class="nav-link px-4 py-2 rounded-full hover:bg-primary-50 {% if page.url == '/blog/' or page.url contains '/blog/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Insights</a>
       </div>
 
       <!-- CTA -->
@@ -50,13 +50,13 @@
   <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white border-t border-primary-100 shadow-soft-lg">
     <div class="container-custom py-6">
       <div class="flex flex-col gap-1">
-        <a href="{{ '/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Home</a>
-        <a href="{{ '/why-accounting-brains/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Why Us</a>
-        <a href="{{ '/services/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Services</a>
-        <a href="{{ '/about/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">About</a>
-        <a href="{{ '/pricing/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Pricing</a>
-        <a href="{{ '/blog/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Insights</a>
-        <a href="{{ '/contact/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block">Contact</a>
+        <a href="{{ '/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block {% if page.url == '/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Home</a>
+        <a href="{{ '/why-accounting-brains/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block {% if page.url == '/why-accounting-brains/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Why Us</a>
+        <a href="{{ '/services/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block {% if page.url == '/services/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Services</a>
+        <a href="{{ '/about/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block {% if page.url == '/about/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">About</a>
+        <a href="{{ '/pricing/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block {% if page.url == '/pricing/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Pricing</a>
+        <a href="{{ '/blog/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block {% if page.url == '/blog/' or page.url contains '/blog/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Insights</a>
+        <a href="{{ '/contact/' | url }}" class="nav-link py-3 px-4 rounded-xl hover:bg-primary-50 block {% if page.url == '/contact/' %}bg-primary-100 text-primary-900 font-semibold{% endif %}">Contact</a>
       </div>
       <div class="mt-6 pt-6 border-t border-primary-100">
         <a href="{{ '/contact/' | url }}" class="btn btn-primary w-full justify-center">
