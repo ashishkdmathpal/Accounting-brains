@@ -3,7 +3,7 @@
   "tagline": "Enterprise-Grade Accounting. Delivered Smarter.",
   "taglineAlt": "Simplifies Accounting, Compliance & Financial Operations",
   "quote": "It's not about having lots of money. It's knowing how to manage it.",
-  "description": "Accounting Brains simplifies accounting, compliance, and financial operations for US businesses and non-profit organizations through end-to-end bookkeeping and accounting, delivered via our Global Delivery Center with strong processes, multi-level independent quality controls, predictable outcomes, and continuous process improvement.",
+  "description": "Accounting Brains simplifies accounting, compliance, and financial operations for US organizations through end-to-end bookkeeping and accounting, delivered via our Global Delivery Center with strong processes, multi-level independent quality controls, predictable outcomes, and continuous process improvement.",
   "url": "https://accountingbrains.com",
   "author": "Accounting Brains Team",
   "email": "hello@accountingbrains.com",
@@ -35,7 +35,7 @@
       "name": "US Operations",
       "address": "United States",
       "phone": "+1 (855) 228-2724",
-      "description": "Serving US businesses and non-profit organizations nationwide"
+      "description": "Serving US organizations nationwide"
     },
     "gcc": {
       "name": "Brain Coin India Pvt Ltd",

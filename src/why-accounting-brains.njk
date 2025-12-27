@@ -147,57 +147,86 @@ description: "Discover why Accounting Brains was built to solve the common chall
   </div>
 </section>
 
-<!-- Comparison Table Section -->
+<!-- Comparison Cards Section - Mobile Optimized -->
 <section class="section bg-primary-50">
   <div class="container-custom">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12">
-        <span class="label mb-4 block">Comparative Overview</span>
-        <h2 class="headline-lg mb-6">Compare Your Options</h2>
+        <span class="label mb-4 block">Quick Comparison</span>
+        <h2 class="headline-lg mb-6">At a Glance</h2>
       </div>
 
-      <div class="bg-white rounded-3xl shadow-soft-xl overflow-hidden">
-        <div class="overflow-x-auto">
-          <table class="w-full">
-            <thead>
-              <tr class="bg-primary-900 text-white">
-                <th class="px-6 py-4 text-left font-semibold">Model</th>
-                <th class="px-6 py-4 text-left font-semibold">Typical Annual Cost</th>
-                <th class="px-6 py-4 text-left font-semibold">Delivery Structure</th>
-                <th class="px-6 py-4 text-left font-semibold">Risk Profile</th>
-                <th class="px-6 py-4 text-left font-semibold">Scalability</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-primary-100">
-              <tr class="hover:bg-primary-50 transition-colors">
-                <td class="px-6 py-4 font-medium text-primary-900">In-House US Accountant</td>
-                <td class="px-6 py-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-sm">High</span></td>
-                <td class="px-6 py-4 text-primary-600">Single individual</td>
-                <td class="px-6 py-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-sm">High</span></td>
-                <td class="px-6 py-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-sm">Low</span></td>
-              </tr>
-              <tr class="hover:bg-primary-50 transition-colors">
-                <td class="px-6 py-4 font-medium text-primary-900">US-Based Outsourced Firm</td>
-                <td class="px-6 py-4"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-sm">Medium-High</span></td>
-                <td class="px-6 py-4 text-primary-600">Shared resources</td>
-                <td class="px-6 py-4"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-sm">Medium</span></td>
-                <td class="px-6 py-4"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-sm">Medium</span></td>
-              </tr>
-              <tr class="bg-accent-50 hover:bg-accent-100 transition-colors">
-                <td class="px-6 py-4 font-bold text-accent-700">Accounting Brains (GDC)</td>
-                <td class="px-6 py-4"><span class="px-2 py-1 bg-accent-200 text-accent-700 rounded text-sm font-medium">Optimized</span></td>
-                <td class="px-6 py-4 text-accent-700 font-medium">Dedicated team with reviews</td>
-                <td class="px-6 py-4"><span class="px-2 py-1 bg-accent-200 text-accent-700 rounded text-sm font-medium">Low</span></td>
-                <td class="px-6 py-4"><span class="px-2 py-1 bg-accent-200 text-accent-700 rounded text-sm font-medium">High</span></td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="space-y-4">
+        <!-- In-House Card -->
+        <div class="bg-white rounded-2xl p-5 border border-primary-100">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-bold text-primary-900">In-House US Accountant</h3>
+            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">High Cost</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div class="bg-primary-50 rounded-lg p-3">
+              <span class="text-primary-500 block text-xs mb-1">Delivery</span>
+              <span class="text-primary-900 font-medium">Single individual</span>
+            </div>
+            <div class="bg-primary-50 rounded-lg p-3">
+              <span class="text-primary-500 block text-xs mb-1">Risk</span>
+              <span class="px-2 py-0.5 bg-red-100 text-red-700 rounded text-xs">High</span>
+            </div>
+            <div class="bg-primary-50 rounded-lg p-3 col-span-2">
+              <span class="text-primary-500 block text-xs mb-1">Scalability</span>
+              <span class="px-2 py-0.5 bg-red-100 text-red-700 rounded text-xs">Low - requires new hires</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- US-Based Outsourced Card -->
+        <div class="bg-white rounded-2xl p-5 border border-primary-100">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-bold text-primary-900">US-Based Outsourced</h3>
+            <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">Medium-High</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div class="bg-primary-50 rounded-lg p-3">
+              <span class="text-primary-500 block text-xs mb-1">Delivery</span>
+              <span class="text-primary-900 font-medium">Shared resources</span>
+            </div>
+            <div class="bg-primary-50 rounded-lg p-3">
+              <span class="text-primary-500 block text-xs mb-1">Risk</span>
+              <span class="px-2 py-0.5 bg-amber-100 text-amber-700 rounded text-xs">Medium</span>
+            </div>
+            <div class="bg-primary-50 rounded-lg p-3 col-span-2">
+              <span class="text-primary-500 block text-xs mb-1">Scalability</span>
+              <span class="px-2 py-0.5 bg-amber-100 text-amber-700 rounded text-xs">Medium - limited flexibility</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accounting Brains Card - Highlighted -->
+        <div class="bg-accent-50 rounded-2xl p-5 border-2 border-accent-300">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-bold text-accent-700">Accounting Brains (GDC)</h3>
+            <span class="px-3 py-1 bg-accent-200 text-accent-700 rounded-full text-sm font-medium">Optimized</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div class="bg-white rounded-lg p-3">
+              <span class="text-accent-600 block text-xs mb-1">Delivery</span>
+              <span class="text-primary-900 font-medium">Dedicated team + reviews</span>
+            </div>
+            <div class="bg-white rounded-lg p-3">
+              <span class="text-accent-600 block text-xs mb-1">Risk</span>
+              <span class="px-2 py-0.5 bg-accent-200 text-accent-700 rounded text-xs font-medium">Low</span>
+            </div>
+            <div class="bg-white rounded-lg p-3 col-span-2">
+              <span class="text-accent-600 block text-xs mb-1">Scalability</span>
+              <span class="px-2 py-0.5 bg-accent-200 text-accent-700 rounded text-xs font-medium">High - grows with you</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="mt-8 p-6 bg-accent-100 rounded-2xl text-center">
-        <p class="text-lg text-primary-700">
-          Clients typically achieve <span class="font-bold text-accent-700">40-60% cost efficiency</span> compared to in-house or US-based outsourced models - without compromising accuracy or control.
+      <div class="mt-8 p-5 bg-accent-100 rounded-2xl text-center">
+        <p class="text-primary-700">
+          <span class="font-bold text-accent-700 text-lg">40-60%</span> cost efficiency vs in-house or US-based models
         </p>
       </div>
     </div>
