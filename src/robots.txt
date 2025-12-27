@@ -1,0 +1,18 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+# Robots.txt for AccountingBrains
+# https://accountingbrains.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: {{ site.url }}/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+
+# Disallow API endpoints (if any)
+Disallow: /api/

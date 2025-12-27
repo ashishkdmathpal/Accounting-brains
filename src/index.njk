@@ -1,242 +1,533 @@
 ---
 layout: base.njk
-title: "AccountingBrains - AI-Powered CPA Services | Expert Accounting Made Simple"
-description: "Professional CPA services powered by AI. Get expert tax preparation, bookkeeping, payroll, and financial consulting. Transform your business finances today."
+title: "Accounting Brains - Enterprise-Grade Accounting for US Businesses & Non-Profits"
+description: "Accounting Brains simplifies accounting, compliance, and financial operations for US businesses and non-profit organizations through end-to-end bookkeeping delivered via our Global Delivery Center with multi-level quality controls."
 ---
 
 <!-- Hero Section -->
-<section class="gradient-bg section">
-  <div class="container-custom">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div class="space-y-6">
-        <h1 class="text-5xl md:text-6xl font-heading font-bold leading-tight">
-          Expert <span class="text-gradient">CPA Services</span> Powered by AI
-        </h1>
-        <p class="text-xl text-gray-600">
-          Transform your business finances with cutting-edge accounting solutions. Professional expertise meets intelligent automation.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="/contact" class="btn btn-primary text-lg">Get Started Free</a>
-          <a href="/services" class="btn btn-secondary text-lg">Explore Services</a>
+<section class="relative overflow-hidden bg-primary-50/50">
+  <!-- Decorative Elements -->
+  <div class="absolute top-20 left-10 w-72 h-72 bg-accent-100 rounded-full blur-3xl opacity-40"></div>
+  <div class="absolute bottom-20 right-10 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-50"></div>
+
+  <!-- Floating Shapes -->
+  <div class="absolute top-32 right-20 w-4 h-4 bg-accent-400 rounded-full animate-float opacity-60 hidden lg:block"></div>
+  <div class="absolute top-48 right-40 w-3 h-3 bg-primary-400 rounded-full animate-float animation-delay-200 opacity-60 hidden lg:block"></div>
+  <div class="absolute bottom-32 left-20 w-5 h-5 bg-accent-300 rounded-full animate-float animation-delay-400 opacity-60 hidden lg:block"></div>
+
+  <div class="container-custom relative">
+    <div class="py-16 md:py-24 lg:py-32">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Left Column - Content -->
+        <div class="order-2 lg:order-1">
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-primary-100 shadow-soft mb-8">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-accent-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span class="text-sm font-medium text-primary-700">US Businesses</span>
+            </span>
+            <span class="w-1 h-1 rounded-full bg-primary-300"></span>
+            <span class="text-sm font-medium text-primary-700">Non-Profit Organizations</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="headline-xl text-balance mb-6">
+            Enterprise-Grade Accounting. <span class="text-accent-600">Delivered Smarter.</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="subheadline max-w-xl mb-8">
+            Accounting Brains simplifies accounting, compliance, and financial operations for US businesses and non-profit organizations through end-to-end bookkeeping and accounting, delivered via our Global Delivery Center with strong processes, multi-level independent quality controls, predictable outcomes, and continuous process improvement.
+          </p>
+
+          <!-- Key Differentiators -->
+          <div class="space-y-3 mb-8">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-accent-600 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span class="text-primary-700">Dedicated accountants with independent quality oversight</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-accent-600 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span class="text-primary-700">Clear reporting, live reviews, and KPI-driven insights</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-accent-600 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span class="text-primary-700">Scalable support without hiring risk</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 mb-10">
+            <a href="{{ '/contact/' | url }}" class="btn btn-primary btn-lg">
+              Schedule a Free Consultation
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <a href="#how-it-works" class="btn btn-secondary btn-lg">
+              View How It Works
+            </a>
+          </div>
+
+          <p class="text-sm text-primary-500 italic">No sales pitch. Just clarity.</p>
         </div>
-        <div class="flex items-center gap-8 pt-4">
-          <div>
-            <div class="text-3xl font-bold text-primary-600">500+</div>
-            <div class="text-sm text-gray-600">Happy Clients</div>
+
+        <!-- Right Column - Dashboard Mockup -->
+        <div class="order-1 lg:order-2 relative">
+          <div class="relative">
+            <!-- Main Dashboard Card -->
+            <div class="bg-white rounded-3xl shadow-soft-xl border border-primary-100 p-6 relative z-10">
+              <!-- Dashboard Header -->
+              <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-primary-900 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                      <path d="M2 17l10 5 10-5"/>
+                      <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-primary-900">Monthly Financial Dashboard</div>
+                    <div class="text-xs text-primary-500">Multi-Level Review Complete</div>
+                  </div>
+                </div>
+                <div class="px-3 py-1 rounded-full bg-accent-100 text-accent-700 text-xs font-medium">
+                  Live
+                </div>
+              </div>
+
+              <!-- Financial Overview -->
+              <div class="bg-primary-50 rounded-2xl p-5 mb-4">
+                <div class="flex items-center justify-between mb-4">
+                  <div>
+                    <div class="text-sm text-primary-500">Total Managed</div>
+                    <div class="text-3xl font-bold text-primary-900">$2.4M</div>
+                  </div>
+                  <div class="flex items-center gap-1 px-3 py-1 rounded-full bg-accent-100 text-accent-700 text-sm font-medium">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+                    </svg>
+                    KPI Tracked
+                  </div>
+                </div>
+                <!-- Chart Bars -->
+                <div class="flex items-end gap-2 h-24">
+                  <div class="flex-1 bg-accent-400 rounded-t-lg h-20" title="Q1"></div>
+                  <div class="flex-1 bg-primary-300 rounded-t-lg h-10" title="Q2"></div>
+                  <div class="flex-1 bg-primary-200 rounded-t-lg h-6" title="Q3"></div>
+                  <div class="flex-1 bg-accent-300 rounded-t-lg h-16" title="Q4"></div>
+                  <div class="flex-1 bg-accent-500 rounded-t-lg h-24" title="Current"></div>
+                  <div class="flex-1 bg-accent-400 rounded-t-lg h-18" style="height: 72px"></div>
+                  <div class="flex-1 bg-primary-200 rounded-t-lg h-8"></div>
+                </div>
+                <div class="flex justify-between mt-3 text-xs text-primary-500">
+                  <span>Continuous Process Improvement</span>
+                  <span>Audit-Ready</span>
+                </div>
+              </div>
+
+              <!-- Quick Stats -->
+              <div class="grid grid-cols-3 gap-2 sm:gap-3">
+                <div class="bg-primary-50 rounded-xl p-2 sm:p-3 text-center min-w-0">
+                  <div class="text-sm sm:text-base md:text-lg font-bold text-primary-900 truncate">40-60%</div>
+                  <div class="text-xs text-accent-600 font-medium truncate">Cost Savings</div>
+                </div>
+                <div class="bg-accent-50 rounded-xl p-2 sm:p-3 text-center min-w-0">
+                  <div class="text-sm sm:text-base md:text-lg font-bold text-accent-700 truncate">3-Level</div>
+                  <div class="text-xs text-primary-500 truncate">QC Review</div>
+                </div>
+                <div class="bg-primary-50 rounded-xl p-2 sm:p-3 text-center min-w-0">
+                  <div class="text-sm sm:text-base md:text-lg font-bold text-primary-900 truncate">Live</div>
+                  <div class="text-xs text-primary-500 truncate">Reviews</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Card 1 -->
+            <div class="absolute -left-4 top-1/4 bg-white rounded-2xl shadow-soft-lg border border-primary-100 p-4 z-20 animate-float hidden md:flex items-center gap-3 max-w-xs">
+              <div class="w-10 h-10 rounded-xl bg-accent-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="text-sm font-medium text-primary-900">Month-End Close</div>
+                <div class="text-xs text-primary-500">Reviewed & Delivered</div>
+              </div>
+            </div>
+
+            <!-- Floating Card 2 -->
+            <div class="absolute -right-4 bottom-1/4 bg-white rounded-2xl shadow-soft-lg border border-primary-100 p-4 z-20 animate-float animation-delay-300 hidden md:flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-accent-500 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="text-sm font-medium text-primary-900">Scale with Confidence</div>
+                <div class="text-xs text-accent-600">No Hiring Risk</div>
+              </div>
+            </div>
           </div>
-          <div>
-            <div class="text-3xl font-bold text-primary-600">98%</div>
-            <div class="text-sm text-gray-600">Satisfaction Rate</div>
-          </div>
-          <div>
-            <div class="text-3xl font-bold text-primary-600">24/7</div>
-            <div class="text-sm text-gray-600">AI Support</div>
-          </div>
-        </div>
-      </div>
-      <div class="relative">
-        <div class="bg-white rounded-2xl shadow-2xl p-8">
-          <svg class="w-full h-auto text-primary-600" viewBox="0 0 400 300" fill="none">
-            <rect x="50" y="50" width="300" height="200" rx="10" fill="currentColor" opacity="0.1"/>
-            <circle cx="200" cy="150" r="60" fill="currentColor" opacity="0.2"/>
-            <path d="M170 150 L190 170 L230 130" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Features Section -->
+<!-- Quote Section -->
+<section class="py-8 bg-primary-900">
+  <div class="container-custom">
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+        </div>
+        <p class="text-lg md:text-xl text-white font-medium italic">"{{ site.quote }}"</p>
+      </div>
+      <div class="flex items-center gap-2 text-primary-300 text-sm">
+        <span class="w-1 h-1 bg-accent-400 rounded-full"></span>
+        <span>{{ site.stats.yearsExperience }} Years Experience</span>
+        <span class="w-1 h-1 bg-accent-400 rounded-full"></span>
+        <span>{{ site.stats.clients }} Clients</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What You Get Section -->
 <section class="section bg-white">
   <div class="container-custom">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-heading font-bold mb-4">Why Choose AccountingBrains?</h2>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">Combining certified CPA expertise with AI-powered efficiency to deliver unmatched value</p>
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="label mb-4 block">What You Get</span>
+      <h2 class="headline-lg mb-6">We don't just manage your numbers - we help you understand them.</h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="card text-center">
-        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-          </svg>
-        </div>
-        <h3 class="text-xl font-heading font-bold mb-2">Lightning Fast</h3>
-        <p class="text-gray-600">AI-powered automation processes your financials in minutes, not days</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for item in site.whatYouGet %}
+      <div class="flex items-start gap-3 p-4 bg-primary-50/50 rounded-xl">
+        <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        <span class="text-primary-700">{{ item }}</span>
       </div>
-
-      <div class="card text-center">
-        <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-          </svg>
-        </div>
-        <h3 class="text-xl font-heading font-bold mb-2">100% Accurate</h3>
-        <p class="text-gray-600">Certified CPAs review every transaction for complete peace of mind</p>
-      </div>
-
-      <div class="card text-center">
-        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-        </div>
-        <h3 class="text-xl font-heading font-bold mb-2">Save Money</h3>
-        <p class="text-gray-600">Transparent pricing with no hidden fees. Pay only for what you need</p>
+      {% endfor %}
+      <div class="flex items-start gap-3 p-4 bg-accent-50 rounded-xl border border-accent-200">
+        <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        <span class="text-accent-700 font-medium">Typically 40-60% cost efficiency vs in-house or US-based models</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Services Overview -->
-<section class="section gradient-bg">
+<!-- Why Accounting Brains Section -->
+<section class="section bg-primary-50">
   <div class="container-custom">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-heading font-bold mb-4">Comprehensive Accounting Solutions</h2>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">From tax preparation to financial consulting, we've got you covered</p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="label mb-4 block">Why Accounting Brains</span>
+        <h2 class="headline-lg mb-6">Built for organizations that want confidence, not chaos.</h2>
+        <p class="subheadline mb-6">
+          Accounting Brains was built to solve a common challenge faced by US organizations: high accounting costs without consistent accuracy, visibility, or accountability.
+        </p>
+        <p class="text-primary-600 mb-8">
+          Our leadership, management and core team bring over a decade of experience across both for-profit businesses and non-profit organizations, giving us deep insight into compliance, reporting, audit readiness, and real-world operational realities.
+        </p>
+        <a href="{{ '/why-accounting-brains/' | url }}" class="btn btn-primary">Read More About Our Approach</a>
+      </div>
+
+      <!-- Visual Card -->
+      <div class="bg-white rounded-3xl shadow-soft-xl border border-primary-100 p-6">
+        <div class="text-center mb-6">
+          <h3 class="text-xl font-bold text-primary-900 mb-2">The Reality Businesses Face Today</h3>
+          <p class="text-primary-500 text-sm">Understanding your options is key to choosing the right partner</p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="bg-primary-50 rounded-xl p-4">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-primary-900">In-House US Accountant</span>
+              <span class="text-xs px-2 py-1 bg-red-100 text-red-700 rounded-full">High Cost</span>
+            </div>
+            <p class="text-sm text-primary-600">Single point of failure, limited scalability, knowledge loss when people leave</p>
+          </div>
+
+          <div class="bg-primary-50 rounded-xl p-4">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-primary-900">US-Based Outsourced Firm</span>
+              <span class="text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded-full">Medium-High</span>
+            </div>
+            <p class="text-sm text-primary-600">Costs remain US-heavy, shared teams, rotating resources, less visibility</p>
+          </div>
+
+          <div class="bg-accent-50 rounded-xl p-4 border-2 border-accent-200">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-accent-700">Accounting Brains (GDC)</span>
+              <span class="text-xs px-2 py-1 bg-accent-100 text-accent-700 rounded-full">Optimized</span>
+            </div>
+            <p class="text-sm text-accent-600">Dedicated team with reviews, structured processes, multi-level quality controls, scalable</p>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-primary-100 text-center">
+          <p class="text-sm text-primary-600">
+            Clients typically achieve <span class="font-bold text-accent-600">40-60% cost efficiency</span> compared to in-house or US-based outsourced models - without compromising accuracy or control.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="section bg-white">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="label mb-4 block">How It Works</span>
+      <h2 class="headline-lg mb-6">A structured approach to your accounting success</h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+      {% for step in site.howItWorks %}
+      <div class="relative bg-primary-50/50 rounded-2xl p-6 {% if step.step == 4 %}border-2 border-accent-200 bg-accent-50/50{% endif %}">
+        <div class="w-12 h-12 rounded-xl {% if step.step == 4 %}bg-accent-500 text-white{% else %}bg-primary-900 text-white{% endif %} flex items-center justify-center mb-4 font-bold text-lg">
+          {{ step.step }}
+        </div>
+        <h3 class="text-lg font-bold text-primary-900 mb-2">{{ step.title }}</h3>
+        <p class="text-primary-600 text-sm">{{ step.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="{{ '/contact/' | url }}" class="btn btn-primary btn-lg">
+        Start Your Journey
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Services Overview Section -->
+<section class="section bg-primary-50">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="label mb-4 block">Our Services</span>
+      <h2 class="headline-lg mb-6">Comprehensive accounting for businesses and non-profits</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- For Businesses -->
+      <div class="bg-white rounded-3xl border border-primary-100 p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center">
+            <svg class="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-heading font-bold">Tax Preparation</h3>
+          <h3 class="text-xl font-bold text-primary-900">Services for Businesses</h3>
         </div>
-        <p class="text-gray-600 mb-4">Expert tax filing for individuals and businesses. Maximize deductions, minimize liability.</p>
-        <a href="/services#tax-prep" class="text-primary-600 font-medium hover:underline">Learn more →</a>
+        <ul class="space-y-3">
+          {% for service in site.services.businesses %}
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-primary-700">{{ service }}</span>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
 
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
+      <!-- For Non-Profits -->
+      <div class="bg-white rounded-3xl border border-primary-100 p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center">
             <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-heading font-bold">Bookkeeping</h3>
+          <h3 class="text-xl font-bold text-primary-900">Services for Non-Profits</h3>
         </div>
-        <p class="text-gray-600 mb-4">Accurate record-keeping and financial reporting. Always know where your business stands.</p>
-        <a href="/services#bookkeeping" class="text-accent-600 font-medium hover:underline">Learn more →</a>
-      </div>
-
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+        <ul class="space-y-3">
+          {% for service in site.services.nonprofits %}
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
             </svg>
-          </div>
-          <h3 class="text-xl font-heading font-bold">Payroll Services</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Hassle-free payroll processing. Ensure compliance and keep your team happy.</p>
-        <a href="/services#payroll" class="text-primary-600 font-medium hover:underline">Learn more →</a>
-      </div>
-
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-heading font-bold">Financial Consulting</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Strategic financial advice to grow your business. Data-driven insights for better decisions.</p>
-        <a href="/services#consulting" class="text-accent-600 font-medium hover:underline">Learn more →</a>
-      </div>
-
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-heading font-bold">Audit Support</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Comprehensive audit preparation and support. Navigate audits with confidence.</p>
-        <a href="/services#audit" class="text-primary-600 font-medium hover:underline">Learn more →</a>
-      </div>
-
-      <div class="card hover:scale-105 transition-transform">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-heading font-bold">Business Formation</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Start your business right. LLC, S-Corp, C-Corp setup and compliance guidance.</p>
-        <a href="/services#formation" class="text-accent-600 font-medium hover:underline">Learn more →</a>
+            <span class="text-primary-700">{{ service }}</span>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
+
+    <div class="text-center mt-12">
+      <a href="{{ '/services/' | url }}" class="btn btn-primary btn-lg">
+        View All Services
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Service Models Section -->
+<section class="section bg-white">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="label mb-4 block">Engagement Models</span>
+      <h2 class="headline-lg mb-6">Choose the model that works for you</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Managed Accounting Services -->
+      <div class="bg-accent-50 rounded-3xl border border-accent-200 p-8">
+        <h3 class="text-xl font-bold text-primary-900 mb-3">{{ site.serviceModels.managed.name }}</h3>
+        <p class="text-primary-600 mb-6">{{ site.serviceModels.managed.description }}</p>
+        <p class="text-sm font-medium text-primary-700 mb-4">This model includes:</p>
+        <ul class="space-y-3 mb-6">
+          {% for feature in site.serviceModels.managed.features %}
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-primary-700">{{ feature }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        <p class="text-sm text-accent-700 italic">Ideal for organizations that want accounting ownership without day-to-day management.</p>
+      </div>
+
+      <!-- Dedicated Accountant Model -->
+      <div class="bg-primary-50 rounded-3xl border border-primary-200 p-8">
+        <h3 class="text-xl font-bold text-primary-900 mb-3">{{ site.serviceModels.dedicated.name }}</h3>
+        <p class="text-primary-600 mb-6">{{ site.serviceModels.dedicated.description }}</p>
+        <p class="text-sm font-medium text-primary-700 mb-4">In this setup:</p>
+        <ul class="space-y-3 mb-6">
+          {% for feature in site.serviceModels.dedicated.features %}
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-primary-700">{{ feature }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        <p class="text-sm text-primary-600 italic">You gain continuity, control, and scale - without employment risk or overhead.</p>
+      </div>
+    </div>
+
+    <div class="mt-12 p-6 bg-accent-50 rounded-2xl border border-accent-200 text-center">
+      <p class="text-primary-700">
+        By combining a Global Delivery Center with flexible engagement models, Accounting Brains delivers the <span class="font-bold">control of in-house hiring</span>, the <span class="font-bold">efficiency of outsourcing</span>, and the <span class="font-bold">governance and accountability</span> required for high-stakes accounting.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Industries We Serve Section -->
+<section class="section bg-primary-50">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="label mb-4 block">Industries We Serve</span>
+      <h2 class="headline-lg mb-6">Trusted across sectors</h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {% for industry in site.industries %}
+      <div class="bg-white rounded-2xl p-6 text-center border border-primary-100 hover:shadow-soft-lg transition-all">
+        <div class="w-14 h-14 rounded-xl {% if loop.index == 1 %}bg-primary-100{% elif loop.index == 2 %}bg-accent-100{% elif loop.index == 3 %}bg-accent-100{% else %}bg-primary-100{% endif %} flex items-center justify-center mx-auto mb-4">
+          {% if loop.index == 1 %}
+          <svg class="w-7 h-7 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+          {% elif loop.index == 2 %}
+          <svg class="w-7 h-7 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+          {% elif loop.index == 3 %}
+          <svg class="w-7 h-7 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+          </svg>
+          {% else %}
+          <svg class="w-7 h-7 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+          </svg>
+          {% endif %}
+        </div>
+        <h3 class="font-semibold text-primary-900">{{ industry }}</h3>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Software & Tools Section -->
+<section class="py-12 bg-gray-50 border-t border-gray-100">
+  <div class="container-custom">
+    <div class="text-center mb-8">
+      <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Cloud-Based Expertise</p>
+      <p class="text-lg text-gray-600 mt-2">Certified professionals working with leading platforms</p>
+    </div>
+    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+      {% for tool in site.software %}
+      <div class="flex items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors">
+        <span class="text-xl font-bold">{{ tool }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="text-center text-sm text-gray-500 mt-6">QuickBooks Pro-Advisor Certified Team</p>
   </div>
 </section>
 
 <!-- CTA Section -->
-<section class="section bg-primary-600 text-white">
-  <div class="container-custom text-center">
-    <h2 class="text-4xl font-heading font-bold mb-4">Ready to Transform Your Finances?</h2>
-    <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">Join hundreds of businesses that trust AccountingBrains for their accounting needs</p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/contact" class="btn bg-white text-primary-600 hover:bg-gray-100 text-lg">Schedule Free Consultation</a>
-      <a href="/pricing" class="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 text-lg">View Pricing</a>
-    </div>
-  </div>
-</section>
+<section class="section bg-white relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 bg-dots opacity-30"></div>
 
-<!-- Testimonials Section -->
-<section class="section bg-white">
-  <div class="container-custom">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-heading font-bold mb-4">What Our Clients Say</h2>
-      <p class="text-xl text-gray-600">Don't just take our word for it</p>
-    </div>
+  <div class="container-custom relative">
+    <div class="bg-primary-900 rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden">
+      <!-- Decorative SVG Elements -->
+      <svg class="absolute top-0 right-0 w-96 h-96 opacity-10" viewBox="0 0 400 400" fill="none">
+        <circle cx="300" cy="100" r="200" stroke="#059669" stroke-width="40"/>
+        <circle cx="300" cy="100" r="120" stroke="#059669" stroke-width="20"/>
+        <circle cx="300" cy="100" r="50" fill="#059669"/>
+      </svg>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="card">
-        <div class="flex items-center gap-2 mb-4">
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+      <svg class="absolute bottom-0 left-0 w-64 h-64 opacity-10" viewBox="0 0 300 300" fill="none">
+        <rect x="20" y="20" width="100" height="100" rx="20" stroke="white" stroke-width="10"/>
+        <rect x="60" y="60" width="100" height="100" rx="20" stroke="white" stroke-width="10"/>
+        <rect x="100" y="100" width="100" height="100" rx="20" fill="white" fill-opacity="0.2"/>
+      </svg>
+
+      <div class="relative max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-6 text-balance">
+          Let's Start With Clarity
+        </h2>
+        <p class="text-lg text-primary-300 mb-10 max-w-xl mx-auto">
+          You don't need a sales pitch. You need a model that works. Schedule a free consultation to discuss your accounting needs.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="{{ '/contact/' | url }}" class="btn btn-accent btn-lg">
+            Schedule Free Consultation
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="{{ '/pricing/' | url }}" class="btn btn-lg bg-white/10 text-white hover:bg-white/20 border border-white/20">
+            View Pricing
+          </a>
         </div>
-        <p class="text-gray-600 mb-4">"AccountingBrains transformed our financial management. The AI tools save us hours every week while maintaining 100% accuracy."</p>
-        <div class="font-medium">Sarah Johnson</div>
-        <div class="text-sm text-gray-500">CEO, TechStart Inc.</div>
-      </div>
-
-      <div class="card">
-        <div class="flex items-center gap-2 mb-4">
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="text-gray-600 mb-4">"Best decision we made for our business. Professional, responsive, and the pricing is incredibly fair. Highly recommend!"</p>
-        <div class="font-medium">Michael Chen</div>
-        <div class="text-sm text-gray-500">Owner, Chen's Restaurant Group</div>
-      </div>
-
-      <div class="card">
-        <div class="flex items-center gap-2 mb-4">
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="text-gray-600 mb-4">"The team is knowledgeable, proactive, and always available. They saved us thousands on taxes last year!"</p>
-        <div class="font-medium">Emily Rodriguez</div>
-        <div class="text-sm text-gray-500">CFO, GreenTech Solutions</div>
+        <p class="text-sm text-primary-400 mt-6 italic">No pressure. Just clarity.</p>
       </div>
     </div>
   </div>

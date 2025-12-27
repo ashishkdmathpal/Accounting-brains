@@ -1,8 +1,145 @@
 {
-  "name": "AccountingBrains",
-  "description": "AI-Powered CPA Services",
+  "name": "Accounting Brains",
+  "tagline": "Enterprise-Grade Accounting. Delivered Smarter.",
+  "taglineAlt": "Simplifies Accounting, Compliance & Financial Operations",
+  "quote": "It's not about having lots of money. It's knowing how to manage it.",
+  "description": "Accounting Brains simplifies accounting, compliance, and financial operations for US businesses and non-profit organizations through end-to-end bookkeeping and accounting, delivered via our Global Delivery Center with strong processes, multi-level independent quality controls, predictable outcomes, and continuous process improvement.",
   "url": "https://accountingbrains.com",
-  "author": "AccountingBrains Team",
+  "author": "Accounting Brains Team",
   "email": "hello@accountingbrains.com",
-  "gaId": ""
+  "phone": "+1 (855) 228-2724",
+  "gaId": "",
+  "founded": "2018",
+  "stats": {
+    "clients": "70+",
+    "clientsLabel": "Clients Served",
+    "yearsExperience": "10+",
+    "yearsLabel": "Years Experience",
+    "managedAnnually": "$50M+",
+    "managedLabel": "Managed Annually",
+    "retention": "98%",
+    "retentionLabel": "Client Retention",
+    "teamMembers": "50+",
+    "teamLabel": "Team Members",
+    "support": "24/7",
+    "supportLabel": "Support",
+    "costEfficiency": "40-60%",
+    "costEfficiencyLabel": "Cost Efficiency vs In-House"
+  },
+  "social": {
+    "twitter": "@accountingbrains",
+    "linkedin": "accountingbrains"
+  },
+  "locations": {
+    "us": {
+      "name": "US Operations",
+      "address": "United States",
+      "phone": "+1 (855) 228-2724",
+      "description": "Serving US businesses and non-profit organizations nationwide"
+    },
+    "gcc": {
+      "name": "Brain Coin India Pvt Ltd",
+      "location": "India",
+      "address": "B 30, Sundar Park, Sinhgad Road, Pune 411051",
+      "phone": ["+91-9553614291", "+91-8485876206"],
+      "description": "Global Delivery Center delivering cost-effective excellence with structured processes"
+    }
+  },
+  "team": {
+    "credentials": ["CA", "CPA", "CS", "MBA", "Lawyers"],
+    "certifications": ["QuickBooks Pro-Advisor"],
+    "industries": ["Financial Services", "Healthcare", "IT/ITES", "Engineering", "Trading", "Manufacturing", "Non-Profit"]
+  },
+  "software": ["QuickBooks", "Xero", "Zoho", "SAP"],
+  "services": {
+    "businesses": [
+      "End-to-end bookkeeping and reconciliations",
+      "Accounts Payable & Accounts Receivable support",
+      "Payroll accounting support & reconciliations",
+      "Month-end, quarter-end, and year-end close",
+      "Financial statements and dashboards",
+      "Budgeting, forecasting, and cash flow analysis",
+      "Tax preparation support and CPA coordination",
+      "Audit preparation and audit support",
+      "Virtual CFO services"
+    ],
+    "nonprofits": [
+      "Fund accounting (restricted & unrestricted)",
+      "Grant tracking and donor reporting",
+      "Budget vs actual preparation, reporting, and analysis",
+      "Form 990 preparation support",
+      "1099 data preparation support",
+      "Audit readiness and auditor coordination"
+    ]
+  },
+  "serviceModels": {
+    "managed": {
+      "name": "Managed Accounting Services (GDC-Managed)",
+      "description": "We fully manage your bookkeeping and accounting function end-to-end.",
+      "features": [
+        "Day-to-day execution and transaction processing",
+        "Multi-level reviews and independent quality oversight",
+        "Month-end close and reporting",
+        "Regular client check-ins and live reviews",
+        "Accurate, timely, and audit-ready deliverables"
+      ]
+    },
+    "dedicated": {
+      "name": "Dedicated Accountant / Dedicated Team Model",
+      "description": "For organizations that prefer deeper control, resources work exclusively for your organization.",
+      "features": [
+        "Resources work exclusively for your organization",
+        "Team members operate as an extension of your internal team",
+        "Resources remain on Accounting Brains' payroll",
+        "We manage hiring, onboarding, training, HR, infrastructure, and quality controls"
+      ]
+    }
+  },
+  "whatYouGet": [
+    "Clean, scalable Chart of Accounts",
+    "Outsourced bookkeeping & reporting",
+    "Accounts Payable & Accounts Receivable support",
+    "Payroll support & coordination",
+    "Cloud-based bookkeeping (QuickBooks, Xero, Zoho & more)",
+    "Monthly financials & custom MIS reports",
+    "Live review sessions with finance experts",
+    "Dashboards & KPI-driven reporting",
+    "Continuous process improvement",
+    "Scale with confidence",
+    "Strong data security and access controls",
+    "Reliable turnaround with structured timelines"
+  ],
+  "differentiators": [
+    "Dedicated accountants with independent quality oversight",
+    "Clear reporting, live reviews, and KPI-driven insights",
+    "Scalable support without hiring risk",
+    "Typically 40-60% cost efficiency vs in-house or US-based models"
+  ],
+  "howItWorks": [
+    {"step": 1, "title": "Discover & Understand", "description": "We learn about your organization and accounting needs"},
+    {"step": 2, "title": "Dedicated Team Setup", "description": "Primary Accountant, Senior Reviewer, Quality Team assigned"},
+    {"step": 3, "title": "Execute with Multi-Level Reviews", "description": "Work performed with structured quality controls"},
+    {"step": 4, "title": "Live Month-End Close & Deliverables Review", "description": "Walk through results and resolve questions in real time"},
+    {"step": 5, "title": "Ongoing Check-ins & KPI Discussions", "description": "Regular reviews to track progress and insights"},
+    {"step": 6, "title": "Continuous Process Improvement & Scalable Growth", "description": "Your accounting function gets better over time"}
+  ],
+  "industries": [
+    "Small & Mid-Sized Businesses",
+    "Startups & Growth Companies",
+    "Non-Profit Organizations",
+    "CPA Firms"
+  ],
+  "targetAudience": [
+    "501(c)(3) Organizations",
+    "Charitable Foundations",
+    "NGOs",
+    "Religious Organizations",
+    "Educational Institutions",
+    "Healthcare Non-Profits",
+    "Arts & Cultural Organizations",
+    "Environmental Organizations",
+    "Small & Mid-Sized Businesses",
+    "Startups & Growth Companies",
+    "CPA Firms"
+  ]
 }

@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title or "AccountingBrains - AI-Powered CPA Services" }}</title>
-  <meta name="description" content="{{ description or 'Professional CPA services powered by AI. Expert accounting, tax preparation, and financial consulting for businesses and individuals.' }}">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <!-- Primary Meta Tags -->
+  <title>{{ title or "AccountingBrains - Expert CPA Services for US Non-Profits | Form 990 & Grant Accounting" }}</title>
+  <meta name="title" content="{{ title or 'AccountingBrains - Expert CPA Services for US Non-Profits' }}">
+  <meta name="description" content="{{ description or 'Specialized CPA services for US-based non-profits, NGOs & foundations. Expert Form 990 filing, grant accounting, compliance & financial management. US-licensed CPAs with global delivery excellence.' }}">
+  <meta name="keywords" content="non-profit accounting, 501(c)(3) accounting, Form 990 preparation, NGO accounting services, non-profit CPA, grant accounting, foundation accounting, charitable organization accounting, non-profit bookkeeping, non-profit financial statements, audit preparation non-profit, US non-profit tax compliance">
+  <meta name="author" content="AccountingBrains">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Geo Tags for US Targeting -->
+  <meta name="geo.region" content="US">
+  <meta name="geo.placename" content="United States">
+  <meta name="ICBM" content="39.8283, -98.5795">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ title or 'AccountingBrains - Expert CPA Services for US Non-Profits' }}">
+  <meta property="og:description" content="{{ description or 'Specialized CPA services for US-based non-profits, NGOs & foundations. Expert Form 990 filing, grant accounting & compliance.' }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="AccountingBrains">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:title" content="{{ title or 'AccountingBrains - Expert CPA Services for US Non-Profits' }}">
+  <meta name="twitter:description" content="{{ description or 'Specialized CPA services for US-based non-profits. Expert Form 990 filing, grant accounting & compliance.' }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/twitter-image.png">
+  <meta name="twitter:site" content="{{ site.social.twitter }}">
+  <meta name="twitter:creator" content="{{ site.social.twitter }}">
+
+  <!-- Additional SEO Meta Tags -->
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="msapplication-TileColor" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AccountingBrains">
+
+  <!-- Favicon - SVG for modern browsers -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><path d='M50 15L15 35l35 20 35-20L50 15z' fill='none' stroke='white' stroke-width='5'/><path d='M15 65l35 20 35-20' fill='none' stroke='white' stroke-width='5'/><path d='M15 50l35 20 35-20' fill='none' stroke='white' stroke-width='5'/></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><path d='M50 15L15 35l35 20 35-20L50 15z' fill='none' stroke='white' stroke-width='5'/></svg>">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
 
   <!-- Google Analytics -->
   {% if site.gaId %}
@@ -23,34 +71,172 @@
   </script>
   {% endif %}
 
-  <!-- Schema.org markup -->
+  <!-- Schema.org Structured Data - Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AccountingService",
+    "@id": "{{ site.url }}/#organization",
     "name": "AccountingBrains",
-    "description": "AI-Powered CPA Services",
-    "url": "https://accountingbrains.com",
-    "logo": "https://accountingbrains.com/assets/images/logo.png",
+    "alternateName": "AccountingBrains CPA Services",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/images/logo.png",
+      "width": 512,
+      "height": 512
+    },
+    "image": "{{ site.url }}/assets/images/og-image.png",
+    "email": "{{ site.email }}",
+    "telephone": "{{ site.phone }}",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
     },
-    "priceRange": "$$"
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "serviceType": [
+      "Non-Profit Accounting",
+      "Form 990 Preparation",
+      "Grant Accounting",
+      "Financial Statement Preparation",
+      "Audit Support",
+      "Non-Profit Bookkeeping",
+      "Compliance Services"
+    ],
+    "audience": {
+      "@type": "Audience",
+      "audienceType": [
+        "Non-Profit Organizations",
+        "501(c)(3) Organizations",
+        "Charitable Foundations",
+        "NGOs"
+      ]
+    },
+    "priceRange": "$$",
+    "paymentAccepted": ["Credit Card", "Bank Transfer", "ACH"],
+    "currenciesAccepted": "USD",
+    "sameAs": [
+      "https://linkedin.com/company/{{ site.social.linkedin }}",
+      "https://twitter.com/{{ site.social.twitter | replace('@', '') }}"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Non-Profit Accounting Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Form 990 Preparation & Filing",
+            "description": "Complete Form 990, 990-EZ, and 990-PF preparation and e-filing for non-profit organizations"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Grant Accounting",
+            "description": "Comprehensive grant tracking, reporting, and compliance management"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Non-Profit Bookkeeping",
+            "description": "Fund accounting, monthly reconciliations, and financial reporting for non-profits"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Schema.org - WebSite for Sitelinks Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AccountingBrains",
+    "url": "{{ site.url }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.url }}/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Schema.org - BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ site.url }}"
+      }
+      {% if page.url != "/" %}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ title }}",
+        "item": "{{ site.url }}{{ page.url }}"
+      }
+      {% endif %}
+    ]
+  }
+  </script>
+
+  <!-- Schema.org - FAQPage (for AI/LLM optimization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What accounting services does AccountingBrains provide for non-profits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AccountingBrains provides comprehensive accounting services for US-based non-profits including Form 990 preparation and filing, grant accounting and management, non-profit bookkeeping, financial statement preparation, audit support, board financial reporting, and compliance services. Our US-licensed CPAs deliver expert services through our Global Capability Center."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does AccountingBrains handle Form 990 preparation for 501(c)(3) organizations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, AccountingBrains specializes in Form 990 preparation and e-filing for all types of 501(c)(3) organizations, including Form 990, 990-EZ, 990-PF for private foundations, and 990-N for small organizations. Our CPAs ensure accuracy and compliance with IRS requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does AccountingBrains deliver cost-effective services to US non-profits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AccountingBrains combines US-licensed CPA expertise with our Global Capability Center in India to deliver high-quality accounting services at competitive rates. This model allows non-profits to access expert CPA services while maximizing their program spending."
+        }
+      }
+    ]
   }
   </script>
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen bg-white">
   {% include "header.njk" %}
 
-  <main class="flex-grow">
+  <main class="flex-grow" role="main">
     {{ content | safe }}
   </main>
 
   {% include "footer.njk" %}
   {% include "cookie-consent.njk" %}
-
-  <!-- Scripts -->
-  <script src="/assets/js/main.js"></script>
 </body>
 </html>
