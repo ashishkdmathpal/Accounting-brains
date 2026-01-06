@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy({ "src/.nojekyll": ".nojekyll" });
+  eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 
   // NOTE: CSS is handled by PostCSS, not passthrough copy
   // This prevents the uncompiled Tailwind directives from overwriting compiled CSS
