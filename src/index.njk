@@ -274,8 +274,8 @@ description: "Accounting Brains simplifies accounting, compliance, and financial
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {% for step in site.howItWorks %}
-      <div class="relative bg-primary-50/50 rounded-2xl p-6 {% if step.step == 4 %}border-2 border-accent-200 bg-accent-50/50{% endif %}">
-        <div class="w-12 h-12 rounded-xl {% if step.step == 4 %}bg-accent-500 text-white{% else %}bg-primary-900 text-white{% endif %} flex items-center justify-center mb-4 font-bold text-lg">
+      <div class="relative bg-primary-50/50 rounded-2xl p-6">
+        <div class="w-12 h-12 rounded-xl bg-primary-900 text-white flex items-center justify-center mb-4 font-bold text-lg">
           {{ step.step }}
         </div>
         <h3 class="text-lg font-bold text-primary-900 mb-2">{{ step.title }}</h3>
