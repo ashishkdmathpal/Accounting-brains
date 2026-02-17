@@ -3,7 +3,7 @@
   "tagline": "Enterprise-Grade Accounting. Delivered Smarter.",
   "taglineAlt": "Simplifies Accounting, Compliance & Financial Operations",
   "quote": "It's not about having lots of money. It's knowing how to manage it.",
-  "description": "Accounting Brains simplifies accounting, compliance, and financial operations for US organizations through end-to-end bookkeeping and accounting, delivered via our Global Delivery Center with strong processes, multi-level independent quality controls, predictable outcomes, and continuous process improvement.",
+  "description": "Accounting Brains simplifies accounting, compliance, and financial operations for businesses in the US, Canada, UAE & Australia through end-to-end bookkeeping and accounting, delivered via our Global Delivery Center with strong processes, multi-level independent quality controls, predictable outcomes, and continuous process improvement.",
   "url": "https://accountingbrains.com",
   "author": "Accounting Brains Team",
   "email": "hello@accountingbrains.com",
@@ -24,11 +24,13 @@
     "support": "24/7",
     "supportLabel": "Support",
     "costEfficiency": "40-60%",
-    "costEfficiencyLabel": "Cost Efficiency vs In-House"
+    "costEfficiencyLabel": "Cost Efficiency vs Local Accountants"
   },
   "social": {
     "twitter": "@accountingbrains",
-    "linkedin": "accountingbrains"
+    "linkedin": "accountingbrains",
+    "facebook": "accountingbrains",
+    "instagram": "accountingbrains"
   },
   "locations": {
     "us": {
@@ -45,12 +47,13 @@
       "description": "Global Delivery Center delivering cost-effective excellence with structured processes"
     }
   },
+  "areaServed": ["United States", "Canada", "UAE", "Australia"],
   "team": {
     "credentials": ["CA", "CPA", "CS", "MBA", "Lawyers"],
     "certifications": ["QuickBooks Pro-Advisor"],
-    "industries": ["Financial Services", "Healthcare", "IT/ITES", "Engineering", "Trading", "Manufacturing", "Non-Profit"]
+    "industries": ["Financial Services", "Healthcare", "IT/ITES", "Engineering", "Trading", "Manufacturing", "Non-Profit", "Technology", "Real Estate", "E-commerce"]
   },
-  "software": ["QuickBooks", "Xero", "Zoho", "SAP"],
+  "software": ["QuickBooks", "Xero", "Zoho", "SAP", "Sage", "MYOB"],
   "services": {
     "businesses": [
       "End-to-end bookkeeping and reconciliations",
@@ -72,6 +75,28 @@
       "Audit readiness and auditor coordination"
     ]
   },
+  "serviceType": [
+    "Outsourced Accounting",
+    "Bookkeeping Services",
+    "Non-Profit Accounting",
+    "Form 990 Preparation",
+    "Grant Accounting",
+    "Financial Statement Preparation",
+    "Audit Support",
+    "Virtual CFO Services",
+    "CRA Tax Filing",
+    "HST/GST Filing",
+    "T2 Corporate Returns",
+    "T1 Personal Returns",
+    "FTA VAT Filing",
+    "IFRS Compliance",
+    "UAE Corporate Tax",
+    "Freezone Compliance",
+    "BAS Lodgement",
+    "PAYG Withholding",
+    "ASIC Compliance",
+    "ATO Compliance"
+  ],
   "serviceModels": {
     "managed": {
       "name": "Managed Accounting Services (GDC-Managed)",
@@ -113,10 +138,10 @@
     "Dedicated accountants with independent quality oversight",
     "Clear reporting, live reviews, and KPI-driven insights",
     "Scalable support without hiring risk",
-    "Typically 40-60% cost efficiency vs in-house or US-based models"
+    "Typically 40-60% cost efficiency vs local or in-house models"
   ],
   "howItWorks": [
-    {"step": 1, "title": "Discover & Understand", "description": "We learn about your organization and accounting needs"},
+    {"step": 1, "title": "Discover & Understand", "description": "We learn about your organization, region, and accounting needs"},
     {"step": 2, "title": "Dedicated Team Setup", "description": "Primary Accountant, Senior Reviewer, Quality Team assigned"},
     {"step": 3, "title": "Execute with Multi-Level Reviews", "description": "Work performed with structured quality controls"},
     {"step": 4, "title": "Live Month-End Close & Deliverables Review", "description": "Walk through results and resolve questions in real time"},
@@ -127,7 +152,10 @@
     "Small & Mid-Sized Businesses",
     "Startups & Growth Companies",
     "Non-Profit Organizations",
-    "CPA Firms"
+    "CPA Firms",
+    "Technology Companies",
+    "Real Estate Businesses",
+    "E-commerce"
   ],
   "targetAudience": [
     "501(c)(3) Organizations",
@@ -140,6 +168,51 @@
     "Environmental Organizations",
     "Small & Mid-Sized Businesses",
     "Startups & Growth Companies",
-    "CPA Firms"
-  ]
+    "CPA Firms",
+    "Canadian SMBs & CPA/CA Firms",
+    "UAE Freezone Companies",
+    "UAE Mainland LLCs",
+    "Australian SMBs",
+    "Technology Companies",
+    "Real Estate Businesses",
+    "E-commerce Companies"
+  ],
+  "regions": {
+    "usa": {
+      "name": "United States",
+      "flag": "🇺🇸",
+      "compliance": ["IRS", "GAAP", "Form 990", "1099"],
+      "software": ["QuickBooks", "Xero"],
+      "keyServices": ["Bookkeeping & Reconciliations", "Form 990 Preparation", "Payroll Accounting", "Virtual CFO", "Audit Support"],
+      "localRate": "$150–300/hr",
+      "abRate": "$25–50/hr"
+    },
+    "canada": {
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "compliance": ["CRA", "HST/GST", "T2 Corporate", "T1 Personal"],
+      "software": ["QuickBooks", "Sage"],
+      "keyServices": ["CRA Compliance", "HST/GST Filing", "T2 Corporate Returns", "T1 Personal Returns", "Bookkeeping & Reconciliations"],
+      "localRate": "CAD 150–250/hr",
+      "abRate": "CAD 30–50/hr"
+    },
+    "uae": {
+      "name": "UAE / Middle East",
+      "flag": "🇦🇪",
+      "compliance": ["FTA VAT", "IFRS", "Corporate Tax", "Freezone Compliance"],
+      "software": ["Zoho", "Xero"],
+      "keyServices": ["FTA VAT Filing", "IFRS Reporting", "UAE Corporate Tax", "Freezone Accounting", "Bookkeeping & Reconciliations"],
+      "localRate": "AED 300–600/hr",
+      "abRate": "AED 80–150/hr"
+    },
+    "australia": {
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "compliance": ["ATO", "BAS", "GST", "PAYG", "ASIC"],
+      "software": ["Xero", "MYOB"],
+      "keyServices": ["BAS Lodgement", "GST Compliance", "PAYG Withholding", "ASIC Compliance", "Bookkeeping & Reconciliations"],
+      "localRate": "AUD 200–400/hr",
+      "abRate": "AUD 50–100/hr"
+    }
+  }
 }

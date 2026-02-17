@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: "Our Services - Accounting for US Organizations | Accounting Brains"
-description: "Comprehensive accounting services including end-to-end bookkeeping, accounts payable/receivable, payroll, financial reporting, Form 990 preparation, grant accounting, and audit support for US organizations."
+title: "Our Services - Outsourced Accounting for US, Canada, UAE & Australia | Accounting Brains"
+description: "Comprehensive outsourced accounting services for businesses in the US, Canada, UAE & Australia — bookkeeping, CRA filing, BAS lodgement, FTA VAT, IFRS, Form 990, payroll, and virtual CFO, delivered via our Global Delivery Center."
 ---
 
 <!-- Hero Section -->
@@ -392,6 +392,197 @@ description: "Comprehensive accounting services including end-to-end bookkeeping
       {% endfor %}
     </div>
     <p class="text-center text-sm text-gray-500 mt-6">QuickBooks Pro-Advisor Certified Team</p>
+  </div>
+</section>
+
+<!-- Services By Country Section -->
+<section id="services-by-country" class="section bg-white">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="label mb-4 block">Global Compliance Coverage</span>
+      <h2 class="headline-lg mb-6">Services by Country</h2>
+      <p class="subheadline">Our Global Delivery Center serves clients across four markets. Each engagement is staffed with accountants who understand your country's compliance requirements.</p>
+    </div>
+
+    <div class="space-y-8">
+
+      <!-- USA -->
+      <div class="bg-primary-50 rounded-3xl p-8 border border-primary-100">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="text-4xl">🇺🇸</span>
+          <div>
+            <h3 class="text-2xl font-bold text-primary-900">United States</h3>
+            <p class="text-sm text-primary-600">IRS · GAAP · Form 990 · 1099 Compliance</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Key Services</h4>
+            <ul class="space-y-2">
+              {% for svc in site.regions.usa.keyServices %}
+              <li class="flex items-center gap-2 text-sm text-primary-700">
+                <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                {{ svc }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Compliance Standards</h4>
+            <div class="flex flex-wrap gap-2">
+              {% for c in site.regions.usa.compliance %}
+              <span class="px-3 py-1 bg-white border border-primary-200 rounded-full text-xs font-medium text-primary-700">{{ c }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Software Platforms</h4>
+            <div class="flex flex-wrap gap-2">
+              {% for sw in site.regions.usa.software %}
+              <span class="px-3 py-1 bg-accent-100 border border-accent-200 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
+              {% endfor %}
+            </div>
+            <div class="mt-4 bg-white rounded-xl p-4">
+              <p class="text-xs text-primary-500 mb-1">Cost vs local CPA</p>
+              <p class="text-sm"><span class="line-through text-red-400">{{ site.regions.usa.localRate }}</span> → <span class="font-bold text-accent-600">{{ site.regions.usa.abRate }}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canada -->
+      <div class="bg-red-50/40 rounded-3xl p-8 border border-red-100">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="text-4xl">🇨🇦</span>
+          <div>
+            <h3 class="text-2xl font-bold text-primary-900">Canada</h3>
+            <p class="text-sm text-primary-600">CRA · HST/GST · T2 Corporate · T1 Personal Returns</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Key Services</h4>
+            <ul class="space-y-2">
+              {% for svc in site.regions.canada.keyServices %}
+              <li class="flex items-center gap-2 text-sm text-primary-700">
+                <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                {{ svc }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Compliance Standards</h4>
+            <div class="flex flex-wrap gap-2">
+              {% for c in site.regions.canada.compliance %}
+              <span class="px-3 py-1 bg-white border border-red-200 rounded-full text-xs font-medium text-primary-700">{{ c }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Software Platforms</h4>
+            <div class="flex flex-wrap gap-2">
+              {% for sw in site.regions.canada.software %}
+              <span class="px-3 py-1 bg-accent-100 border border-accent-200 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
+              {% endfor %}
+            </div>
+            <div class="mt-4 bg-white rounded-xl p-4">
+              <p class="text-xs text-primary-500 mb-1">Cost vs local CPA</p>
+              <p class="text-sm"><span class="line-through text-red-400">{{ site.regions.canada.localRate }}</span> → <span class="font-bold text-accent-600">{{ site.regions.canada.abRate }}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UAE -->
+      <div class="bg-amber-50/40 rounded-3xl p-8 border border-amber-100">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="text-4xl">🇦🇪</span>
+          <div>
+            <h3 class="text-2xl font-bold text-primary-900">UAE / Middle East</h3>
+            <p class="text-sm text-primary-600">FTA VAT · IFRS · Corporate Tax · Freezone &amp; Mainland Compliance</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Key Services</h4>
+            <ul class="space-y-2">
+              {% for svc in site.regions.uae.keyServices %}
+              <li class="flex items-center gap-2 text-sm text-primary-700">
+                <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                {{ svc }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Compliance Standards</h4>
+            <div class="flex flex-wrap gap-2">
+              {% for c in site.regions.uae.compliance %}
+              <span class="px-3 py-1 bg-white border border-amber-200 rounded-full text-xs font-medium text-primary-700">{{ c }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Software Platforms</h4>
+            <div class="flex flex-wrap gap-2">
+              {% for sw in site.regions.uae.software %}
+              <span class="px-3 py-1 bg-accent-100 border border-accent-200 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
+              {% endfor %}
+            </div>
+            <div class="mt-4 bg-white rounded-xl p-4">
+              <p class="text-xs text-primary-500 mb-1">Cost vs local accountant</p>
+              <p class="text-sm"><span class="line-through text-red-400">{{ site.regions.uae.localRate }}</span> → <span class="font-bold text-accent-600">{{ site.regions.uae.abRate }}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Australia -->
+      <div class="bg-blue-50/40 rounded-3xl p-8 border border-blue-100">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="text-4xl">🇦🇺</span>
+          <div>
+            <h3 class="text-2xl font-bold text-primary-900">Australia</h3>
+            <p class="text-sm text-primary-600">ATO · BAS · GST · PAYG · ASIC Compliance</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Key Services</h4>
+            <ul class="space-y-2">
+              {% for svc in site.regions.australia.keyServices %}
+              <li class="flex items-center gap-2 text-sm text-primary-700">
+                <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                {{ svc }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Compliance Standards</h4>
+            <div class="flex flex-wrap gap-2">
+              {% for c in site.regions.australia.compliance %}
+              <span class="px-3 py-1 bg-white border border-blue-200 rounded-full text-xs font-medium text-primary-700">{{ c }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Software Platforms</h4>
+            <div class="flex flex-wrap gap-2">
+              {% for sw in site.regions.australia.software %}
+              <span class="px-3 py-1 bg-accent-100 border border-accent-200 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
+              {% endfor %}
+            </div>
+            <div class="mt-4 bg-white rounded-xl p-4">
+              <p class="text-xs text-primary-500 mb-1">Cost vs local accountant</p>
+              <p class="text-sm"><span class="line-through text-red-400">{{ site.regions.australia.localRate }}</span> → <span class="font-bold text-accent-600">{{ site.regions.australia.abRate }}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 

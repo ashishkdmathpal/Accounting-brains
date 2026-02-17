@@ -5,35 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>{{ title or "AccountingBrains - Expert CPA Services for US Non-Profits | Form 990 & Grant Accounting" }}</title>
-  <meta name="title" content="{{ title or 'AccountingBrains - Expert CPA Services for US Non-Profits' }}">
-  <meta name="description" content="{{ description or 'Specialized CPA services for US-based non-profits, NGOs & foundations. Expert Form 990 filing, grant accounting, compliance & financial management. US-licensed CPAs with global delivery excellence.' }}">
-  <meta name="keywords" content="non-profit accounting, 501(c)(3) accounting, Form 990 preparation, NGO accounting services, non-profit CPA, grant accounting, foundation accounting, charitable organization accounting, non-profit bookkeeping, non-profit financial statements, audit preparation non-profit, US non-profit tax compliance">
-  <meta name="author" content="AccountingBrains">
+  <title>{{ title or "Accounting Brains | Outsourced Accounting for US, Canada, UAE & Australia" }}</title>
+  <meta name="title" content="{{ title or 'Accounting Brains | Outsourced Accounting for US, Canada, UAE & Australia' }}">
+  <meta name="description" content="{{ description or 'Accounting Brains delivers outsourced bookkeeping, accounting, and compliance services for businesses in the US, Canada, UAE & Australia — via our Global Delivery Center with 40-60% cost savings and multi-level quality controls.' }}">
+  <meta name="keywords" content="outsourced accounting, bookkeeping services, CRA accounting Canada, HST GST filing, T2 corporate return, FTA VAT UAE, IFRS accounting, UAE corporate tax, BAS lodgement Australia, ATO compliance, Form 990 preparation, non-profit accounting, virtual CFO, global delivery center, accounting outsourcing India">
+  <meta name="author" content="Accounting Brains">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-  <!-- Geo Tags for US Targeting -->
+  <!-- Geo Tags - Multi-Country -->
   <meta name="geo.region" content="US">
-  <meta name="geo.placename" content="United States">
-  <meta name="ICBM" content="39.8283, -98.5795">
+  <meta name="geo.placename" content="United States, Canada, UAE, Australia">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:title" content="{{ title or 'AccountingBrains - Expert CPA Services for US Non-Profits' }}">
-  <meta property="og:description" content="{{ description or 'Specialized CPA services for US-based non-profits, NGOs & foundations. Expert Form 990 filing, grant accounting & compliance.' }}">
+  <meta property="og:title" content="{{ title or 'Accounting Brains | Outsourced Accounting for US, Canada, UAE & Australia' }}">
+  <meta property="og:description" content="{{ description or 'Outsourced bookkeeping, accounting & compliance for businesses in the US, Canada, UAE & Australia. 40-60% cost savings via our Global Delivery Center.' }}">
   <meta property="og:image" content="{{ site.url }}/assets/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="AccountingBrains">
+  <meta property="og:site_name" content="Accounting Brains">
   <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="en_CA">
+  <meta property="og:locale:alternate" content="en_AU">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  <meta name="twitter:title" content="{{ title or 'AccountingBrains - Expert CPA Services for US Non-Profits' }}">
-  <meta name="twitter:description" content="{{ description or 'Specialized CPA services for US-based non-profits. Expert Form 990 filing, grant accounting & compliance.' }}">
+  <meta name="twitter:title" content="{{ title or 'Accounting Brains | Outsourced Accounting for US, Canada, UAE & Australia' }}">
+  <meta name="twitter:description" content="{{ description or 'Outsourced accounting & compliance for US, Canada, UAE & Australia. 40-60% savings via our Global Delivery Center.' }}">
   <meta name="twitter:image" content="{{ site.url }}/assets/images/twitter-image.png">
   <meta name="twitter:site" content="{{ site.social.twitter }}">
   <meta name="twitter:creator" content="{{ site.social.twitter }}">
@@ -77,8 +78,8 @@
     "@context": "https://schema.org",
     "@type": "AccountingService",
     "@id": "{{ site.url }}/#organization",
-    "name": "AccountingBrains",
-    "alternateName": "AccountingBrains CPA Services",
+    "name": "Accounting Brains",
+    "alternateName": "Accounting Brains Global Delivery Center",
     "description": "{{ site.description }}",
     "url": "{{ site.url }}",
     "logo": {
@@ -94,61 +95,90 @@
       "@type": "PostalAddress",
       "addressCountry": "US"
     },
-    "areaServed": {
-      "@type": "Country",
-      "name": "United States"
-    },
+    "areaServed": [
+      { "@type": "Country", "name": "United States" },
+      { "@type": "Country", "name": "Canada" },
+      { "@type": "Country", "name": "United Arab Emirates" },
+      { "@type": "Country", "name": "Australia" }
+    ],
     "serviceType": [
+      "Outsourced Accounting",
+      "Bookkeeping Services",
       "Non-Profit Accounting",
       "Form 990 Preparation",
       "Grant Accounting",
       "Financial Statement Preparation",
       "Audit Support",
-      "Non-Profit Bookkeeping",
-      "Compliance Services"
+      "Virtual CFO Services",
+      "CRA Tax Filing",
+      "HST/GST Filing",
+      "T2 Corporate Returns",
+      "FTA VAT Filing",
+      "IFRS Compliance",
+      "UAE Corporate Tax",
+      "Freezone Compliance",
+      "BAS Lodgement",
+      "PAYG Withholding",
+      "ASIC Compliance"
     ],
     "audience": {
       "@type": "Audience",
       "audienceType": [
+        "Small & Mid-Sized Businesses",
         "Non-Profit Organizations",
         "501(c)(3) Organizations",
-        "Charitable Foundations",
-        "NGOs"
+        "CPA Firms",
+        "Canadian SMBs",
+        "UAE Freezone Companies",
+        "UAE Mainland LLCs",
+        "Australian SMBs",
+        "Technology Companies",
+        "E-commerce Businesses"
       ]
     },
     "priceRange": "$$",
-    "paymentAccepted": ["Credit Card", "Bank Transfer", "ACH"],
-    "currenciesAccepted": "USD",
+    "paymentAccepted": ["Credit Card", "Bank Transfer", "ACH", "Wire Transfer"],
+    "currenciesAccepted": "USD, CAD, AED, AUD",
     "sameAs": [
       "https://linkedin.com/company/{{ site.social.linkedin }}",
-      "https://twitter.com/{{ site.social.twitter | replace('@', '') }}"
+      "https://twitter.com/{{ site.social.twitter | replace('@', '') }}",
+      "https://facebook.com/{{ site.social.facebook }}",
+      "https://instagram.com/{{ site.social.instagram }}"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Non-Profit Accounting Services",
+      "name": "Global Outsourced Accounting Services",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Form 990 Preparation & Filing",
-            "description": "Complete Form 990, 990-EZ, and 990-PF preparation and e-filing for non-profit organizations"
+            "name": "US Accounting & Non-Profit Services",
+            "description": "Bookkeeping, Form 990 preparation, grant accounting, payroll, and virtual CFO for US businesses and non-profits"
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Grant Accounting",
-            "description": "Comprehensive grant tracking, reporting, and compliance management"
+            "name": "Canada Accounting & CRA Compliance",
+            "description": "CRA compliance, HST/GST filing, T2 corporate returns, T1 personal returns, and bookkeeping for Canadian businesses"
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Non-Profit Bookkeeping",
-            "description": "Fund accounting, monthly reconciliations, and financial reporting for non-profits"
+            "name": "UAE Accounting & FTA VAT Compliance",
+            "description": "FTA VAT filing, IFRS reporting, UAE corporate tax, freezone compliance, and bookkeeping for UAE businesses"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Australia Accounting & ATO Compliance",
+            "description": "BAS lodgement, GST compliance, PAYG withholding, ASIC compliance, and bookkeeping for Australian businesses"
           }
         }
       ]
@@ -203,26 +233,50 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What accounting services does AccountingBrains provide for non-profits?",
+        "name": "Which countries does Accounting Brains serve?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "AccountingBrains provides comprehensive accounting services for US-based non-profits including Form 990 preparation and filing, grant accounting and management, non-profit bookkeeping, financial statement preparation, audit support, board financial reporting, and compliance services. Our US-licensed CPAs deliver expert services through our Global Capability Center."
+          "text": "Accounting Brains serves businesses and organizations in the United States, Canada, UAE (and broader Middle East), and Australia. Our India-based Global Delivery Center provides outsourced accounting, bookkeeping, and compliance services tailored to each country's regulatory requirements."
         }
       },
       {
         "@type": "Question",
-        "name": "Does AccountingBrains handle Form 990 preparation for 501(c)(3) organizations?",
+        "name": "Does Accounting Brains handle CRA compliance and Canadian tax returns?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, AccountingBrains specializes in Form 990 preparation and e-filing for all types of 501(c)(3) organizations, including Form 990, 990-EZ, 990-PF for private foundations, and 990-N for small organizations. Our CPAs ensure accuracy and compliance with IRS requirements."
+          "text": "Yes, Accounting Brains provides CRA compliance services for Canadian businesses including HST/GST filing, T2 corporate returns, T1 personal returns, bookkeeping, and financial reporting. Our team understands Canadian compliance standards and works with QuickBooks and Sage."
         }
       },
       {
         "@type": "Question",
-        "name": "How does AccountingBrains deliver cost-effective services to US non-profits?",
+        "name": "Does Accounting Brains handle FTA VAT filing and IFRS compliance in the UAE?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "AccountingBrains combines US-licensed CPA expertise with our Global Capability Center in India to deliver high-quality accounting services at competitive rates. This model allows non-profits to access expert CPA services while maximizing their program spending."
+          "text": "Yes, Accounting Brains provides FTA VAT filing, IFRS-compliant financial reporting, UAE corporate tax compliance, and freezone accounting for businesses in the UAE and broader Middle East. We work with Zoho Books and Xero for UAE-based clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Accounting Brains handle BAS lodgement and ATO compliance for Australian businesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Accounting Brains provides BAS lodgement, GST compliance, PAYG withholding, ASIC compliance, and bookkeeping for Australian SMBs. We work with Xero and MYOB, which are the leading platforms in the Australian market."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much can I save by outsourcing to Accounting Brains?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Clients typically save 40-60% compared to local accountants. In the US, local CPAs charge $150-300/hr vs Accounting Brains at $25-50/hr. In Canada, local CPA rates are CAD 150-250/hr vs our CAD 30-50/hr. In UAE, local rates are AED 300-600/hr vs our AED 80-150/hr. In Australia, local rates are AUD 200-400/hr vs our AUD 50-100/hr."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What accounting services does Accounting Brains provide for US non-profits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Accounting Brains provides Form 990 preparation and filing, grant accounting and management, fund accounting, non-profit bookkeeping, financial statement preparation, audit support, and board financial reporting for US-based non-profits and 501(c)(3) organizations."
         }
       }
     ]
