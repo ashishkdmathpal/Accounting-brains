@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: "Accounting Brains - Enterprise-Grade Accounting for US Organizations"
-description: "Accounting Brains simplifies accounting, compliance, and financial operations for US organizations through end-to-end bookkeeping delivered via our Global Delivery Center with multi-level quality controls."
+title: "Accounting Brains | Outsourced Accounting for US, Canada, UAE & Australia"
+description: "Accounting Brains delivers outsourced accounting, bookkeeping, and compliance services for businesses in the US, Canada, UAE & Australia — via our Global Delivery Center with 40-60% cost savings and multi-level quality controls."
 ---
 
 <!-- Hero Section -->
@@ -24,7 +24,7 @@ description: "Accounting Brains simplifies accounting, compliance, and financial
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-primary-100 shadow-soft mb-8">
             <span class="flex items-center gap-1.5">
               <svg class="w-4 h-4 text-accent-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-              <span class="text-sm font-medium text-primary-700">US Organizations</span>
+              <span class="text-sm font-medium text-primary-700">🌏 US · Canada · UAE · Australia</span>
             </span>
             <span class="w-1 h-1 rounded-full bg-primary-300"></span>
             <span class="text-sm font-medium text-primary-700">All Entity Types</span>
@@ -32,12 +32,12 @@ description: "Accounting Brains simplifies accounting, compliance, and financial
 
           <!-- Headline -->
           <h1 class="headline-xl text-balance mb-6">
-            Enterprise-Grade Accounting. <span class="text-accent-600">Delivered Smarter.</span>
+            Outsourced Accounting for <span class="text-accent-600">US, Canada, UAE &amp; Australia.</span>
           </h1>
 
           <!-- Subheadline -->
           <p class="subheadline max-w-xl mb-8">
-            Accounting Brains simplifies accounting, compliance, and financial operations for US organizations through end-to-end bookkeeping and accounting, delivered via our Global Delivery Center with strong processes, multi-level independent quality controls, predictable outcomes, and continuous process improvement.
+            Accounting Brains simplifies accounting, compliance, and financial operations for businesses across the US, Canada, UAE &amp; Australia — delivered via our Global Delivery Center with multi-level quality controls and 40–60% cost savings vs. local accountants.
           </p>
 
           <!-- Key Differentiators -->
@@ -219,7 +219,7 @@ description: "Accounting Brains simplifies accounting, compliance, and financial
         <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
         </svg>
-        <span class="text-accent-700 font-medium">Typically 40-60% cost efficiency vs in-house or US-based models</span>
+        <span class="text-accent-700 font-medium">Typically 40-60% cost efficiency vs local or in-house accountants across US, Canada, UAE &amp; Australia</span>
       </div>
     </div>
   </div>
@@ -361,6 +361,106 @@ description: "Accounting Brains simplifies accounting, compliance, and financial
         <h3 class="font-medium text-primary-900 text-sm">{{ industry }}</h3>
       </div>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Countries We Serve Section -->
+<section class="section bg-primary-50">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="label mb-4 block">Global Reach</span>
+      <h2 class="headline-lg mb-6">Countries We Serve</h2>
+      <p class="subheadline">Our India-based Global Delivery Center serves businesses across four English-speaking markets — bringing local compliance expertise and 40-60% cost savings.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- USA -->
+      <div class="bg-white rounded-2xl p-6 border border-primary-100 hover:shadow-soft-lg transition-all">
+        <div class="text-4xl mb-3">🇺🇸</div>
+        <h3 class="text-lg font-bold text-primary-900 mb-1">{{ site.regions.usa.name }}</h3>
+        <p class="text-xs text-primary-500 mb-4">IRS · GAAP · Form 990 · 1099</p>
+        <ul class="space-y-2 mb-4">
+          {% for svc in site.regions.usa.keyServices %}
+          <li class="flex items-center gap-2 text-sm text-primary-700">
+            <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            {{ svc }}
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="bg-primary-50 rounded-lg p-3 text-xs">
+          <span class="text-primary-500">Software: </span>
+          <span class="font-medium text-primary-800">{{ site.regions.usa.software | join(", ") }}</span>
+        </div>
+      </div>
+
+      <!-- Canada -->
+      <div class="bg-white rounded-2xl p-6 border border-primary-100 hover:shadow-soft-lg transition-all">
+        <div class="text-4xl mb-3">🇨🇦</div>
+        <h3 class="text-lg font-bold text-primary-900 mb-1">{{ site.regions.canada.name }}</h3>
+        <p class="text-xs text-primary-500 mb-4">CRA · HST/GST · T2 Corporate · T1 Personal</p>
+        <ul class="space-y-2 mb-4">
+          {% for svc in site.regions.canada.keyServices %}
+          <li class="flex items-center gap-2 text-sm text-primary-700">
+            <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            {{ svc }}
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="bg-primary-50 rounded-lg p-3 text-xs">
+          <span class="text-primary-500">Software: </span>
+          <span class="font-medium text-primary-800">{{ site.regions.canada.software | join(", ") }}</span>
+        </div>
+      </div>
+
+      <!-- UAE -->
+      <div class="bg-white rounded-2xl p-6 border border-primary-100 hover:shadow-soft-lg transition-all">
+        <div class="text-4xl mb-3">🇦🇪</div>
+        <h3 class="text-lg font-bold text-primary-900 mb-1">{{ site.regions.uae.name }}</h3>
+        <p class="text-xs text-primary-500 mb-4">FTA VAT · IFRS · Corporate Tax · Freezone</p>
+        <ul class="space-y-2 mb-4">
+          {% for svc in site.regions.uae.keyServices %}
+          <li class="flex items-center gap-2 text-sm text-primary-700">
+            <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            {{ svc }}
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="bg-primary-50 rounded-lg p-3 text-xs">
+          <span class="text-primary-500">Software: </span>
+          <span class="font-medium text-primary-800">{{ site.regions.uae.software | join(", ") }}</span>
+        </div>
+      </div>
+
+      <!-- Australia -->
+      <div class="bg-white rounded-2xl p-6 border border-primary-100 hover:shadow-soft-lg transition-all">
+        <div class="text-4xl mb-3">🇦🇺</div>
+        <h3 class="text-lg font-bold text-primary-900 mb-1">{{ site.regions.australia.name }}</h3>
+        <p class="text-xs text-primary-500 mb-4">ATO · BAS · GST · PAYG · ASIC</p>
+        <ul class="space-y-2 mb-4">
+          {% for svc in site.regions.australia.keyServices %}
+          <li class="flex items-center gap-2 text-sm text-primary-700">
+            <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            {{ svc }}
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="bg-primary-50 rounded-lg p-3 text-xs">
+          <span class="text-primary-500">Software: </span>
+          <span class="font-medium text-primary-800">{{ site.regions.australia.software | join(", ") }}</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="{{ '/services/' | url }}" class="btn btn-primary">
+        View Country-Specific Services
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
