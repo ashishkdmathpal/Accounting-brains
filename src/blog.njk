@@ -32,77 +32,9 @@ pagination:
         </div>
       </div>
       <div class="relative">
-        <!-- Blog Hero SVG - Knowledge & Insights -->
-        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
-          <svg viewBox="0 0 400 280" class="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Background -->
-            <rect x="20" y="20" width="360" height="240" rx="16" fill="#F8FAFC"/>
-
-            <!-- Central Book/Article Stack -->
-            <g transform="translate(120, 70)">
-              <!-- Back card -->
-              <rect x="8" y="8" width="145" height="130" rx="10" fill="#E2E8F0"/>
-              <!-- Middle card -->
-              <rect x="4" y="4" width="145" height="130" rx="10" fill="#EEF2FF"/>
-              <!-- Front card (main article) -->
-              <rect x="0" y="0" width="145" height="130" rx="10" fill="white" stroke="#6366F1" stroke-width="2"/>
-
-              <!-- Article content -->
-              <rect x="15" y="18" width="80" height="8" rx="4" fill="#6366F1"/>
-              <rect x="15" y="35" width="115" height="4" rx="2" fill="#E2E8F0"/>
-              <rect x="15" y="45" width="100" height="4" rx="2" fill="#E2E8F0"/>
-              <rect x="15" y="55" width="110" height="4" rx="2" fill="#E2E8F0"/>
-              <rect x="15" y="65" width="90" height="4" rx="2" fill="#E2E8F0"/>
-
-              <!-- Mini chart in article -->
-              <g transform="translate(15, 80)">
-                <rect x="0" y="25" width="12" height="15" rx="2" fill="#C7D2FE"/>
-                <rect x="18" y="18" width="12" height="22" rx="2" fill="#A5B4FC"/>
-                <rect x="36" y="10" width="12" height="30" rx="2" fill="#818CF8"/>
-                <rect x="54" y="5" width="12" height="35" rx="2" fill="#6366F1"/>
-              </g>
-            </g>
-
-            <!-- Top Left: Lightbulb (Ideas) -->
-            <g transform="translate(45, 55)">
-              <circle cx="28" cy="28" r="26" fill="white" stroke="#E2E8F0" stroke-width="1"/>
-              <circle cx="28" cy="28" r="20" fill="#FEF3C7"/>
-              <circle cx="28" cy="24" r="10" fill="#FBBF24"/>
-              <rect x="24" y="35" width="8" height="3" rx="1" fill="#FBBF24"/>
-              <rect x="25" y="39" width="6" height="2" rx="1" fill="#F59E0B"/>
-            </g>
-
-            <!-- Top Right: Success Check -->
-            <g transform="translate(305, 45)">
-              <circle cx="28" cy="28" r="26" fill="white" stroke="#E2E8F0" stroke-width="1"/>
-              <circle cx="28" cy="28" r="20" fill="#D1FAE5"/>
-              <path d="M20 28 L25 33 L36 22" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-
-            <!-- Bottom Left: Document -->
-            <g transform="translate(55, 175)">
-              <rect x="0" y="0" width="50" height="60" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
-              <rect x="8" y="10" width="34" height="5" rx="2" fill="#6366F1"/>
-              <rect x="8" y="20" width="28" height="3" rx="1.5" fill="#E2E8F0"/>
-              <rect x="8" y="27" width="32" height="3" rx="1.5" fill="#E2E8F0"/>
-              <rect x="8" y="34" width="24" height="3" rx="1.5" fill="#E2E8F0"/>
-              <rect x="8" y="44" width="18" height="8" rx="2" fill="#EEF2FF"/>
-            </g>
-
-            <!-- Bottom Right: Analytics -->
-            <g transform="translate(295, 170)">
-              <rect x="0" y="0" width="60" height="50" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
-              <rect x="8" y="30" width="10" height="12" rx="2" fill="#C7D2FE"/>
-              <rect x="22" y="22" width="10" height="20" rx="2" fill="#A5B4FC"/>
-              <rect x="36" y="14" width="10" height="28" rx="2" fill="#6366F1"/>
-            </g>
-
-            <!-- Connecting lines (subtle) -->
-            <line x1="95" y1="90" x2="120" y2="100" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 4"/>
-            <line x1="305" y1="90" x2="265" y2="100" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 4"/>
-            <line x1="105" y1="190" x2="120" y2="170" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 4"/>
-            <line x1="295" y1="190" x2="265" y2="170" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 4"/>
-          </svg>
+        <!-- Blog Hero Illustration — from Marketing Engine brand-svgs library -->
+        <div class="bg-primary-50 rounded-2xl shadow-xl p-6 md:p-8 flex items-center justify-center" style="min-height: 280px;">
+          <img src="{{ '/assets/images/hero-blog.svg' | url }}" alt="Finance & Accounting Insights" class="w-full h-auto max-h-72 object-contain">
         </div>
       </div>
     </div>
@@ -328,7 +260,7 @@ pagination:
         </div>
         <h3 class="text-lg font-bold text-gray-900 mb-2">Outsourcing Readiness Checklist</h3>
         <p class="text-gray-600 text-sm mb-4">Is your firm ready to outsource? 20-point assessment guide</p>
-        <a href="#" class="text-primary-600 hover:underline font-medium text-sm inline-flex items-center gap-1">
+        <a href="{{ '/assets/downloads/outsourcing-readiness-checklist.pdf' | url }}" target="_blank" class="text-primary-600 hover:underline font-medium text-sm inline-flex items-center gap-1">
           Download PDF
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -353,8 +285,8 @@ pagination:
         </div>
         <h3 class="text-lg font-bold text-gray-900 mb-2">Month-End Close Playbook</h3>
         <p class="text-gray-600 text-sm mb-4">Cut your close time from 10 days to 3 — step by step</p>
-        <a href="#" class="text-primary-600 hover:underline font-medium text-sm inline-flex items-center gap-1">
-          Download Excel
+        <a href="{{ '/assets/downloads/month-end-close-playbook.pdf' | url }}" target="_blank" class="text-primary-600 hover:underline font-medium text-sm inline-flex items-center gap-1">
+          Download PDF
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
           </svg>
@@ -383,7 +315,7 @@ pagination:
         </div>
         <h3 class="text-lg font-bold text-gray-900 mb-2">Fractional CFO ROI Calculator</h3>
         <p class="text-gray-600 text-sm mb-4">See your savings vs full-time CFO in under 2 minutes</p>
-        <a href="#" class="text-primary-600 hover:underline font-medium text-sm inline-flex items-center gap-1">
+        <a href="{{ '/assets/downloads/fractional-cfo-roi-calculator.pdf' | url }}" target="_blank" class="text-primary-600 hover:underline font-medium text-sm inline-flex items-center gap-1">
           Download PDF
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
