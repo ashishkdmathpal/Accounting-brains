@@ -8,6 +8,7 @@ category: "Outsourced Accounting"
 tags: ["accounting-outsourcing", "fa-outsourcing", "finance-outsourcing", "india-accounting", "outsourcing-market"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-fa-outsourcing-market-54-billion.png"
 ---
 
 When an industry reaches $54.8 billion and is growing at double-digit rates, two things are true simultaneously: there's massive opportunity in it, and standing on the sidelines while your competitors participate is a strategic risk.

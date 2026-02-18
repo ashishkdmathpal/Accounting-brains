@@ -8,6 +8,7 @@ category: "Technology"
 tags: ["cloud accounting", "accounting software", "digital transformation", "SME finance", "accounting technology"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-cloud-accounting-61-percent-smes-moved.png"
 ---
 
 The accounting software market crossed a threshold that can't be reversed: more than two-thirds of it is now cloud-based. If your firm is still running desktop software, you're not just behind the curve — you're in the minority.

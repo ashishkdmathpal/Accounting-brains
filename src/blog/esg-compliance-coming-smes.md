@@ -8,6 +8,7 @@ category: "Regulatory Compliance"
 tags: ["esg-compliance", "esg-reporting", "csrd", "sustainability-reporting", "sme-compliance"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-esg-compliance-coming-smes.png"
 ---
 
 When the EU announced a 90% reduction in CSRD (Corporate Sustainability Reporting Directive) requirements for small and medium enterprises, many SME owners took it as a signal that ESG reporting wasn't their problem — at least not yet.

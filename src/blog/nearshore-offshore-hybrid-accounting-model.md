@@ -8,6 +8,7 @@ category: "Global Delivery"
 tags: ["offshore-accounting", "nearshore-accounting", "hybrid-outsourcing", "outsourced-accounting", "global-accounting-team"]
 readTime: 7
 featured: false
+image: "/assets/images/blog-nearshore-offshore-hybrid-accounting-model.png"
 ---
 
 When businesses evaluate accounting outsourcing, they often frame it as a binary choice: offshore for maximum savings, or nearshore for easier collaboration. The firms that have done this the longest have moved past the binary.

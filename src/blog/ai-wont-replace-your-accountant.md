@@ -8,6 +8,7 @@ category: "Technology & Innovation"
 tags: ["ai-accounting", "accounting-technology", "automation", "cpa-technology", "finance-transformation"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-ai-wont-replace-your-accountant.png"
 ---
 
 The debate about AI replacing accountants was settled before most firms finished having it.

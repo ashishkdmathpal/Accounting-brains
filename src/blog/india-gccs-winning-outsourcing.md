@@ -8,6 +8,7 @@ category: "Global Delivery"
 tags: ["india-outsourcing", "global-capability-centers", "gcc", "outsourced-accounting", "india-gdc"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-india-gccs-winning-outsourcing.png"
 ---
 
 The conversation about India as an outsourcing destination used to center on one variable: cost. Cheaper labor. Favorable exchange rates. Basic process execution at lower price points.

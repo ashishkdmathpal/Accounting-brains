@@ -8,6 +8,7 @@ category: "Financial Controls"
 tags: ["fraud prevention", "internal controls", "financial fraud", "small business fraud", "audit"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-business-fraud-losses-7-7-percent-revenue.png"
 ---
 
 Half a trillion dollars. That's the scale of global fraud losses in 2025 — **$534 billion**, according to the Association of Certified Fraud Examiners. It's not an abstraction. It's a systematic failure of financial controls, disproportionately concentrated in smaller organizations with fewer defenses.

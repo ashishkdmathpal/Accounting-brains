@@ -8,6 +8,7 @@ category: "Technology"
 tags: ["digital banking", "SME finance", "fintech", "real-time payments", "accounting technology"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-sme-digital-banking-78-percent-switched.png"
 ---
 
 The branch visit is dead for business banking. More than three-quarters of small and mid-sized businesses have already moved to digital-only banking — and the accounting practices that serve them haven't kept pace.

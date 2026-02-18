@@ -8,6 +8,7 @@ category: "Technology & Innovation"
 tags: ["ai-adoption", "accounting-technology", "cpa-technology", "accounting-automation", "ai-implementation"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-ai-adoption-accounting-firms-laggard.png"
 ---
 
 There are two kinds of accounting firms in 2026: those that have moved on AI, and those that are still "exploring" it.

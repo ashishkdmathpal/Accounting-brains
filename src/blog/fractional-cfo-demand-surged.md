@@ -8,6 +8,7 @@ category: "Financial Strategy"
 tags: ["fractional-cfo", "cfo-services", "outsourced-cfo", "small-business-finance", "financial-leadership"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-fractional-cfo-demand-surged.png"
 ---
 
 The debate about whether fractional CFOs are a real strategic option has been decided by the market.

@@ -8,6 +8,7 @@ category: "Financial Strategy"
 tags: ["bookkeeper", "small-business-finance", "financial-management", "outsourced-accounting", "business-growth"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-5-signs-outgrown-bookkeeper.png"
 ---
 
 Your bookkeeper is good at their job. They record every transaction, reconcile your accounts, and keep your books clean for tax season. That's not the problem.

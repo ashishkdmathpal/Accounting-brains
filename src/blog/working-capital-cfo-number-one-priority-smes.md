@@ -8,6 +8,7 @@ category: "Financial Management"
 tags: ["working capital", "cash flow management", "CFO", "SME finance", "financial visibility"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-working-capital-cfo-number-one-priority-smes.png"
 ---
 
 Q1 just closed. Do you know your exact cash position?

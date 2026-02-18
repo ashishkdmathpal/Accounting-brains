@@ -8,6 +8,7 @@ category: "Talent & Workforce"
 tags: ["CPA shortage", "accounting talent", "retirement wave", "outsourcing", "accounting firm growth"]
 readTime: 7
 featured: false
+image: "/assets/images/blog-cpa-retirement-wave-75-percent-talent-crisis.png"
 ---
 
 The accounting profession is facing a talent crisis that isn't coming — it's already here. Three out of four CPAs plan to retire within 15 years. One in five firms expects to lose half their staff to retirement within three years. And the replacement pipeline has effectively collapsed.

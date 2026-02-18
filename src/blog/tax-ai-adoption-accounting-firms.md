@@ -8,6 +8,7 @@ category: "Technology & Innovation"
 tags: ["accounting-ai", "tax-technology", "cpa-technology", "ai-adoption", "accounting-automation"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-tax-ai-adoption-accounting-firms.png"
 ---
 
 One year ago, AI adoption in accounting was still considered an early-adopter move. Nine percent of accounting firms were using it in any meaningful way. The other 91% were watching, evaluating, or skeptical.

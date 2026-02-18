@@ -8,6 +8,7 @@ category: "CPA Firm Management"
 tags: ["accounting-attrition", "staff-retention", "cpa-hiring", "busy-season-burnout", "talent-management"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-entry-level-attrition-costs-400k.png"
 ---
 
 Every accounting firm knows about the post-busy-season resignation wave. Partners watch it happen every April and May with a resignation — hoping this year will be different, adjusting workloads slightly, and then watching the same cycle play out again.

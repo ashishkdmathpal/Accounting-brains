@@ -8,6 +8,7 @@ category: "Compliance"
 tags: ["PCAOB", "QC 1000", "audit compliance", "accounting regulation", "quality control"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-pcaob-qc-1000-new-compliance-rules-2025.png"
 ---
 
 The PCAOB's new quality control standard isn't coming. It arrived on December 15, 2025. If your firm hasn't adapted your quality management systems, you're not behind schedule — you're already non-compliant.

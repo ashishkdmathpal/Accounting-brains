@@ -8,6 +8,7 @@ category: "CPA Firm Management"
 tags: ["revenue-per-partner", "cpa-firm-profitability", "partner-compensation", "accounting-firm-efficiency", "firm-growth"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-revenue-per-partner-cpa-firm-optimization.png"
 ---
 
 Accounting firm revenue is growing. Partner compensation is rising. The profession is, by aggregate measures, more profitable than it was five years ago.
