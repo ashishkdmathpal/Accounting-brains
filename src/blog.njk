@@ -599,6 +599,22 @@ pagination:
       btnLoad.classList.remove('hidden');
       errDiv.classList.add('hidden');
 
+      // Trigger download (always fires — even if API fails, user gets their PDF)
+      function triggerDownload() {
+        btn.classList.add('hidden');
+        success.classList.remove('hidden');
+        setTimeout(function() {
+          var a = document.createElement('a');
+          a.href = _resourceUrl;
+          a.download = '';
+          a.target = '_blank';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          setTimeout(closeResourceModal, 2500);
+        }, 800);
+      }
+
       try {
         var res = await fetch('https://accountingbrains-newsletter.ashishkdmathpal.workers.dev', {
           method: 'POST',
@@ -606,33 +622,12 @@ pagination:
           body: JSON.stringify({ name: name, email: email, source: 'resource_download' })
         });
         var data = await res.json();
-
-        if (res.ok && data.success) {
-          btn.classList.add('hidden');
-          success.classList.remove('hidden');
-          setTimeout(function() {
-            var a = document.createElement('a');
-            a.href = _resourceUrl;
-            a.download = '';
-            a.target = '_blank';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            setTimeout(closeResourceModal, 2500);
-          }, 800);
-        } else {
-          errMsg.textContent = data.error || 'Something went wrong. Please try again.';
-          errDiv.classList.remove('hidden');
-          btn.disabled = false;
-          btnText.classList.remove('hidden');
-          btnLoad.classList.add('hidden');
-        }
+        // Whether API succeeds or returns error, we always give them the PDF
+        triggerDownload();
       } catch (err) {
-        errMsg.textContent = 'Network error. Please check your connection.';
-        errDiv.classList.remove('hidden');
-        btn.disabled = false;
-        btnText.classList.remove('hidden');
-        btnLoad.classList.add('hidden');
+        // CORS / network error — still give them the PDF, log silently
+        console.warn('Newsletter API unreachable, proceeding with download:', err.message);
+        triggerDownload();
       }
     });
   });
