@@ -8,6 +8,7 @@ category: "CPA Firm Management"
 tags: ["staff-utilization", "cpa-firm-profitability", "billable-hours", "firm-management", "accounting-efficiency"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-staff-utilization-below-target-accounting.png"
 ---
 
 Utilization rate is the metric that most accounting firms track — and most get wrong.

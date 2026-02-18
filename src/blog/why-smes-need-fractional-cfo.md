@@ -8,6 +8,7 @@ category: "Financial Strategy"
 tags: ["fractional-cfo", "small-business-finance", "cash-flow-management", "outsourced-cfo", "sme-growth"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-why-smes-need-fractional-cfo.png"
 ---
 
 Most small business owners know they need better financial leadership. They feel it every time they struggle to explain why cash is tight despite a profitable quarter. They feel it when investors ask for projections they can't produce. They feel it when a vendor asks about payment terms they've never modeled.

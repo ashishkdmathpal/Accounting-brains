@@ -8,6 +8,7 @@ category: "Financial Strategy"
 tags: ["bookkeeper", "financial-analyst", "fractional-cfo", "small-business-finance", "outsourced-accounting"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-bookkeeper-vs-financial-analyst.png"
 ---
 
 When your business was small, a bookkeeper was enough. They tracked every dollar in and every dollar out, kept your books clean, and made sure you were ready for tax season. They did exactly what you needed.

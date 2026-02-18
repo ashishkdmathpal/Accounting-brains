@@ -8,6 +8,7 @@ category: "Finance Operations"
 tags: ["month-end-close", "accounting-process", "finance-operations", "close-cycle", "accounting-efficiency"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-month-end-close-3-days.png"
 ---
 
 Your February close just happened. How long did it take?

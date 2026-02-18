@@ -8,6 +8,7 @@ category: "CPA Firm Management"
 tags: ["cpa-burnout", "accounting-talent", "tax-season", "outsourced-accounting", "cpa-firm-growth"]
 readTime: 7
 featured: false
+image: "/assets/images/blog-tax-season-burnout-breaking-cpa-firms.png"
 ---
 
 Every spring, the same story plays out across accounting firms from New York to Los Angeles. Partners push their teams harder. Staff work nights and weekends. Quality checks get rushed. And somewhere in the middle of it all, a talented junior accountant quietly updates their LinkedIn profile.

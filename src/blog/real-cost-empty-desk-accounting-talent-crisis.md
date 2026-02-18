@@ -8,6 +8,7 @@ category: "CPA Firm Management"
 tags: ["accounting-talent-shortage", "cpa-hiring", "outsourced-accounting", "accounting-staffing", "firm-management"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-real-cost-empty-desk-accounting-talent-crisis.png"
 ---
 
 There's a desk in your firm that's been empty longer than you're comfortable admitting. Maybe you've been covering it by redistributing work. Maybe you're in month two of a search with no qualified candidates in sight.

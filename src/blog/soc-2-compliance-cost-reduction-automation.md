@@ -8,6 +8,7 @@ category: "Compliance"
 tags: ["SOC 2 compliance", "compliance automation", "audit readiness", "cybersecurity compliance", "accounting controls"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-soc-2-compliance-cost-reduction-automation.png"
 ---
 
 SOC 2 certification has a reputation problem: it's seen as expensive, painful, and disruptive to normal business operations. For SMBs going through their first SOC 2 audit, that reputation is often deserved.

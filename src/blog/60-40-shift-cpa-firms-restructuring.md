@@ -8,6 +8,7 @@ category: "CPA Firm Management"
 tags: ["cpa-firm-restructuring", "outsourced-accounting", "advisory-services", "accounting-outsourcing", "firm-profitability"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-60-40-shift-cpa-firms-restructuring.png"
 ---
 
 There's a restructuring happening across the accounting profession — and most firms haven't finished waking up to it.

@@ -22,7 +22,7 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:title" content="{{ title or 'Accounting Brains | Outsourced Accounting for US, Canada, UAE & Australia' }}">
   <meta property="og:description" content="{{ description or 'Outsourced bookkeeping, accounting & compliance for businesses in the US, Canada, UAE & Australia. 40-60% cost savings via our Global Delivery Center.' }}">
-  <meta property="og:image" content="{{ site.url }}/assets/images/og-image.png">
+  <meta property="og:image" content="{{ site.url }}{% if image %}{{ image }}{% else %}/assets/images/og-image.png{% endif %}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Accounting Brains">
@@ -35,7 +35,7 @@
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   <meta name="twitter:title" content="{{ title or 'Accounting Brains | Outsourced Accounting for US, Canada, UAE & Australia' }}">
   <meta name="twitter:description" content="{{ description or 'Outsourced accounting & compliance for US, Canada, UAE & Australia. 40-60% savings via our Global Delivery Center.' }}">
-  <meta name="twitter:image" content="{{ site.url }}/assets/images/twitter-image.png">
+  <meta name="twitter:image" content="{{ site.url }}{% if image %}{{ image }}{% else %}/assets/images/twitter-image.png{% endif %}">
   <meta name="twitter:site" content="{{ site.social.twitter }}">
   <meta name="twitter:creator" content="{{ site.social.twitter }}">
 

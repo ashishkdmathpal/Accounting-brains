@@ -8,6 +8,7 @@ category: "CPA Firm Growth"
 tags: ["client-advisory-services", "cas", "advisory-revenue", "cpa-firm-growth", "outsourced-accounting"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-cas-boom-advisory-revenue-growth.png"
 ---
 
 The fastest-growing revenue line in the accounting profession isn't a new service category. It's a fundamental shift in how firms deliver value — and the firms that have made this shift are growing at rates that compliance-focused practices can barely comprehend.

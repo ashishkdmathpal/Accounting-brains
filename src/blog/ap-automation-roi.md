@@ -8,6 +8,7 @@ category: "Finance Operations"
 tags: ["ap-automation", "accounts-payable", "invoice-processing", "accounting-automation", "finance-efficiency"]
 readTime: 6
 featured: false
+image: "/assets/images/blog-ap-automation-roi.png"
 ---
 
 Accounts payable is one of the most overlooked optimization opportunities in business finance. It's invisible when it works, expensive when it doesn't, and most organizations are paying far more than they realize for a process that exists in a completely automatable form.
