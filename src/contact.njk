@@ -453,10 +453,10 @@ description: "Schedule a free consultation with our CPA team. Fast response time
       btnLoading.classList.remove('hidden');
 
       // Build submission data for Apps Script doPost
+      // Merge name into requirement so it's saved in the sheet and the AI can personalize
       const submitData = {
-        name: form.name.value,
         email: form.email.value,
-        requirement: form.requirement.value,
+        requirement: '[Contact Name: ' + form.name.value.trim() + ']\n' + form.requirement.value,
         signatory: 'Team AccountingBrains'
       };
 
