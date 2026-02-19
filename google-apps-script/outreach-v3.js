@@ -281,10 +281,10 @@ function onFormSubmit(e) {
 
     var finalEmail = parsed.recipient_email || providedEmail || "";
     var subject = parsed.subject || "Quick note";
-    var body = (parsed.body || "")
+    var body = repairHtml((parsed.body || "")
       .replace(/\[MEETING_LINK\]/g,
         '<a href="' + CONFIG.MEETING_LINK + '" style="color:#0D9B6A;text-decoration:underline;font-weight:bold;">book a quick call</a>')
-      .replace(/https?:\/\/calendly\.com\/[^\s"'<)]+/g, CONFIG.MEETING_LINK);
+      .replace(/https?:\/\/calendly\.com\/[^\s"'<)]+/g, CONFIG.MEETING_LINK));
 
     sheet.getRange(row, CONFIG.COL_EXTRACTED_EMAIL).setValue(finalEmail);
     sheet.getRange(row, CONFIG.COL_SUBJECT).setValue(subject);
@@ -655,7 +655,7 @@ function step3_draftEmail(requirementText, providedEmail, signatoryName, keyword
     "(full HTML email body using <p> tags with inline styles)\n\n" +
     "Output ONLY the above format. No other text before or after.";
 
-  return callGroq(CONFIG.MODEL_DRAFT, systemPrompt, userPrompt, 1400);
+  return callGroq(CONFIG.MODEL_DRAFT, systemPrompt, userPrompt, 2000);
 }
 
 
@@ -851,6 +851,21 @@ function isValidEmail(email) {
 function stripHtml(html) {
   if (!html) return "";
   return html.replace(/&bull;/g, "- ").replace(/<br\s*\/?>/g, "\n").replace(/<\/p>/g, "\n\n").replace(/<[^>]*>/g, "").replace(/\n{3,}/g, "\n\n").trim();
+}
+
+// Repair truncated HTML from AI output (e.g. cut off mid-tag)
+function repairHtml(html) {
+  if (!html) return "";
+  // Remove any incomplete tag at the end (e.g. "<p style='margin:0...")
+  html = html.replace(/<[^>]*$/, '');
+  // Close any unclosed <p> or <div> tags
+  var openP = (html.match(/<p[\s>]/gi) || []).length;
+  var closeP = (html.match(/<\/p>/gi) || []).length;
+  for (var i = 0; i < openP - closeP; i++) html += '</p>';
+  var openDiv = (html.match(/<div[\s>]/gi) || []).length;
+  var closeDiv = (html.match(/<\/div>/gi) || []).length;
+  for (var j = 0; j < openDiv - closeDiv; j++) html += '</div>';
+  return html;
 }
 
 function formatEmail(bodyHtml, signatureHtml) {
