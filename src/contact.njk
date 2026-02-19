@@ -432,8 +432,13 @@ description: "Schedule a free consultation with our CPA team. Fast response time
 
 <!-- Form JavaScript -->
 <script>
-  // Google Apps Script Web App URL - UPDATE THIS after deploying your Apps Script
-  const CONTACT_FORM_API = 'YOUR_APPS_SCRIPT_WEB_APP_URL';
+  // Google Form submission URL
+  const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfrG-9DxRuZkdSwwsHIKH2BAPwE2-LWwKnOygwoK1Ozuh737g/formResponse';
+
+  // Google Form entry IDs
+  const ENTRY_REQUIREMENT = 'entry.2014766157';
+  const ENTRY_EMAIL = 'entry.437743594';
+  const ENTRY_SIGNATORY = 'entry.175721588';
 
   document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
@@ -461,26 +466,25 @@ description: "Schedule a free consultation with our CPA team. Fast response time
       btnText.classList.add('hidden');
       btnLoading.classList.remove('hidden');
 
-      // Collect form data
-      const formData = new FormData();
-      formData.append('email', form.email.value);
-      formData.append('requirement', form.requirement.value);
+      // Build Google Form submission data
+      const formData = new URLSearchParams();
+      formData.append(ENTRY_REQUIREMENT, form.requirement.value);
+      formData.append(ENTRY_EMAIL, form.email.value);
+      formData.append(ENTRY_SIGNATORY, 'Team AccountingBrains');
 
       try {
-        const response = await fetch(CONTACT_FORM_API, {
+        // Google Forms doesn't support CORS, so we use no-cors mode
+        // This means we can't read the response, but the submission goes through
+        await fetch(GOOGLE_FORM_URL, {
           method: 'POST',
-          body: formData,
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: formData.toString(),
         });
 
-        const result = await response.json();
-
-        if (result.success) {
-          successMsg.classList.remove('hidden');
-          form.reset();
-        } else {
-          errorText.textContent = result.error || 'Something went wrong. Please try again.';
-          errorMsg.classList.remove('hidden');
-        }
+        // If no network error, assume success (Google Forms always accepts valid POSTs)
+        successMsg.classList.remove('hidden');
+        form.reset();
       } catch (error) {
         console.error('Form submission error:', error);
         errorText.textContent = 'Network error. Please check your connection and try again.';
