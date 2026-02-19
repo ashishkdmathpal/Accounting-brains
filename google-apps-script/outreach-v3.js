@@ -294,7 +294,7 @@ function onFormSubmit(e) {
     if (isValidEmail(finalEmail)) {
       var signature = buildSignature(signatory);
       GmailApp.sendEmail(finalEmail, subject, stripHtml(body) + "\n\n" + stripHtml(signature), {
-        htmlBody: formatEmail(body, signature),
+        htmlBody: formatEmail(body, signature, signatory.name),
         name: signatory.name,
         replyTo: CONFIG.COMPANY_EMAIL,
         bcc: CONFIG.BCC_EMAIL
@@ -792,7 +792,6 @@ function _callGroqSingle(model, systemPrompt, userPrompt, maxTokens) {
 
 function buildSignature(signatory) {
   return '<div style="font-family:Arial,sans-serif;font-size:14px;color:#1A2B3C;border-top:2px solid #0D9B6A;padding-top:14px;margin-top:28px;">' +
-    '<strong>' + signatory.name + '</strong><br>' +
     '<a href="' + CONFIG.COMPANY_WEBSITE + '" style="color:#0D9B6A;text-decoration:none;font-weight:bold;">AccountingBrains.com</a><br>' +
     '<a href="' + CONFIG.MEETING_LINK + '" style="display:inline-block;margin-top:8px;padding:8px 18px;background-color:#0D9B6A;color:#ffffff;text-decoration:none;border-radius:4px;font-size:13px;font-weight:bold;">Book a Call</a></div>';
 }
@@ -868,8 +867,8 @@ function repairHtml(html) {
   return html;
 }
 
-function formatEmail(bodyHtml, signatureHtml) {
-  var signoff = '<p style="margin:24px 0 0 0;font-size:14px;color:#1A2B3C;">Best Regards.</p>';
+function formatEmail(bodyHtml, signatureHtml, signatoryName) {
+  var signoff = '<p style="margin:24px 0 0 0;font-size:14px;color:#1A2B3C;">Best Regards,<br>' + (signatoryName || 'Team AccountingBrains') + '</p>';
   return '<div style="font-family:Arial,sans-serif;font-size:14px;color:#1A2B3C;line-height:1.6;max-width:600px;">' + bodyHtml + signoff + signatureHtml + '</div>';
 }
 
@@ -894,7 +893,7 @@ function resendFailed() {
         try {
           var signature = buildSignature(sig);
           GmailApp.sendEmail(email, subject, body, {
-            htmlBody: formatEmail("<p>" + body.replace(/\n/g, "<br>") + "</p>", signature),
+            htmlBody: formatEmail("<p>" + body.replace(/\n/g, "<br>") + "</p>", signature, sig.name),
             name: sig.name, replyTo: CONFIG.COMPANY_EMAIL, bcc: CONFIG.BCC_EMAIL
           });
           sheet.getRange(row, CONFIG.COL_STATUS).setValue("SENT (resend)");
