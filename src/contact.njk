@@ -454,23 +454,48 @@ description: "Schedule a free consultation with our CPA team. Fast response time
       };
 
       try {
-        // Apps Script web apps redirect (302), so use no-cors mode
-        await fetch(APPS_SCRIPT_URL, {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(submitData).toString(),
+        // Apps Script does a 302 redirect which drops POST body with fetch.
+        // Use a hidden form + iframe to submit properly.
+        const iframe = document.createElement('iframe');
+        iframe.name = 'apps_script_iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+
+        const tempForm = document.createElement('form');
+        tempForm.method = 'POST';
+        tempForm.action = APPS_SCRIPT_URL;
+        tempForm.target = 'apps_script_iframe';
+
+        for (const [key, value] of Object.entries(submitData)) {
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = key;
+          input.value = value;
+          tempForm.appendChild(input);
+        }
+
+        document.body.appendChild(tempForm);
+        tempForm.submit();
+
+        // Clean up after submission completes
+        iframe.addEventListener('load', function() {
+          document.body.removeChild(tempForm);
+          document.body.removeChild(iframe);
         });
 
-        // If no network error, assume success
-        successMsg.classList.remove('hidden');
-        form.reset();
+        // Show success after brief delay (iframe submission is fire-and-forget)
+        setTimeout(() => {
+          successMsg.classList.remove('hidden');
+          form.reset();
+          submitBtn.disabled = false;
+          btnText.classList.remove('hidden');
+          btnLoading.classList.add('hidden');
+        }, 1500);
+
       } catch (error) {
         console.error('Form submission error:', error);
         errorText.textContent = 'Network error. Please check your connection and try again.';
         errorMsg.classList.remove('hidden');
-      } finally {
-        // Reset button state
         submitBtn.disabled = false;
         btnText.classList.remove('hidden');
         btnLoading.classList.add('hidden');
