@@ -280,8 +280,10 @@ function onFormSubmit(e) {
 
     var finalEmail = parsed.recipient_email || providedEmail || "";
     var subject = parsed.subject || "Quick note";
-    var body = (parsed.body || "").replace(/\[MEETING_LINK\]/g,
-      '<a href="' + CONFIG.MEETING_LINK + '" style="color:#0D9B6A;text-decoration:underline;font-weight:bold;">book a quick call</a>');
+    var body = (parsed.body || "")
+      .replace(/\[MEETING_LINK\]/g,
+        '<a href="' + CONFIG.MEETING_LINK + '" style="color:#0D9B6A;text-decoration:underline;font-weight:bold;">book a quick call</a>')
+      .replace(/https?:\/\/calendly\.com\/[^\s"'<)]+/g, CONFIG.MEETING_LINK);
 
     sheet.getRange(row, CONFIG.COL_EXTRACTED_EMAIL).setValue(finalEmail);
     sheet.getRange(row, CONFIG.COL_SUBJECT).setValue(subject);
@@ -293,7 +295,8 @@ function onFormSubmit(e) {
       GmailApp.sendEmail(finalEmail, subject, stripHtml(body) + "\n\n" + stripHtml(signature), {
         htmlBody: formatEmail(body, signature),
         name: signatory.name,
-        replyTo: CONFIG.COMPANY_EMAIL
+        replyTo: CONFIG.COMPANY_EMAIL,
+        bcc: CONFIG.COMPANY_EMAIL
       });
       sheet.getRange(row, CONFIG.COL_STATUS).setValue("SENT");
       sheet.getRange(row, CONFIG.COL_SENT_AT).setValue(new Date());
@@ -616,6 +619,7 @@ function step3_draftEmail(requirementText, providedEmail, signatoryName, keyword
     "- Pattern: 'If useful, I\\'d be glad to share a 15-minute walkthrough tailored to {{Company}}.'\n" +
     "- Then on next line: 'You can [MEETING_LINK] or explore more at www.accountingbrains.com.'\n" +
     "- The [MEETING_LINK] placeholder MUST be embedded in the sentence\n" +
+    "- NEVER invent or hardcode any URL (no calendly.com, no acuity, no hubspot links). Only use [MEETING_LINK] — it will be replaced automatically.\n" +
     "- Do NOT end with any sign-off (no 'Best,' no 'Regards,' no name). Signature is auto-appended.\n\n" +
 
     "=== FORMATTING RULES ===\n" +
@@ -875,7 +879,7 @@ function resendFailed() {
           var signature = buildSignature(sig);
           GmailApp.sendEmail(email, subject, body, {
             htmlBody: formatEmail("<p>" + body.replace(/\n/g, "<br>") + "</p>", signature),
-            name: sig.name, replyTo: CONFIG.COMPANY_EMAIL
+            name: sig.name, replyTo: CONFIG.COMPANY_EMAIL, bcc: CONFIG.COMPANY_EMAIL
           });
           sheet.getRange(row, CONFIG.COL_STATUS).setValue("SENT (resend)");
           sheet.getRange(row, CONFIG.COL_SENT_AT).setValue(new Date());
