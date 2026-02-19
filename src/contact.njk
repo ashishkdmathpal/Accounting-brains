@@ -159,34 +159,19 @@ description: "Schedule a free consultation with our CPA team. Fast response time
             </div>
           </div>
 
-          <!-- Cal.com Embed - Replace YOUR_CAL_USERNAME with your actual Cal.com username -->
-          <div class="cal-embed-container bg-gray-50 rounded-lg p-4 min-h-[500px]">
-            <div id="cal-embed-placeholder" class="text-center py-12">
-              <div class="animate-pulse">
-                <div class="h-8 bg-gray-200 rounded w-3/4 mx-auto mb-4"></div>
-                <div class="h-4 bg-gray-200 rounded w-1/2 mx-auto"></div>
-              </div>
-              <p class="text-sm text-gray-500 mt-6">Loading calendar...</p>
-            </div>
+          <div class="bg-gray-50 rounded-lg p-8 text-center">
+            <svg class="w-16 h-16 text-accent-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+            <p class="text-gray-600 mb-6">Pick a time that works for you. We'll discuss your accounting needs and how we can help.</p>
+            <a href="https://cal.com/accountingbrains/30min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-accent-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent-700 transition-colors shadow-lg hover:shadow-xl">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              Book a Meeting
+            </a>
+            <p class="text-sm text-gray-500 mt-4">Free 30-minute consultation — no obligation</p>
           </div>
-
-          <!-- Cal.com Inline Embed Script -->
-          <script>
-            (function () {
-              // Replace YOUR_CAL_USERNAME with your actual Cal.com username
-              var calInline = document.createElement('script');
-              calInline.src = 'https://app.cal.com/embed/embed.js';
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(calInline, s);
-
-              calInline.onload = function() {
-                const embedPlaceholder = document.getElementById('cal-embed-placeholder');
-                if (embedPlaceholder) {
-                  embedPlaceholder.innerHTML = '<div data-cal-link="accountingbrains/30min" data-cal-config=\'{"theme":"light"}\' style="width:100%;height:100%;overflow:scroll"></div>';
-                }
-              };
-            })();
-          </script>
         </div>
 
         <!-- Contact Information Cards -->
