@@ -164,7 +164,7 @@ description: "Schedule a free consultation with our CPA team. Fast response time
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
             </svg>
             <p class="text-gray-600 mb-6">Pick a time that works for you. We'll discuss your accounting needs and how we can help.</p>
-            <a href="https://cal.com/accountingbrains/30min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-accent-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent-700 transition-colors shadow-lg hover:shadow-xl">
+            <a href="https://cal.com/accountingbrains/30min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
               </svg>
@@ -417,13 +417,8 @@ description: "Schedule a free consultation with our CPA team. Fast response time
 
 <!-- Form JavaScript -->
 <script>
-  // Google Form submission URL
-  const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfrG-9DxRuZkdSwwsHIKH2BAPwE2-LWwKnOygwoK1Ozuh737g/formResponse';
-
-  // Google Form entry IDs
-  const ENTRY_REQUIREMENT = 'entry.2014766157';
-  const ENTRY_EMAIL = 'entry.437743594';
-  const ENTRY_SIGNATORY = 'entry.175721588';
+  // Apps Script Web App URL
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx-TiB2nc9lCCaYLDm1bqxafhunlJsh_ntRr_Rc630oj6QBTYhQBZMb0NE8BEtBuXsr/exec';
 
   document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
@@ -451,23 +446,23 @@ description: "Schedule a free consultation with our CPA team. Fast response time
       btnText.classList.add('hidden');
       btnLoading.classList.remove('hidden');
 
-      // Build Google Form submission data
-      const formData = new URLSearchParams();
-      formData.append(ENTRY_REQUIREMENT, form.requirement.value);
-      formData.append(ENTRY_EMAIL, form.email.value);
-      formData.append(ENTRY_SIGNATORY, 'Team AccountingBrains');
+      // Build submission data for Apps Script doPost
+      const submitData = {
+        email: form.email.value,
+        requirement: form.requirement.value,
+        signatory: 'Team AccountingBrains'
+      };
 
       try {
-        // Google Forms doesn't support CORS, so we use no-cors mode
-        // This means we can't read the response, but the submission goes through
-        await fetch(GOOGLE_FORM_URL, {
+        // Apps Script web apps redirect (302), so use no-cors mode
+        await fetch(APPS_SCRIPT_URL, {
           method: 'POST',
           mode: 'no-cors',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: formData.toString(),
+          body: new URLSearchParams(submitData).toString(),
         });
 
-        // If no network error, assume success (Google Forms always accepts valid POSTs)
+        // If no network error, assume success
         successMsg.classList.remove('hidden');
         form.reset();
       } catch (error) {

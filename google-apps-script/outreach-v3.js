@@ -1,13 +1,12 @@
 // ================================================================
-//  ACCOUNTINGBRAINS — VALUE-DRIVEN OUTREACH v3.1
-//
+//  ACCOUNTINGBRAINS — VALUE-DRIVEN OUTREACH v3
+//  
 //  3-STEP PIPELINE + COST TRACKING PER EMAIL
-//  + Website form handler (doPost) + BCC on all emails
-//
+//  
 //  Step 1: llama-3.3-70b → Extract keywords
 //  Step 2: groq/compound-mini → Web search
 //  Step 3: llama-3.3-70b → Draft value-driven email
-//
+//  
 //  Logs tokens, cost (USD + INR), model split per email
 //  Dependencies: Google ecosystem + Groq API only
 // ================================================================
@@ -19,7 +18,7 @@
 
 var CONFIG = {
   GROQ_API_KEY: null,  // Loaded from Script Properties — see getApiKey()
-
+  
   // Primary models
   MODEL_EXTRACT: "llama-3.3-70b-versatile",
   MODEL_VISION: "meta-llama/llama-4-scout-17b-16e-instruct",
@@ -294,8 +293,7 @@ function onFormSubmit(e) {
       GmailApp.sendEmail(finalEmail, subject, stripHtml(body) + "\n\n" + stripHtml(signature), {
         htmlBody: formatEmail(body, signature),
         name: signatory.name,
-        replyTo: CONFIG.COMPANY_EMAIL,
-        bcc: CONFIG.COMPANY_EMAIL
+        replyTo: CONFIG.COMPANY_EMAIL
       });
       sheet.getRange(row, CONFIG.COL_STATUS).setValue("SENT");
       sheet.getRange(row, CONFIG.COL_SENT_AT).setValue(new Date());
@@ -752,7 +750,7 @@ function _callGroqSingle(model, systemPrompt, userPrompt, maxTokens) {
   for (var attempt = 0; attempt < 2; attempt++) {
     response = UrlFetchApp.fetch("https://api.groq.com/openai/v1/chat/completions", options);
     httpCode = response.getResponseCode();
-
+    
     try {
       json = JSON.parse(response.getContentText());
     } catch (parseErr) {
@@ -775,7 +773,7 @@ function _callGroqSingle(model, systemPrompt, userPrompt, maxTokens) {
 
   var content = json.choices[0].message.content;
   Logger.log("Groq [" + model + "] success. Tokens: " + (json.usage ? json.usage.total_tokens : "unknown"));
-
+  
   return {
     content: content,
     usage: json.usage || { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0 }
@@ -796,40 +794,40 @@ function buildSignature(signatory) {
 
 function parseAiResponse(text) {
   if (!text) return null;
-
+  
   // ---- METHOD 1: Marker format (===RECIPIENT_EMAIL=== / ===SUBJECT=== / ===BODY===) ----
   if (text.indexOf("===SUBJECT===") > -1 || text.indexOf("===BODY===") > -1) {
     var result = { recipient_email: "", subject: "", body: "" };
-
+    
     // Extract email
     var emailMatch = text.match(/===RECIPIENT_EMAIL===\s*([\s\S]*?)(?====SUBJECT===)/);
     if (emailMatch) result.recipient_email = emailMatch[1].trim();
-
+    
     // Extract subject
     var subjectMatch = text.match(/===SUBJECT===\s*([\s\S]*?)(?====BODY===)/);
     if (subjectMatch) result.subject = subjectMatch[1].trim();
-
+    
     // Extract body (everything after ===BODY===)
     var bodyMatch = text.match(/===BODY===\s*([\s\S]*)/);
     if (bodyMatch) result.body = bodyMatch[1].trim();
-
+    
     if (result.body) return result;
   }
-
+  
   // ---- METHOD 2: JSON format (for Step 1 and other models) ----
   var cleaned = text
     .replace(/```json\s*/g, "")
     .replace(/```\s*/g, "")
     .trim();
-
+  
   try { return JSON.parse(cleaned); } catch (e) { /* continue */ }
-
+  
   // Extract JSON block
   var jsonMatch = cleaned.match(/\{[\s\S]*"body"[\s\S]*\}/);
   if (jsonMatch) {
     try { return JSON.parse(jsonMatch[0]); } catch (e) { /* continue */ }
   }
-
+  
   var firstBrace = cleaned.indexOf("{");
   var lastBrace = cleaned.lastIndexOf("}");
   if (firstBrace > -1 && lastBrace > firstBrace) {
@@ -877,9 +875,7 @@ function resendFailed() {
           var signature = buildSignature(sig);
           GmailApp.sendEmail(email, subject, body, {
             htmlBody: formatEmail("<p>" + body.replace(/\n/g, "<br>") + "</p>", signature),
-            name: sig.name,
-            replyTo: CONFIG.COMPANY_EMAIL,
-            bcc: CONFIG.COMPANY_EMAIL
+            name: sig.name, replyTo: CONFIG.COMPANY_EMAIL
           });
           sheet.getRange(row, CONFIG.COL_STATUS).setValue("SENT (resend)");
           sheet.getRange(row, CONFIG.COL_SENT_AT).setValue(new Date());
@@ -889,66 +885,6 @@ function resendFailed() {
     }
   }
   SpreadsheetApp.getUi().alert(resent > 0 ? resent + " email(s) resent!" : "No emails to resend.");
-}
-
-
-// ============================================
-// WEBSITE FORM HANDLER
-// Receives leads from accountingbrains.com contact form
-// Writes to the same sheet and triggers the AI pipeline
-// ============================================
-
-function doPost(e) {
-  try {
-    var email, requirement;
-
-    // Handle both JSON and form-data submissions
-    if (e.postData && e.postData.type === "application/json") {
-      var jsonData = JSON.parse(e.postData.contents);
-      email = jsonData.email;
-      requirement = jsonData.requirement;
-    } else {
-      email = e.parameter.email;
-      requirement = e.parameter.requirement;
-    }
-
-    if (!email || !requirement) {
-      return ContentService
-        .createTextOutput(JSON.stringify({ success: false, error: "Email and requirement are required" }))
-        .setMimeType(ContentService.MimeType.JSON);
-    }
-
-    // Append row to the sheet (matches existing column layout)
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-    var newRow = sheet.getLastRow() + 1;
-
-    // Timestamp in col 1, Requirement in col 2, Recipient email in col 4, Signatory in col 5
-    sheet.getRange(newRow, 1).setValue(new Date());
-    sheet.getRange(newRow, CONFIG.COL_REQUIREMENT).setValue(requirement);
-    sheet.getRange(newRow, CONFIG.COL_RECIPIENT).setValue(email);
-    sheet.getRange(newRow, CONFIG.COL_SIGNATORY).setValue(CONFIG.DEFAULT_SIGNATORY);
-    sheet.getRange(newRow, CONFIG.COL_STATUS).setValue("WEBSITE LEAD — processing...");
-
-    // Trigger the AI pipeline on this row
-    var fakeEvent = { range: sheet.getRange(newRow, 1) };
-    onFormSubmit(fakeEvent);
-
-    return ContentService
-      .createTextOutput(JSON.stringify({ success: true, message: "Thank you! We will get back to you shortly." }))
-      .setMimeType(ContentService.MimeType.JSON);
-
-  } catch (err) {
-    Logger.log("doPost error: " + err.toString());
-    return ContentService
-      .createTextOutput(JSON.stringify({ success: false, error: "Something went wrong. Please try again." }))
-      .setMimeType(ContentService.MimeType.JSON);
-  }
-}
-
-function doGet(e) {
-  return ContentService
-    .createTextOutput(JSON.stringify({ status: "ok", service: "AccountingBrains Lead Capture" }))
-    .setMimeType(ContentService.MimeType.JSON);
 }
 
 
@@ -994,7 +930,7 @@ function testImageScan() {
   // First, test with the actual URL from your sheet
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   var lastRow = sheet.getLastRow();
-
+  
   // Find the last row with a file upload
   var fileUrl = "";
   for (var row = lastRow; row >= 2; row--) {
@@ -1031,4 +967,55 @@ function testImageScan() {
   } catch (e) {
     SpreadsheetApp.getUi().alert("ERROR: " + e.message + "\n\nIf this is a permission error, click OK, then run this function again — it should prompt for Drive access.");
   }
+}
+
+
+// ============================================
+// WEB APP HANDLERS (for website contact form)
+// ============================================
+
+function doPost(e) {
+  try {
+    // Parse incoming data (supports both JSON and form-urlencoded)
+    var data;
+    if (e.postData && e.postData.type === "application/json") {
+      data = JSON.parse(e.postData.contents);
+    } else {
+      data = e.parameter;
+    }
+
+    var email = (data.email || "").trim();
+    var requirement = (data.requirement || "").trim();
+    var signatory = (data.signatory || CONFIG.DEFAULT_SIGNATORY).trim();
+
+    if (!requirement) {
+      return ContentService.createTextOutput(JSON.stringify({ success: false, error: "Requirement is empty" }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // Append row to sheet
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var newRow = sheet.getLastRow() + 1;
+    sheet.getRange(newRow, 1).setValue(new Date());
+    sheet.getRange(newRow, CONFIG.COL_REQUIREMENT).setValue(requirement);
+    sheet.getRange(newRow, CONFIG.COL_RECIPIENT).setValue(email);
+    sheet.getRange(newRow, CONFIG.COL_SIGNATORY).setValue(signatory);
+
+    // Trigger the AI pipeline on this row
+    var fakeEvent = { range: sheet.getRange(newRow, 1) };
+    onFormSubmit(fakeEvent);
+
+    return ContentService.createTextOutput(JSON.stringify({ success: true }))
+      .setMimeType(ContentService.MimeType.JSON);
+
+  } catch (err) {
+    Logger.log("doPost error: " + err.toString());
+    return ContentService.createTextOutput(JSON.stringify({ success: false, error: err.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function doGet(e) {
+  return ContentService.createTextOutput(JSON.stringify({ status: "ok", service: "AccountingBrains Lead Capture" }))
+    .setMimeType(ContentService.MimeType.JSON);
 }
