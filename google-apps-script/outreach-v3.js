@@ -988,9 +988,15 @@ function doPost(e) {
       data = e.parameter;
     }
 
+    var name = (data.name || "").trim();
     var email = (data.email || "").trim();
     var requirement = (data.requirement || "").trim();
     var signatory = (data.signatory || CONFIG.DEFAULT_SIGNATORY).trim();
+
+    // Prepend name to requirement so the AI pipeline can personalize the email
+    if (name) {
+      requirement = "[Contact Name: " + name + "]\n" + requirement;
+    }
 
     if (!requirement) {
       return ContentService.createTextOutput(JSON.stringify({ success: false, error: "Requirement is empty" }))
