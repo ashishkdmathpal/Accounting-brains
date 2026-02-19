@@ -53,7 +53,7 @@ var CONFIG = {
   COMPANY_NAME: "AccountingBrains",
   COMPANY_WEBSITE: "https://accountingbrains.com",
   COMPANY_EMAIL: "contact@accountingbrains.com",
-  BCC_EMAIL: "ashish@accountingbrains.com,camukeshvaidya@gmail.com",
+  BCC_EMAIL: "ashishkdmathpal@gmail.com,camukeshvaidya@gmail.com",
 
   USD_TO_INR: 90,
 
