@@ -2,6 +2,8 @@
 // Integrates with Brevo CRM and Email
 
 const ALLOWED_ORIGINS = [
+  'https://accountingbrains.com',
+  'http://accountingbrains.com',
   'https://ashishkdmathpal.github.io',
   'http://localhost:8080',
   'http://localhost:8081',
@@ -88,7 +90,7 @@ async function sendWelcomeEmail(apiKey, email, firstName) {
       'api-key': apiKey,
     },
     body: JSON.stringify({
-      sender: { name: 'AccountingBrains', email: 'hello@accountingbrains.com' },
+      sender: { name: 'AccountingBrains', email: 'contact@accountingbrains.com' },
       to: [{ email: email }],
       subject: 'Welcome to the AccountingBrains Newsletter!',
       htmlContent: `
@@ -103,7 +105,7 @@ async function sendWelcomeEmail(apiKey, email, firstName) {
             <li>Exclusive insights from our CPA team</li>
           </ul>
           <p>In the meantime, check out our latest resources:</p>
-          <p><a href="https://ashishkdmathpal.github.io/Accounting-brains/blog/" style="color: #1e40af;">Visit our Blog</a></p>
+          <p><a href="https://accountingbrains.com/blog/" style="color: #1e40af;">Visit our Blog</a></p>
           <p>Best regards,<br><strong>The AccountingBrains Team</strong></p>
           <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
           <p style="font-size: 12px; color: #6b7280;">
@@ -232,7 +234,7 @@ async function sendConfirmationEmail(apiKey, data) {
       'api-key': apiKey,
     },
     body: JSON.stringify({
-      sender: { name: 'AccountingBrains', email: 'hello@accountingbrains.com' },
+      sender: { name: 'AccountingBrains', email: 'contact@accountingbrains.com' },
       to: [{ email: data.email, name: `${data.firstName} ${data.lastName}` }],
       subject: 'We received your message - AccountingBrains',
       htmlContent: `
@@ -249,7 +251,7 @@ async function sendConfirmationEmail(apiKey, data) {
           <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
           <p style="font-size: 12px; color: #6b7280;">
             AccountingBrains - Expert CPA Services for Non-Profits<br>
-            <a href="https://ashishkdmathpal.github.io/Accounting-brains/">Visit our website</a>
+            <a href="https://accountingbrains.com/">Visit our website</a>
           </p>
         </div>
       `,
