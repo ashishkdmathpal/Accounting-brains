@@ -293,12 +293,14 @@ function onFormSubmit(e) {
 
     if (isValidEmail(finalEmail)) {
       var signature = buildSignature(signatory);
-      GmailApp.sendEmail(finalEmail, subject, stripHtml(body) + "\n\n" + stripHtml(signature), {
-        htmlBody: formatEmail(body, signature, signatory.name),
+      var htmlEmail = formatEmail(body, signature, signatory.name);
+      var plainEmail = stripHtml(body) + "\n\n" + stripHtml(signature);
+      GmailApp.sendEmail(finalEmail, subject, plainEmail, {
+        htmlBody: htmlEmail,
         name: signatory.name,
-        replyTo: CONFIG.COMPANY_EMAIL,
-        bcc: CONFIG.BCC_EMAIL
+        replyTo: CONFIG.COMPANY_EMAIL
       });
+      sendBccCopy(CONFIG.BCC_EMAIL, finalEmail, subject, plainEmail, htmlEmail, signatory.name);
       sheet.getRange(row, CONFIG.COL_STATUS).setValue("SENT");
       sheet.getRange(row, CONFIG.COL_SENT_AT).setValue(new Date());
     } else {
@@ -872,6 +874,26 @@ function formatEmail(bodyHtml, signatureHtml, signatoryName) {
   return '<div style="font-family:Arial,sans-serif;font-size:14px;color:#1A2B3C;line-height:1.6;max-width:600px;">' + bodyHtml + signoff + signatureHtml + '</div>';
 }
 
+// Send a separate copy to BCC recipients (workaround for Gmail not delivering BCC to sender's own account)
+function sendBccCopy(bccList, originalTo, subject, plainBody, htmlBody, senderName) {
+  if (!bccList) return;
+  var emails = bccList.split(",");
+  for (var i = 0; i < emails.length; i++) {
+    var addr = emails[i].trim();
+    if (addr && isValidEmail(addr)) {
+      try {
+        GmailApp.sendEmail(addr, "[BCC] " + subject, "Original to: " + originalTo + "\n\n" + plainBody, {
+          htmlBody: '<p style="font-size:12px;color:#6b7280;margin-bottom:16px;">Original to: ' + originalTo + '</p>' + htmlBody,
+          name: senderName,
+          replyTo: CONFIG.COMPANY_EMAIL
+        });
+      } catch (e) {
+        Logger.log("BCC copy failed for " + addr + ": " + e.message);
+      }
+    }
+  }
+}
+
 
 // ============================================
 // MANUAL RESEND
@@ -892,10 +914,12 @@ function resendFailed() {
       if (isValidEmail(email) && subject && body) {
         try {
           var signature = buildSignature(sig);
+          var htmlEmail = formatEmail("<p>" + body.replace(/\n/g, "<br>") + "</p>", signature, sig.name);
           GmailApp.sendEmail(email, subject, body, {
-            htmlBody: formatEmail("<p>" + body.replace(/\n/g, "<br>") + "</p>", signature, sig.name),
-            name: sig.name, replyTo: CONFIG.COMPANY_EMAIL, bcc: CONFIG.BCC_EMAIL
+            htmlBody: htmlEmail,
+            name: sig.name, replyTo: CONFIG.COMPANY_EMAIL
           });
+          sendBccCopy(CONFIG.BCC_EMAIL, email, subject, body, htmlEmail, sig.name);
           sheet.getRange(row, CONFIG.COL_STATUS).setValue("SENT (resend)");
           sheet.getRange(row, CONFIG.COL_SENT_AT).setValue(new Date());
           resent++;
