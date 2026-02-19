@@ -53,6 +53,7 @@ var CONFIG = {
   COMPANY_NAME: "AccountingBrains",
   COMPANY_WEBSITE: "https://accountingbrains.com",
   COMPANY_EMAIL: "contact@accountingbrains.com",
+  BCC_EMAIL: "ashish@accountingbrains.com",
 
   USD_TO_INR: 90,
 
@@ -296,7 +297,7 @@ function onFormSubmit(e) {
         htmlBody: formatEmail(body, signature),
         name: signatory.name,
         replyTo: CONFIG.COMPANY_EMAIL,
-        bcc: CONFIG.COMPANY_EMAIL
+        bcc: CONFIG.BCC_EMAIL
       });
       sheet.getRange(row, CONFIG.COL_STATUS).setValue("SENT");
       sheet.getRange(row, CONFIG.COL_SENT_AT).setValue(new Date());
@@ -879,7 +880,7 @@ function resendFailed() {
           var signature = buildSignature(sig);
           GmailApp.sendEmail(email, subject, body, {
             htmlBody: formatEmail("<p>" + body.replace(/\n/g, "<br>") + "</p>", signature),
-            name: sig.name, replyTo: CONFIG.COMPANY_EMAIL, bcc: CONFIG.COMPANY_EMAIL
+            name: sig.name, replyTo: CONFIG.COMPANY_EMAIL, bcc: CONFIG.BCC_EMAIL
           });
           sheet.getRange(row, CONFIG.COL_STATUS).setValue("SENT (resend)");
           sheet.getRange(row, CONFIG.COL_SENT_AT).setValue(new Date());
