@@ -5,9 +5,9 @@ description: "Comprehensive outsourced accounting services for businesses in the
 ---
 
 <!-- Hero Section -->
-<section class="relative overflow-hidden bg-primary-50/50 py-16 md:py-24">
-  <div class="absolute top-20 left-10 w-72 h-72 bg-accent-100 rounded-full blur-3xl opacity-40"></div>
-  <div class="absolute bottom-20 right-10 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-50"></div>
+<section class="relative overflow-hidden bg-primary-50/50 dark:bg-gray-800/50 py-16 md:py-24">
+  <div class="absolute top-20 left-10 w-72 h-72 bg-accent-100 dark:bg-accent-900/20 rounded-full blur-3xl opacity-40"></div>
+  <div class="absolute bottom-20 right-10 w-96 h-96 bg-primary-100 dark:bg-primary-900/20 rounded-full blur-3xl opacity-50"></div>
 
   <div class="container-custom relative">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -25,7 +25,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
 
       <!-- Hero SVG - Services Overview -->
       <div class="relative">
-        <div class="bg-white rounded-3xl shadow-soft-xl border border-primary-100 p-4 md:p-6">
+        <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-soft-xl border border-primary-100 dark:border-gray-700 p-4 md:p-6">
           <svg class="w-full" viewBox="0 0 400 280" fill="none">
             <!-- Central Hub -->
             <circle cx="200" cy="140" r="50" fill="#059669" fill-opacity="0.1" stroke="#059669" stroke-width="2"/>
@@ -70,11 +70,11 @@ description: "Comprehensive outsourced accounting services for businesses in the
 </section>
 
 <!-- Services for Businesses Section -->
-<section id="business-services" class="section bg-white">
+<section id="business-services" class="section bg-white dark:bg-gray-900">
   <div class="container-custom">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
       <div>
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 dark:bg-gray-700 text-primary-700 dark:text-gray-300 text-sm font-medium mb-6">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
           </svg>
@@ -100,7 +100,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
       </div>
 
       <!-- Business Services Visual -->
-      <div class="bg-primary-50 rounded-3xl p-6">
+      <div class="bg-primary-50 dark:bg-gray-800 rounded-3xl p-6">
         <svg class="w-full" viewBox="0 0 320 400" fill="none">
           <!-- Dashboard Card -->
           <rect x="20" y="20" width="280" height="360" rx="16" fill="white" stroke="#e2e8f0" stroke-width="2"/>
@@ -148,7 +148,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
 </section>
 
 <!-- Services for NGOs & Foundations Section -->
-<section id="nonprofit-services" class="section bg-primary-50">
+<section id="nonprofit-services" class="section bg-primary-50 dark:bg-gray-800">
   <div class="container-custom">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
       <!-- NGO & Foundation Services Visual -->
@@ -202,7 +202,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
       </div>
 
       <div class="order-1 lg:order-2">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-100 text-accent-700 text-sm font-medium mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400 text-sm font-medium mb-6">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
           </svg>
@@ -215,7 +215,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
 
         <div class="space-y-4">
           {% for service in site.services.nonprofits %}
-          <div class="flex items-start gap-3 p-4 bg-accent-50 rounded-xl hover:bg-accent-100 transition-colors">
+          <div class="flex items-start gap-3 p-4 bg-accent-50 dark:bg-accent-900/20 rounded-xl hover:bg-accent-100 transition-colors">
             <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
             </svg>
@@ -231,7 +231,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
 </section>
 
 <!-- Engagement Models Section -->
-<section id="engagement-models" class="section bg-white">
+<section id="engagement-models" class="section bg-white dark:bg-gray-900">
   <div class="container-custom">
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="label mb-4 block">Engagement Models</span>
@@ -241,7 +241,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <!-- Managed Accounting Services -->
-      <div class="bg-accent-50 rounded-3xl border-2 border-accent-200 p-8 hover:shadow-soft-lg transition-all">
+      <div class="bg-accent-50 dark:bg-accent-900/20 rounded-3xl border-2 border-accent-200 dark:border-accent-700 p-8 hover:shadow-soft-lg transition-all">
         <div class="flex items-center gap-4 mb-6">
           <div class="w-14 h-14 rounded-2xl bg-accent-500 flex items-center justify-center">
             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -249,7 +249,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             </svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-primary-900">{{ site.serviceModels.managed.name }}</h3>
+            <h3 class="text-xl font-bold text-primary-900 dark:text-white">{{ site.serviceModels.managed.name }}</h3>
             <span class="text-sm text-accent-600 font-medium">Fully Managed</span>
           </div>
         </div>
@@ -263,7 +263,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <svg class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
             </svg>
-            <span class="text-primary-700">{{ feature }}</span>
+            <span class="text-primary-700 dark:text-gray-300">{{ feature }}</span>
           </li>
           {% endfor %}
         </ul>
@@ -274,7 +274,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
       </div>
 
       <!-- Dedicated Team Model -->
-      <div class="bg-primary-50 rounded-3xl border-2 border-primary-200 p-8 hover:shadow-soft-lg transition-all">
+      <div class="bg-primary-50 rounded-3xl border-2 border-primary-200 dark:border-gray-600 p-8 hover:shadow-soft-lg transition-all">
         <div class="flex items-center gap-4 mb-6">
           <div class="w-14 h-14 rounded-2xl bg-primary-900 flex items-center justify-center">
             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -282,7 +282,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             </svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-primary-900">{{ site.serviceModels.dedicated.name }}</h3>
+            <h3 class="text-xl font-bold text-primary-900 dark:text-white">{{ site.serviceModels.dedicated.name }}</h3>
             <span class="text-sm text-primary-600 font-medium">Your Extended Team</span>
           </div>
         </div>
@@ -296,18 +296,18 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
             </svg>
-            <span class="text-primary-700">{{ feature }}</span>
+            <span class="text-primary-700 dark:text-gray-300">{{ feature }}</span>
           </li>
           {% endfor %}
         </ul>
 
-        <div class="bg-primary-100 rounded-xl p-4">
+        <div class="bg-primary-100 dark:bg-gray-700 rounded-xl p-4">
           <p class="text-sm text-primary-600 italic">You gain continuity, control, and scale - without employment risk or overhead.</p>
         </div>
       </div>
     </div>
 
-    <div class="mt-12 p-6 bg-accent-50 rounded-2xl border border-accent-200 text-center">
+    <div class="mt-12 p-6 bg-accent-50 dark:bg-accent-900/20 rounded-2xl border border-accent-200 dark:border-accent-700 text-center">
       <p class="text-primary-700 mb-4">
         By combining a Global Delivery Center with flexible engagement models, Accounting Brains delivers the <span class="font-bold">control of in-house hiring</span>, the <span class="font-bold">efficiency of outsourcing</span>, and the <span class="font-bold">governance and accountability</span> required for high-stakes accounting.
       </p>
@@ -319,7 +319,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
 </section>
 
 <!-- How It Works Section -->
-<section class="section bg-primary-50">
+<section class="section bg-primary-50 dark:bg-gray-800">
   <div class="container-custom">
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="label mb-4 block">How It Works</span>
@@ -328,7 +328,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {% for step in site.howItWorks %}
-      <div class="bg-white rounded-2xl p-6 shadow-soft hover:shadow-soft-lg transition-all {% if step.step == 4 %}border-2 border-accent-300{% endif %}">
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-soft hover:shadow-soft-lg transition-all {% if step.step == 4 %}border-2 border-accent-300 dark:border-accent-700{% endif %}">
         <div class="w-12 h-12 rounded-xl {% if step.step == 4 %}bg-accent-500{% else %}bg-primary-900{% endif %} text-white flex items-center justify-center mb-4 font-bold text-lg">
           {{ step.step }}
         </div>
@@ -341,7 +341,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
 </section>
 
 <!-- Industries We Serve -->
-<section class="section bg-white">
+<section class="section bg-white dark:bg-gray-900">
   <div class="container-custom">
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="label mb-4 block">Industries We Serve</span>
@@ -350,7 +350,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
       {% for industry in site.industries %}
-      <div class="bg-primary-50 rounded-2xl p-6 text-center hover:shadow-soft-lg transition-all">
+      <div class="bg-primary-50 dark:bg-gray-800 rounded-2xl p-6 text-center hover:shadow-soft-lg transition-all">
         <div class="w-14 h-14 rounded-xl {% if loop.index == 1 %}bg-primary-100{% elif loop.index == 2 %}bg-accent-100{% elif loop.index == 3 %}bg-accent-100{% else %}bg-primary-100{% endif %} flex items-center justify-center mx-auto mb-4">
           {% if loop.index == 1 %}
           <svg class="w-7 h-7 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -370,7 +370,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
           </svg>
           {% endif %}
         </div>
-        <h3 class="font-semibold text-primary-900">{{ industry }}</h3>
+        <h3 class="font-semibold text-primary-900 dark:text-white">{{ industry }}</h3>
       </div>
       {% endfor %}
     </div>
@@ -378,25 +378,25 @@ description: "Comprehensive outsourced accounting services for businesses in the
 </section>
 
 <!-- Software & Tools Section -->
-<section class="py-12 bg-gray-50 border-t border-b border-gray-100">
+<section class="py-12 bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700">
   <div class="container-custom">
     <div class="text-center mb-8">
-      <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Cloud-Based Expertise</p>
+      <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Cloud-Based Expertise</p>
       <p class="text-lg text-gray-600 mt-2">We work with the platforms you trust</p>
     </div>
     <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
       {% for tool in site.software %}
-      <div class="flex items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors">
+      <div class="flex items-center gap-2 text-gray-400 dark:text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 dark:hover:text-gray-300 transition-colors">
         <span class="text-xl font-bold">{{ tool }}</span>
       </div>
       {% endfor %}
     </div>
-    <p class="text-center text-sm text-gray-500 mt-6">QuickBooks Pro-Advisor Certified Team</p>
+    <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-6">QuickBooks Pro-Advisor Certified Team</p>
   </div>
 </section>
 
 <!-- Services By Country Section -->
-<section id="services-by-country" class="section bg-white">
+<section id="services-by-country" class="section bg-white dark:bg-gray-900">
   <div class="container-custom">
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="label mb-4 block">Global Compliance Coverage</span>
@@ -407,12 +407,12 @@ description: "Comprehensive outsourced accounting services for businesses in the
     <div class="space-y-8">
 
       <!-- USA -->
-      <div class="bg-primary-50 rounded-3xl p-8 border border-primary-100">
+      <div class="bg-primary-50 dark:bg-gray-800 rounded-3xl p-8 border border-primary-100">
         <div class="flex items-center gap-4 mb-6">
-          <span class="text-4xl">🇺🇸</span>
+          <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center"><svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M3 13h18M3 17h18"/><rect x="3" y="5" width="7" height="8" fill="currentColor" opacity="0.15"/></svg></div>
           <div>
-            <h3 class="text-2xl font-bold text-primary-900">United States</h3>
-            <p class="text-sm text-primary-600">IRS · GAAP · Form 990 · 1099 · IFRS Compliance</p>
+            <h3 class="text-2xl font-bold text-primary-900 dark:text-white">United States</h3>
+            <p class="text-sm text-primary-600 dark:text-gray-400">IRS · GAAP · Form 990 · 1099 · IFRS Compliance</p>
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -420,7 +420,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Key Services</h4>
             <ul class="space-y-2">
               {% for svc in site.regions.usa.keyServices %}
-              <li class="flex items-center gap-2 text-sm text-primary-700">
+              <li class="flex items-center gap-2 text-sm text-primary-700 dark:text-gray-300">
                 <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 {{ svc }}
               </li>
@@ -431,7 +431,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Compliance Standards</h4>
             <div class="flex flex-wrap gap-2">
               {% for c in site.regions.usa.compliance %}
-              <span class="px-3 py-1 bg-white border border-primary-200 rounded-full text-xs font-medium text-primary-700">{{ c }}</span>
+              <span class="px-3 py-1 bg-white dark:bg-gray-800 border border-primary-200 dark:border-gray-600 rounded-full text-xs font-medium text-primary-700 dark:text-gray-300">{{ c }}</span>
               {% endfor %}
             </div>
           </div>
@@ -439,10 +439,10 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Software Platforms</h4>
             <div class="flex flex-wrap gap-2">
               {% for sw in site.regions.usa.software %}
-              <span class="px-3 py-1 bg-accent-100 border border-accent-200 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
+              <span class="px-3 py-1 bg-accent-100 border border-accent-200 dark:border-accent-700 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
               {% endfor %}
             </div>
-            <div class="mt-4 bg-white rounded-xl p-4">
+            <div class="mt-4 bg-white dark:bg-gray-800 rounded-xl p-4">
               <p class="text-xs text-primary-500 mb-1">Cost vs local CPA</p>
               <p class="text-sm"><span class="line-through text-red-400">{{ site.regions.usa.localRate }}</span> → <span class="font-bold text-accent-600">{{ site.regions.usa.abRate }}</span></p>
             </div>
@@ -451,12 +451,12 @@ description: "Comprehensive outsourced accounting services for businesses in the
       </div>
 
       <!-- Canada -->
-      <div class="bg-red-50/40 rounded-3xl p-8 border border-red-100">
+      <div class="bg-red-50/40 dark:bg-red-900/10 rounded-3xl p-8 border border-red-100 dark:border-red-900/30">
         <div class="flex items-center gap-4 mb-6">
-          <span class="text-4xl">🇨🇦</span>
+          <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center"><svg class="w-6 h-6 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 8l1.5 3 1.5-1-1 2h2l-2 2 .5 2L12 14.5 9.5 16l.5-2-2-2h2l-1-2 1.5 1z" fill="currentColor" opacity="0.2"/></svg></div>
           <div>
-            <h3 class="text-2xl font-bold text-primary-900">Canada</h3>
-            <p class="text-sm text-primary-600">CRA · HST/GST · T2 Corporate · T1 Personal Returns</p>
+            <h3 class="text-2xl font-bold text-primary-900 dark:text-white">Canada</h3>
+            <p class="text-sm text-primary-600 dark:text-gray-400">CRA · HST/GST · T2 Corporate · T1 Personal Returns</p>
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -464,7 +464,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Key Services</h4>
             <ul class="space-y-2">
               {% for svc in site.regions.canada.keyServices %}
-              <li class="flex items-center gap-2 text-sm text-primary-700">
+              <li class="flex items-center gap-2 text-sm text-primary-700 dark:text-gray-300">
                 <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 {{ svc }}
               </li>
@@ -475,7 +475,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Compliance Standards</h4>
             <div class="flex flex-wrap gap-2">
               {% for c in site.regions.canada.compliance %}
-              <span class="px-3 py-1 bg-white border border-red-200 rounded-full text-xs font-medium text-primary-700">{{ c }}</span>
+              <span class="px-3 py-1 bg-white border border-red-200 dark:border-red-900/30 rounded-full text-xs font-medium text-primary-700 dark:text-gray-300">{{ c }}</span>
               {% endfor %}
             </div>
           </div>
@@ -483,10 +483,10 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Software Platforms</h4>
             <div class="flex flex-wrap gap-2">
               {% for sw in site.regions.canada.software %}
-              <span class="px-3 py-1 bg-accent-100 border border-accent-200 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
+              <span class="px-3 py-1 bg-accent-100 border border-accent-200 dark:border-accent-700 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
               {% endfor %}
             </div>
-            <div class="mt-4 bg-white rounded-xl p-4">
+            <div class="mt-4 bg-white dark:bg-gray-800 rounded-xl p-4">
               <p class="text-xs text-primary-500 mb-1">Cost vs local CPA</p>
               <p class="text-sm"><span class="line-through text-red-400">{{ site.regions.canada.localRate }}</span> → <span class="font-bold text-accent-600">{{ site.regions.canada.abRate }}</span></p>
             </div>
@@ -495,12 +495,12 @@ description: "Comprehensive outsourced accounting services for businesses in the
       </div>
 
       <!-- UAE -->
-      <div class="bg-amber-50/40 rounded-3xl p-8 border border-amber-100">
+      <div class="bg-amber-50/40 dark:bg-amber-900/10 rounded-3xl p-8 border border-amber-100 dark:border-amber-900/30">
         <div class="flex items-center gap-4 mb-6">
-          <span class="text-4xl">🇦🇪</span>
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center"><svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9.67h18M3 14.33h18"/><rect x="3" y="5" width="5" height="14" fill="currentColor" opacity="0.15"/></svg></div>
           <div>
-            <h3 class="text-2xl font-bold text-primary-900">UAE / Middle East</h3>
-            <p class="text-sm text-primary-600">FTA VAT · IFRS · Corporate Tax · Freezone &amp; Mainland Compliance</p>
+            <h3 class="text-2xl font-bold text-primary-900 dark:text-white">UAE / Middle East</h3>
+            <p class="text-sm text-primary-600 dark:text-gray-400">FTA VAT · IFRS · Corporate Tax · Freezone &amp; Mainland Compliance</p>
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -508,7 +508,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Key Services</h4>
             <ul class="space-y-2">
               {% for svc in site.regions.uae.keyServices %}
-              <li class="flex items-center gap-2 text-sm text-primary-700">
+              <li class="flex items-center gap-2 text-sm text-primary-700 dark:text-gray-300">
                 <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 {{ svc }}
               </li>
@@ -519,7 +519,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Compliance Standards</h4>
             <div class="flex flex-wrap gap-2">
               {% for c in site.regions.uae.compliance %}
-              <span class="px-3 py-1 bg-white border border-amber-200 rounded-full text-xs font-medium text-primary-700">{{ c }}</span>
+              <span class="px-3 py-1 bg-white border border-amber-200 dark:border-amber-900/30 rounded-full text-xs font-medium text-primary-700 dark:text-gray-300">{{ c }}</span>
               {% endfor %}
             </div>
           </div>
@@ -527,10 +527,10 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Software Platforms</h4>
             <div class="flex flex-wrap gap-2">
               {% for sw in site.regions.uae.software %}
-              <span class="px-3 py-1 bg-accent-100 border border-accent-200 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
+              <span class="px-3 py-1 bg-accent-100 border border-accent-200 dark:border-accent-700 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
               {% endfor %}
             </div>
-            <div class="mt-4 bg-white rounded-xl p-4">
+            <div class="mt-4 bg-white dark:bg-gray-800 rounded-xl p-4">
               <p class="text-xs text-primary-500 mb-1">Cost vs local accountant</p>
               <p class="text-sm"><span class="line-through text-red-400">{{ site.regions.uae.localRate }}</span> → <span class="font-bold text-accent-600">{{ site.regions.uae.abRate }}</span></p>
             </div>
@@ -539,12 +539,12 @@ description: "Comprehensive outsourced accounting services for businesses in the
       </div>
 
       <!-- Australia -->
-      <div class="bg-blue-50/40 rounded-3xl p-8 border border-blue-100">
+      <div class="bg-blue-50/40 dark:bg-blue-900/10 rounded-3xl p-8 border border-blue-100 dark:border-blue-900/30">
         <div class="flex items-center gap-4 mb-6">
-          <span class="text-4xl">🇦🇺</span>
+          <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center"><svg class="w-6 h-6 text-sky-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M5 7l1 2 2-.5-1 2 1.5 1-2 .5V14l-1.5-1L3.5 14V12l-2-.5L3 10l-1-2L4 8.5z" fill="currentColor" opacity="0.15"/></svg></div>
           <div>
-            <h3 class="text-2xl font-bold text-primary-900">Australia</h3>
-            <p class="text-sm text-primary-600">ATO · BAS · GST · PAYG · ASIC Compliance</p>
+            <h3 class="text-2xl font-bold text-primary-900 dark:text-white">Australia</h3>
+            <p class="text-sm text-primary-600 dark:text-gray-400">ATO · BAS · GST · PAYG · ASIC Compliance</p>
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -552,7 +552,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Key Services</h4>
             <ul class="space-y-2">
               {% for svc in site.regions.australia.keyServices %}
-              <li class="flex items-center gap-2 text-sm text-primary-700">
+              <li class="flex items-center gap-2 text-sm text-primary-700 dark:text-gray-300">
                 <svg class="w-4 h-4 text-accent-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 {{ svc }}
               </li>
@@ -563,7 +563,7 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Compliance Standards</h4>
             <div class="flex flex-wrap gap-2">
               {% for c in site.regions.australia.compliance %}
-              <span class="px-3 py-1 bg-white border border-blue-200 rounded-full text-xs font-medium text-primary-700">{{ c }}</span>
+              <span class="px-3 py-1 bg-white border border-blue-200 dark:border-blue-900/30 rounded-full text-xs font-medium text-primary-700 dark:text-gray-300">{{ c }}</span>
               {% endfor %}
             </div>
           </div>
@@ -571,10 +571,10 @@ description: "Comprehensive outsourced accounting services for businesses in the
             <h4 class="font-semibold text-primary-800 mb-3 text-sm uppercase tracking-wider">Software Platforms</h4>
             <div class="flex flex-wrap gap-2">
               {% for sw in site.regions.australia.software %}
-              <span class="px-3 py-1 bg-accent-100 border border-accent-200 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
+              <span class="px-3 py-1 bg-accent-100 border border-accent-200 dark:border-accent-700 rounded-full text-xs font-medium text-accent-700">{{ sw }}</span>
               {% endfor %}
             </div>
-            <div class="mt-4 bg-white rounded-xl p-4">
+            <div class="mt-4 bg-white dark:bg-gray-800 rounded-xl p-4">
               <p class="text-xs text-primary-500 mb-1">Cost vs local accountant</p>
               <p class="text-sm"><span class="line-through text-red-400">{{ site.regions.australia.localRate }}</span> → <span class="font-bold text-accent-600">{{ site.regions.australia.abRate }}</span></p>
             </div>
